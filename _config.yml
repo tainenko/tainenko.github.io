@@ -1,9 +1,9 @@
 # Site
-name: 'Tony.Ko's Blog'
+name: "Tony's BLog"
 description: 'Sharing learning journeys - A roadmap about the software learning.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: '/'
+baseurl: '/mundana-theme-jekyll'
 disqus: 'demowebsite'
 email: 'tainenko@gmail.com'
 mailchimp-list: ''
@@ -20,7 +20,7 @@ plugins:
   
 authors:
     Tony:
-      name:           Tony.Ko
+      name:           Sal
       site:           https://tainenko.github.io
       avatar:         /assets/images/avatar1.jpg
       bio:            "Hi, I am Tony."
@@ -35,7 +35,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: Tony
+      author: sal
       avatar: /assets/images/avatar1.jpg
       
   # all pages
