@@ -1,9 +1,9 @@
 # Site
 name: 'Tony.Ko's Blog'
-description: ''
+description: 'Sharing learning journeys - A roadmap about the software learning.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: '/m'
+baseurl: '/'
 disqus: 'demowebsite'
 email: 'tainenko@gmail.com'
 mailchimp-list: ''
