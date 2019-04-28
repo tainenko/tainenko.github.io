@@ -4,7 +4,7 @@ description: 'My blog of Learning Journey.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
-disqus: 'demowebsite'
+disqus: 'Personal blog'
 email: 'tainenko@gmail.com'
 mailchimp-list: ''
 
