@@ -34,6 +34,14 @@ authors:
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          fakemail@gmail.com
       twitter:        https://twitter.com/wowthemesnet
+
+    tony:
+      name:           Tony
+      site:           https://tainenko.github.io
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hi, I am Tony, the author of Learning Journey blog. I hope you like what I sharing!"
+      email:          tainenko@gmail.com
+      twitter:        https://twitter.com/tainenko
  
 # Defaults
 defaults:
