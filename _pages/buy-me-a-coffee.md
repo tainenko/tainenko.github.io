@@ -9,4 +9,4 @@ You have my permission to use the free items I develop in your personal, commerc
 
 Thank you so much!
 
-<a class="btn btn-danger" href="https://paypal.me/tainenko?locale.x=zh_TW">Buy me a coffee</a>
+<a class="btn btn-danger" href="https://www.buymeacoffee.com/zmXxyGn">Buy me a coffee</a>
