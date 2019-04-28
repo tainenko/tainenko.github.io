@@ -19,6 +19,14 @@ plugins:
   - jekyll-seo-tag
   
 authors:
+    tony:
+      name:           Tony
+      site:           https://tainenko.github.io
+      avatar:         assets/images/avatar3.png
+      bio:            "Hi, I am Tony, the author of Learning Journey blog. I hope you like what I sharing!"
+      email:          tainenko@gmail.com
+      twitter:        https://twitter.com/tainenko
+
     sal:
       name:           Sal
       site:           https://www.wowthemes.net
@@ -35,14 +43,6 @@ authors:
       email:          fakemail@gmail.com
       twitter:        https://twitter.com/wowthemesnet
 
-    tony:
-      name:           Tony
-      site:           https://tainenko.github.io
-      avatar:         assets/images/avatar3.png
-      bio:            "Hi, I am Tony, the author of Learning Journey blog. I hope you like what I sharing!"
-      email:          tainenko@gmail.com
-      twitter:        https://twitter.com/tainenko
- 
 # Defaults
 defaults:
 
