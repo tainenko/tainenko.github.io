@@ -3,7 +3,7 @@ layout: post
 title:  "前端面試心得實戰"
 author: tony
 categories: [ Frontend Interview ]
-image: assets/images/18.png
+image: assets/images/19.gif
 tags: [frontend interview]
 ---
 ## 摘要
