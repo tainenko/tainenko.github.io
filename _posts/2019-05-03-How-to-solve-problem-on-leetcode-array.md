@@ -12,9 +12,6 @@ tags: [frontend interview]
 - 網路上的面試心得分享
 - 前端面試考題(含筆試與概念)
 
-## 面試心得
-[前端面試心得 (2018/11) KKstream, Oath, MIT jobs 快速面試](https://linyencheng.github.io/2018/11/12/thinking-interview/)   
-[2018 前端工程師面試心得](https://medium.com/@weihanglo/2018-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%9D%A2%E8%A9%A6%E5%BF%83%E5%BE%97-125e633db3a2)   
 ## 前端工程師面試問題集
 
 以下是前端開發的面試問題，可以用來審查一個有潛力的面試者。這並不是建議你對同一個面試者問上所有的問題 (那會花費好幾小時)。從列表中挑幾個題目，應該就能幫助你審查面試者是否擁有你需要的技能。
@@ -208,6 +205,30 @@ $(".foo div#bar:eq(0)")
 - 你使用的開發工具中，你最喜歡的部分是什麼？
 - 你有任何的 pet projects (個人開發的小專案)？ 什麼樣的？
 - 你最喜歡 IE 瀏覽器的什麼特點？
+
+
+## 面試心得
+[前端面試心得 (2018/11) KKstream, Oath, MIT jobs 快速面試](https://linyencheng.github.io/2018/11/12/thinking-interview/)   
+[2018 前端工程師面試心得](https://medium.com/@weihanglo/2018-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%9D%A2%E8%A9%A6%E5%BF%83%E5%BE%97-125e633db3a2)   
+
+## 知名企業面試題整理
+主要整理各大公司的線上測驗難度和白板題。
+
+### Hahow 好學校
+#### 線上測驗
+RemoteInterview.io30分鐘3題。  難度約leetcode easy，有考closuret概念。
+#### 白板題
+array
+
+### Appier 沛星科技
+#### 面試
+- 原型鍊的觀念
+- 解釋 CORS
+- 爲什麼送 request 伺服器沒收到 cookies（因爲沒有加 withCredentials）
+- 何謂 third-party cookies 
+
+
+
 
 ## 學習資源
 
