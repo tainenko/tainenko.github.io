@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "How to solve problem on leecode"
+title:  "How to solve problem on leecode - Array"
 author: tony
 categories: [ Leetcode ]
 image: assets/images/18.png
-tags: [leetcode interview algorithms]
+tags: [leetcode algorithms data_structure array]
 ---
-# Array
 ## Introduction
 The most common way is to traverse the array, manipulating each element. The other approach is to use double Pointers.  
 
