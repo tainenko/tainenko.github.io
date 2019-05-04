@@ -8,24 +8,21 @@ tags: [leetcode interview algorithms]
 ---
 # Array
 ## Introduction
-<style>
-.highlight-left {margin-left: 0}
-</style>
 The most common way is to traverse the array, manipulating each element. The other approach is to use double Pointers.  
 
 Double pointer, as the name implies, is to use two Pointers to traverse array. Two Pointers is commonly used in an ordered array. We use two pointers left pointer  and right point which traverse the array form head and tail in the mean time. The traversal would be  completed  until the two pointers intersect. Time complexity is O (n).
 
-> 1. Establish one or more indicators
-> 2. Move the indicator to the target element.
-> 3. manipulated the element
-> 4. Repeat step 2.3 until you have traversed the entire array.
+> 1.Establish one or more indicators.  
+ 2.Move the indicator to the target element.  
+ 3.manipulated the element.  
+ 4.Repeat step 2.3 until you have traversed the entire array.  
 ## How to use
 In general, We will have two pointers: `left` and `right`. They point to the beginning and end of an array, respectively.
 ```
   left = 0;
   right = len(A)-1
 ```
-The most common loop termination condition is used to judge whether two Pointers meet or one of the pointer traversals completed.
+The loop termination condition is whether two Pointers meet or one of the pointer traversals completed.
 ```
   while left<right:
   # do something
