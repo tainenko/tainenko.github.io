@@ -67,6 +67,9 @@ highlighter: rouge
 # Paginate
 paginate: 10
 
+# Google Analytics
+google_analytics: UA-139590916-1
+
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
