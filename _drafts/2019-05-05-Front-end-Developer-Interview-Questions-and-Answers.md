@@ -109,12 +109,9 @@ tags: [frontend,interview,javascript,css,html,react]
         - XHTML 用 id 屬性代替 name 屬性       
         - XHTML 特殊字元的處理   
 6. 頁面佈局中常聽說的“結構與表現”分離，“結構”是指？“表現”是指？    
-
-    “結構”：HTML
-    “表現”：CSS
-
- 
-
+    - “結構”：HTML
+    - “表現”：CSS
+    
 7. 怎麼樣從web前端方面優化效能？至少列舉5點？
     1. HTML部分  
         - 語義化HTML：好處在於可以使程式碼簡潔清晰，支援不同裝置，利於搜尋引擎，便於團隊開發；  
@@ -158,38 +155,24 @@ tags: [frontend,interview,javascript,css,html,react]
         - 使用gzip壓縮內容；                                                                                                                           
 
 8. JavaScript中哪些方法獲取元素?
-    getElementById  
-    getElementsByClassName  
-    getElementsByTagName  
-    getElementsByName  
+    - getElementById  
+    - getElementsByClassName  
+    - getElementsByTagName  
+    - getElementsByName  
 
 9. 描述CSS hack技巧?
-
-條件註釋：僅適用於IE
-
-特定符號：適用於能識別特定符號的瀏覽器
-
-核心符號：針對不同瀏覽器核心
-
- 
-
+    - 條件註釋：僅適用於IE
+    - 特定符號：適用於能識別特定符號的瀏覽器
+    - 核心符號：針對不同瀏覽器核心
+    
 10.用JS擷取字串，asdfgh，要fgh;?
-
-方式1： ‘asdfgh’.substr(3,3)
-
-方式2： ’asdfgh’.substring(3,5) 或者 ‘asdfgh’.substring(3)
-
- 
+    - 方式1： ‘asdfgh’.substr(3,3)
+    - 方式2： ’asdfgh’.substring(3,5) 或者 ‘asdfgh’.substring(3)
 
 11.IE6的雙倍邊距BUG指的是什麼？怎麼解決？
 
 雙邊距：當塊級元素有浮動樣式的時候，給元素新增margin-left和margin-right樣式，在ie6下就會出現雙倍邊距。
-
- 
-
 解決方案：給當前元素新增樣式，使當前元素不為塊，如：display:inline;display:list-item
-
- 
 
 12. 如果製作一個訪問量很大的網站，對css，js和圖片應該怎麼處理?
 
