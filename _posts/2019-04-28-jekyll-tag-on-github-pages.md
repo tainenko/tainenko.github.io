@@ -4,7 +4,7 @@ title:  "How to implement Jekyll tags on github pages"
 author: tony
 categories: [ tutorial ]
 image: assets/images/17.jpg
-tags: [featured jekyll blog github-page]
+tags: [featured, jekyll, blog, github page]
 ---
 
 

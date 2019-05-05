@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "前端面試心得實戰"
+title:  "Cracking the front-end interview"
 author: tony
-categories: [ Frontend Interview ]
+categories: [ Frontend,Interview ]
 image: assets/images/19.gif
-tags: [frontend interview]
+tags: [frontend,interview, javascript]
 ---
 ## 摘要
 此文章紀錄了前端學習過程的資源，包含以下項目：
