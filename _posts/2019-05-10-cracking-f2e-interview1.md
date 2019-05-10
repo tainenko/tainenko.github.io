@@ -7,9 +7,9 @@ image: assets/images/f2e_interview.png
 tags: [frontend,interview,javascript,css3,html5]
 ---
 
-# TCP（Transmission Control Protocol）
+## TCP（Transmission Control Protocol）
 
-    TCP傳輸控制協議，是一種面向連接的、可靠的、基於字節流的傳輸層通信協議。通訊雙方建立一次tcp連接，需要經過三次步驟1、客戶端發送syn包（syn=j）到服務器，並入SYN_SEND狀態，等待服務器確認。2、服務器收入syn包，必須確認客戶的SYN（ack=j+1），同時自己也發送一個SYN包（syn=k），既SYN+ACK包，此時服務器進入SYN_RECV狀態。3、客戶端收到服務器的SYN+ACK包，向服務器發送確認包ACK（ack=k+1），此包發送完畢，客戶端和服務器進入ESTABLISHED狀態，完成三次握手。（tcp在握手過程中並不攜帶數據，而是在三次握手完成之後才會進行數據傳送）
+>TCP傳輸控制協議，是一種面向連接的、可靠的、基於字節流的傳輸層通信協議。通訊雙方建立一次tcp連接，需要經過三次步驟1、客戶端發送syn包（syn=j）到服務器，並入SYN_SEND狀態，等待服務器確認。2、服務器收入syn包，必須確認客戶的SYN（ack=j+1），同時自己也發送一個SYN包（syn=k），既SYN+ACK包，此時服務器進入SYN_RECV狀態。3、客戶端收到服務器的SYN+ACK包，向服務器發送確認包ACK（ack=k+1），此包發送完畢，客戶端和服務器進入ESTABLISHED狀態，完成三次握手。（tcp在握手過程中並不攜帶數據，而是在三次握手完成之後才會進行數據傳送）
 
 SYN：synchronous 建立聯機
 
@@ -25,9 +25,9 @@ UDP是非面向連接協議，使用udp協議通訊並不需要建立連接，�
 
 TCP/IP是位於傳輸層上的一種協議，用於在網絡中傳輸數據；
 
-# socket（嵌套字）
+## socket（嵌套字）
 
-    socket是一組實現TCP/UDP通信的接口API，既無論TCP還是UDP，通過對scoket的編程，都可以實現TCP/UCP通信。（TCP或UDP是一種計算機網絡通信中在傳輸層的一種協議，可以簡單的理解成是一種約定，只有履行合同才是實質性的行動，所以無論是TCP還是UDP要產生作用，都需要有實際性的行為去執行才能體現協議的作用。socket就是實現這種作用的方法）socket作為一個通信鏈的句柄，它包含了網絡通信必備的5種信息。1、連接使用的協議。2、本地主機的IP地址。3、本地進程的協議端口。4、遠地主機的IP地址。5、遠地進程的協議端口。即可知道，socket包含了通信本方和對方的ip和端口以及連接使用的協議（TCP/UDP）。通信雙方中的一方（客戶端）通過socket對另一方（服務端）發起連接請求，服務端在網絡上監聽請求，當收到客戶端發來的請求之後，根據socket裏攜帶的信息，定位到客戶端，就相應請求，把socket描述發給客戶端，雙方確認之後連接就建立了。
+>socket是一組實現TCP/UDP通信的接口API，既無論TCP還是UDP，通過對scoket的編程，都可以實現TCP/UCP通信。（TCP或UDP是一種計算機網絡通信中在傳輸層的一種協議，可以簡單的理解成是一種約定，只有履行合同才是實質性的行動，所以無論是TCP還是UDP要產生作用，都需要有實際性的行為去執行才能體現協議的作用。socket就是實現這種作用的方法）socket作為一個通信鏈的句柄，它包含了網絡通信必備的5種信息。1、連接使用的協議。2、本地主機的IP地址。3、本地進程的協議端口。4、遠地主機的IP地址。5、遠地進程的協議端口。即可知道，socket包含了通信本方和對方的ip和端口以及連接使用的協議（TCP/UDP）。通信雙方中的一方（客戶端）通過socket對另一方（服務端）發起連接請求，服務端在網絡上監聽請求，當收到客戶端發來的請求之後，根據socket裏攜帶的信息，定位到客戶端，就相應請求，把socket描述發給客戶端，雙方確認之後連接就建立了。
 
 socket連接過程的三個步驟
 
@@ -39,7 +39,7 @@ socket連接過程的三個步驟
 
 socket連接一旦建立就保持連接狀態，而HTTP連接則不一樣，它基於tcp協議的短連接，也就是客戶端發起請求，服務器響應請求之後，連接就會自動斷開，不會一直保持。
 
-# URL（Uniform Resource Locator）統一資源定位符
+## URL（Uniform Resource Locator）統一資源定位符
 
 URL是因特網上標準的資源地址
 
@@ -59,7 +59,7 @@ scheme類型
 
 HTTP協議是應用層協議，基於TCP協議，用於包裝數據，程序使用它進行通信，可以簡單高效的處理通信中數據的傳輸和識別處理
 
-# DNS（Domain Name Server）域名服務器
+## DNS（Domain Name Server）域名服務器
 
 DNS是進行域名(domain name)和與之相對應的IP地址 (IP address)轉換的服務器。DNS中保存了一張域名(domain name)和與之相對應的IP地址 (IP address)的表，以解析消息的域名。
 
@@ -83,7 +83,7 @@ Name Server域名服務器會查詢存儲的域名和IP的映射關系表，正�
 
 把解析的結果返回給用戶，用戶根據TTL值緩存在本地系統緩存中，域名解析過程結束。
 
-# HTTP請求發起和響應
+## HTTP請求發起和響應
 
 在一個web程序開發中，一般都有前端和後端之分，前端負責向後端請求數據和展示頁面，後端負責接收請求和做出響應發回給前端，他們之間的協作橋梁是API，而API其實就是一個URL，作為HTTP連接的一種具體載體。
 
@@ -111,7 +111,7 @@ Name Server域名服務器會查詢存儲的域名和IP的映射關系表，正�
 
 （body包含請求的內容）
 
-# 頁面渲染過程
+## 頁面渲染過程
 
 ![頁面渲染過程](https://img1.mukewang.com/5c2d835d00012d2514230720.jpg)
 
@@ -131,7 +131,7 @@ layout：也叫reflow 重排，渲染中的一種行為。當rendertree中任一
 
 repaint：重繪，渲染中的一種行為。render tree中任一元素樣式屬性（幾何尺寸沒改變）發生改變了，render tree都會重新畫，比如字體顏色、背景等變化。
 
-# href與src
+## href與src
 
 href (Hypertext Reference)指定網絡資源的位置，從而在當前元素或者當前文檔和由當前屬性定義的需要的錨點或資源之間定義一個鏈接或者關系。（目的不是為了引用資源，而是為了建立聯系，讓當前標簽能夠鏈接到目標地址。）
 
@@ -145,7 +145,7 @@ href與src的區別
 
 3. 瀏覽器解析方式不同：當瀏覽器解析到src ，會暫停其他資源的下載和處理，直到將該資源加載、編譯、執行完畢，圖片和框架等也如此，類似於將所指向資源應用到當前內容。這也是為什麽建議把 js 腳本放在底部而不是頭部的原因。
 
-# link和@import的區別
+## link和@import的區別
 
 兩者都是外部引用 CSS 的方式，但是存在一定的區別：
 
@@ -157,9 +157,9 @@ href與src的區別
 
 4. link支持使用Javascript控制DOM改變樣式；而@import不支持。
 
-# HTML
+## HTML
 
-1. HTML5的新特性：
+1.) HTML5的新特性：
 
 新的內容標簽：header nav content footer article aside
 
@@ -175,11 +175,11 @@ href與src的區別
 
 拖拽釋放(Drag and drop) API
 
-2. Doctype作用？標準模式與兼容模式各有什麽區別?
+2.) Doctype作用？標準模式與兼容模式各有什麽區別?
 
 \<!DOCTYPE>聲明位於位於HTML文檔中的第一行，處於 \<html> 標簽之前。告知瀏覽器的解析器用什麽文檔標準解析這個文檔。DOCTYPE不存在或格式不正確會導致文檔以兼容模式呈現。  
 
-3. 行內元素有哪些？塊級元素有哪些？ 空(void)元素有那些？
+3.) 行內元素有哪些？塊級元素有哪些？ 空(void)元素有那些？
 
 
 
@@ -191,7 +191,7 @@ iii. 常見的空元素：    \<br> \<hr> \<img> \<input> \<link> \<meta>
 iiii. 鮮為人知的是：    \<area> \<base> \<col> \<command> \<embed> \<keygen> \<param> \<source> \<track> \<wbr>
 不同瀏覽器（版本）、HTML4（5）、CSS2等實際略有差異  
 
-4. 介紹一下你對瀏覽器內核的理解？
+4.)  介紹一下你對瀏覽器內核的理解？
 
 主要分成兩部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。
 渲染引擎：負責取得網頁的內容（HTML、XML、圖像等等）、整理訊息（例如加入CSS等），以及計算網頁的顯示方式，然後會輸出至顯示器或打印機。瀏覽器的內核的不同對於網頁的語法解釋會有不同，所以渲染的效果也不相同。所有網頁瀏覽器、電子郵件客戶端以及其它需要編輯、顯示網絡內容的應用程序都需要內核。
@@ -206,7 +206,7 @@ Gecko內核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等
 Presto內核：Opera7及以上。      [Opera內核原為：Presto，現為：Blink;]
 Webkit內核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]  
 
-5、請描述一下 cookies，sessionStorage 和 localStorage 的區別？
+5.) 請描述一下 cookies，sessionStorage 和 localStorage 的區別？
 
 cookie是網站為了標示用戶身份而儲存在用戶本地終端（Client Side）上的數據（通常經過加密）。
 cookie數據始終在同源的http請求中攜帶（即使不需要），記會在瀏覽器和服務器間來回傳遞。
@@ -221,19 +221,19 @@ sessionStorage和localStorage不會自動把數據發給服務器，僅在本地
     sessionStorage  數據在當前瀏覽器窗口關閉後自動刪除。
     cookie          設置的cookie過期時間之前一直有效，即使窗口或瀏覽器關閉  
     
-6.iframe有那些缺點？
+6.) iframe有那些缺點？
 
 iframe會阻塞主頁面的Onload事件；
 搜索引擎的檢索程序無法解讀這種頁面，不利於SEO;
 iframe和主頁面共享連接池，而瀏覽器對相同域的連接有限制，所以會影響頁面的並行加載。
 使用iframe之前需要考慮這兩個缺點。如果需要使用iframe，最好是通過javascript動態給iframe添加src屬性值，這樣可以繞開以上兩個問題  
 
-7.如何實現瀏覽器內多個標簽頁之間的通信? (阿裏)
+7.) 如何實現瀏覽器內多個標簽頁之間的通信? (阿裏)
 WebSocket、SharedWorker；也可以調用localstorge、cookies等本地存儲方式；  
 localstorge另一個瀏覽上下文裏被添加、修改或刪除時，它都會觸發一個事件，我們通過監聽事件，控制它的值來進行頁面信息通信；  
 註意quirks：Safari 在無痕模式下設置localstorge值時會拋出QuotaExceededError 的異常  
 
-8.HTML5的離線儲存怎麽使用，工作原理能不能解釋一下？
+8.) HTML5的離線儲存怎麽使用，工作原理能不能解釋一下？
 
 在用戶沒有與因特網連接時，可以正常訪問站點或應用，在用戶與因特網連接時，更新用戶機器上的緩存文件。  
 原理：HTML5的離線存儲是基於一個新建的.appcache文件的緩存機制(不是存儲技術)，通過這個文件上的解析清單離線存儲資源，這些資源就會像cookie一樣被存儲了下來。之後當網絡在處於離線狀態下時，瀏覽器會通過被離線存儲的數據進行頁面展示。  
@@ -253,22 +253,22 @@ i. 在cache.manifest文件的編寫離線存儲的資源；
 i. 在離線狀態時，操作window.applicationCache進行需求實現。
 
 
-10. CSS
+10.) CSS  
 
-1.CSS選擇符有哪些？哪些屬性可以繼承？
-
-i. id選擇器（ # myid）
-i. 類選擇器（.myclassname）
-i. 選擇器（div, h1, p）
-i. 相鄰選擇器（h1 + p）
-i. 子選擇器（ul > li）
-i. 後代選擇器（li a）
-i. 通配符選擇器（ * ）
-i. 屬性選擇器（a[rel = "external"]）
-i. 偽類選擇器（a:hover, li:nth-child）
+1.CSS選擇符有哪些？哪些屬性可以繼承？  
+    a. id選擇器（ # myid）  
+    b. 類選擇器（.myclassname）  
+    c. 選擇器（div, h1, p）  
+    d. 相鄰選擇器（h1 + p）  
+    e. 子選擇器（ul > li）  
+    f. 後代選擇器（li a）  
+    g. 通配符選擇器（ * ）  
+    h. 屬性選擇器（a[rel = "external"]）  
+    i. 偽類選擇器（a:hover, li:nth-child）  
 
 *   可繼承的樣式： font-size font-family color, UL LI DL DD DT;
 *   不可繼承的樣式：border padding margin width height ;
+
 2. CSS優先級算法如何計算？
 *   優先級就近原則，同權重情況下樣式定義最近者為準;
 *   載入樣式以最後載入的定位為準;
