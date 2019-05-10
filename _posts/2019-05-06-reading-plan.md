@@ -15,7 +15,7 @@ If there's something that you think I ought to read, then open an issue.
 
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
-### 閱讀計劃
+### Reading Plan
 2019年5月
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)
 
@@ -23,7 +23,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 
 ### Employee book lists
 
-**系統原理與優化**
+** Fundamental and Optimization Theory of Operating System **
 - [ ] [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)
 - [ ] [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)
 - [ ] [《图解网络硬件》*日.三轮贤一*](https://item.jd.com/11506709.html#crumb-wrap)
@@ -40,7 +40,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《深入理解LINUX内核》]()
 - [ ] [《》]()
 
-**攻城獅的自我修練**
+**Self-Discipline of Software Engineer**
 - [ ] [《程序员数学思维修炼》](http://product.dangdang.com/23447083.html)
 - [ ] [《数学之美》]()
 - [ ] [《算法图解》](https://item.jd.com/12148832.html)
@@ -75,7 +75,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》]()
 
 
-**Develop**
+**Program Language**
 - [ ] [《与孩子一起学编程》]()
 - [ ] [《笨方法学Python》]()
 - [ ] [《Python标准库》](https://item.jd.com/11020898.html)
@@ -95,7 +95,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《Perl实例精解》]()
 - [ ] [《》]()
 
-**soft skill**
+**Soft Skills and Mental Toughness**
 - [ ] [《软技能 代码之外的生存指南》]()
 - [ ] [《奔跑吧，程序员：从零开始打造产品、技术和团队》]()
 - [ ] [《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》]()
