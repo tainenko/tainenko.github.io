@@ -15,9 +15,9 @@ A fluent website is like a work of art.The veteran front-end develop must have k
 清楚了解瀏覽器的渲染過程、渲染原理，也就掌握了指導原則。根據優化原則，可以實現出無數種具體的優化方案，各種預編譯、預加載、資源合並、按需加載方案都是針對瀏覽器渲染習慣的優化。
 
 ## 關鍵渲染路徑
-**關鍵渲染路徑（Critical Rendering Path**是指與當前使用者操作有關的內容。例如使用者在瀏覽器送出了一個url，首頁的顯示就是當前用戶操作相關的內容，具體就是瀏覽器收到 HTML、CSS 和 JavaScript 等資源並對其進行處理從而渲染出 Web 頁面。
+**關鍵渲染路徑(Critical Rendering Path)** 是指與當前使用者操作有關的內容。例如使用者在瀏覽器送出了一個url，首頁的顯示就是當前用戶操作相關的內容，具體就是瀏覽器收到 HTML、CSS 和 JavaScript 等資源並對其進行處理從而渲染出 Web 頁面。
 
-了解瀏覽器渲染的過程與原理，最終的目標是為了優化關鍵渲染路徑，因為優化是針對具體問題的解決方案，所以優化沒有一定的方法與途徑 。例如為了保障首屏內容的最快速顯示，通常會提到漸進式頁面渲染，但是為了漸進式頁面渲染，就需要做資源的拆分，那麽以什麽粒度拆分、要不要拆分，不同頁面、不同場景策略不同。具體方案如何決定既要考慮使用者體驗問題，也要考慮前端開發問題。
+了解瀏覽器渲染的過程與原理，最終的目標是為了優化關鍵渲染路徑，因為優化是針對具體問題的解決方案，所以優化沒有一定的方法與途徑 。例如為了保障首屏內容的最快速顯示，通常會提到漸進式頁面渲染，但是為了漸進式頁面渲染，就需要做資源的拆分，那麽以什麽粒度拆分、要不要拆分，不同頁面、不同場景策略不同。如何決定具體的解決方案既要考慮使用者體驗問題，也要考慮前端開發問題。
 
 ## 瀏覽器渲染頁面的過程
 即瀏覽器對內容的渲染，可以分為下面[三個步驟](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)：
@@ -36,7 +36,7 @@ A fluent website is like a work of art.The veteran front-end develop must have k
 ![render process](../assets/images/Render-Process2.jpg)
 需要明白，這三個步驟並不一定一次性順序完成。如果 DOM 或 CSSOM 被修改，以上過程需要重覆執行，這樣才能計算出哪些像素需要在屏幕上進行重新渲染。實際頁面中，CSS 與 JavaScript 往往會多次修改 DOM 和 CSSOM。  
 
-這個過程比較覆雜，涉及到兩個概念: reflow(回流)和repaint(重繪)。DOM節點中的各個元素都是以盒模型的形式存在，這些都需要瀏覽器去計算其位置和大小等，這個過程稱為reflow;當盒模型的位置,大小以及其他屬性，如顏色,字體,等確定下來之後，瀏覽器便開始繪制內容，這個過程稱為repaint。頁面在首次加載時必然會經歷reflow和repaint。reflow和repaint過程是非常消耗性能的，尤其是在移動設備上，它會破壞用戶體驗，有時會造成頁面卡頓。所以我們應該盡可能少的減少reflow和repaint。  
+這個過程比較覆雜，涉及到兩個概念: reflow(回流)和repaint(重繪)。DOM節點中的各個元素都是以盒模型的形式存在，這些都需要瀏覽器去計算其位置和大小等，這個過程稱為reflow;當盒模型的位置,大小以及其他屬性，如顏色,字體,等確定下來之後，瀏覽器便開始繪制內容，這個過程稱為repaint。頁面在首次加載時必然會經歷reflow和repaint。reflow和repaint過程是非常消耗性能的，尤其是在移動設備上，它會破壞用戶體驗，有時會造成頁面卡頓。所以我們應該盡可能地減少reflow和repaint。  
 
 ## Javascript runtime engine
 ![Javascript engine](../assets/images/js_engine.png)
