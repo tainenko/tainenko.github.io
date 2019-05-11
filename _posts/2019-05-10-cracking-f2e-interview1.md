@@ -7,6 +7,8 @@ image: assets/images/f2e_interview.png
 tags: [frontend,interview,javascript,css3,html5]
 ---
 
+F2E面試筆記，題型分類：
+
 ## TCP（Transmission Control Protocol）
 
 >TCP傳輸控制協議，是一種面向連接的、可靠的、基於字節流的傳輸層通信協議。通訊雙方建立一次tcp連接，需要經過三次步驟1、客戶端發送syn包（syn=j）到服務器，並入SYN_SEND狀態，等待服務器確認。2、服務器收入syn包，必須確認客戶的SYN（ack=j+1），同時自己也發送一個SYN包（syn=k），既SYN+ACK包，此時服務器進入SYN_RECV狀態。3、客戶端收到服務器的SYN+ACK包，向服務器發送確認包ACK（ack=k+1），此包發送完畢，客戶端和服務器進入ESTABLISHED狀態，完成三次握手。（tcp在握手過程中並不攜帶數據，而是在三次握手完成之後才會進行數據傳送）
