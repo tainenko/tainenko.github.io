@@ -94,21 +94,28 @@ var fib = function(N) {
   return curr;
   
 };
+var fib = (function() {
+  //Optimize recursion with memory function  
+  var memo = {};
+  function f(n) {
+    var value;
+    
+    if (n in memo) {
+      value = memo[n];
+    } else {
+      if (n === 0 || n === 1)
+        value = n;
+      else
+        value = f(n - 1) + f(n - 2);
 
-var fib = function(N) {
-    //Recursive Optimization
-  
-   if(N<2){
-    return N;
-   }else {
-    var arr=[];
-    var map = new Map();
-     if(map.has(N-1)){
-       
-     }
-    return fib(N-1)+fib(N-2);
+      memo[n] = value;
+    }
+    
+    return value;
   }
-};
+  
+  return f;
+})();
 
 
 //Timeout
