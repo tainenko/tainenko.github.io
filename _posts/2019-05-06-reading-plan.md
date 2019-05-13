@@ -4,7 +4,7 @@ title:  "Reading Plan"
 author: tony
 categories: [ Reading Plan ]
 image: assets/images/book-list.jpg
-tags: [reading, learning, recommend, books list]
+tags: [featured,reading, learning, recommend, books list]
 comments: true
 ---
 “The more you read, the more things you know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!  
@@ -18,6 +18,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 ### Reading Plan
 2019年5月
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)
+[《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)  
 
 ---
 
@@ -93,7 +94,6 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《使用Perl实现系统管理自动化》]()
 - [ ] [《Perl Cookbook》]()
 - [ ] [《Perl实例精解》]()
-- [ ] [《》]()
 
 **Soft Skills and Mental Toughness**
 - [ ] [《软技能 代码之外的生存指南》]()
@@ -101,16 +101,10 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》]()
 - [ ] [《CSS网页设计入门》]()
 - [ ] [《程序员的英语》]()
-- [ ] [《》]()
-
-
----
-
-### Hobby
-
 - [ ] [《番茄工作法图解》](http://product.dangdang.com/21021603.html)
 - [ ] [《单核工作法图解》](https://item.jd.com/12247896.html)
 - [ ] [《浪潮之巅》*Kindle*]()
 - [ ] [《精准表达》](https://book.douban.com/subject/30256364/?icn=index-latestbook-subject)
+- [ ] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
 
 ---
