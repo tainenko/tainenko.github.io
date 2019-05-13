@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript interview question. Solutions of Fibonacci sequence with Iterative and Recursive."
+title:  "Discussion of Fibonacci sequence."
 author: tony
 categories: [ javascript, interview ]
 image: assets/images/recursive.jpg
