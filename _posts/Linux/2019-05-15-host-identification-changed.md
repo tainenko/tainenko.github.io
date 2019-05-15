@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "WARNING REMOTE HOST IDENTIFICATION HAS CHANGED "
+title:  "WARNING REMOTE HOST IDENTIFICATION HAS CHANGED"
 author: tony
 categories: [ Linux ]
-image: assets/images/
+image: assets/images/Linux-has-you.png
 tags: [ linux, host, remote, warning]
 ---
 Whenever you encounter this warning during using ssh to remote server. You can try following solution to solve this problem.
