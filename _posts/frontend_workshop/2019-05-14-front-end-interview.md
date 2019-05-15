@@ -18,18 +18,23 @@ JavaScript 的 ES2015 改變了一切。ES2015 規範帶來了很多重大特性
 
 在 2018 年底，我們仍然看到大多數面試者被問到 AJAX 時，面試者依然在 jQuery 語境中回答問題。這種差距還有很多典型的例子：
 
-CSS Grid 和 Flexbox 布局已經得到了廣泛支持。然而，CSS 面試時仍然集中在多列浮動布局 和行內塊級元素居中。他們依然對 Bootstrap 或 Foundation 網格系統有著永不消亡的熱情。
-模塊打包器（Module bundler）現在幾乎是大規模應用程序的標配。然而，當談到架構時，我們談論的又是 minification(壓縮) 和 concatenation(合並) 。在訪面試中我們真正討論過多少次 Webpack ？
-如果 97％ 的代碼來自 NPM ，但面試的重點缺又是數組排序或對象叠代。更糟糕的是，我們仍然對 typeof null 很感興趣。為什麽不能聊點 選擇合適的庫，框架或工具的理性方法呢？
-我們仍在讓面試者在原型之上進行經典繼承，但並不是要驗證對這些錯誤想法的需要。我們有更多的功能性模式。當然，使用 JavaScript class(類)，新引入的私有和靜態屬性可以好好的討論一下。這將使人們更好地理解面試者的想法，關鍵決策等。
-緩存討論仍局限於 Cache control headers(控制頭) 和 CDN。像 IndexDB，HTTP/2 或Service Workers 這樣的東西只是路過。
-這種例子不勝枚舉，面試評估與工作實際需求之間的差距顯而易見。一方面，我們的前端技術實現取得了跨越式發展，另一方面，新的開發方式還沒有形成大的社區。社區分裂永遠不是好兆頭。這是一條災難之路。差距總是會創造出一種新的東西，它有能力摧毀我們迄今為止所建造的一切。我無法想象 Java 開發人員使用 GWT 編寫另一個 Facebook 。
+CSS Grid 和 Flexbox 布局已經得到了廣泛支持。然而，CSS 面試時仍然集中在多列浮動布局 和行內塊級元素居中。他們依然對 Bootstrap 或 Foundation 網格系統有著永不消亡的熱情。  
+
+模塊打包器（Module bundler）現在幾乎是大規模應用程序的標配。然而，當談到架構時，我們談論的又是 minification(壓縮) 和 concatenation(合並) 。在面試訪談中我們真正討論過多少次 Webpack ？  
+
+如果 97％ 的代碼來自 NPM ，但面試的重點缺又是數組排序或對象叠代。更糟糕的是，我們仍然對 typeof null 很感興趣。為什麽不能聊點 選擇合適的庫，框架或工具的理性方法呢？  
+
+我們仍在讓面試者在原型之上進行經典繼承，但並不是要驗證對這些錯誤想法的需要。我們有更多的功能性模式。當然，使用 JavaScript class(類)，新引入的私有和靜態屬性可以好好的討論一下。這將使人們更好地理解面試者的想法，關鍵決策等。  
+
+緩存討論仍局限於 Cache control headers(控制頭) 和 CDN。像 IndexDB，HTTP/2 或Service Workers 這樣的東西只是路過。  
+
+這種例子不勝枚舉，面試評估與工作實際需求之間的差距顯而易見。一方面，我們的前端技術實現取得了跨越式發展，另一方面，新的開發方式還沒有形成大的社區。社區分裂永遠不是好兆頭。這是一條災難之路。差距總是會創造出一種新的東西，它有能力摧毀我們迄今為止所建造的一切。我無法想象 Java 開發人員使用 GWT 編寫另一個 Facebook 。  
 
 面試是催生變革和匯聚人才的好方式。作為面試官的你，如果僅僅把面試當成面試，那麽它只會讓你自我膨脹。
 
-要使一場面試成功，必須進行討論。 它必須是一個交換思想的地方。 它應該挑起人們思考並客觀地分析給定的問題。 它是理解人們做出的決策過程，也是了解一個人對技術和解決問題的熱情，也意味著了解未來可能的同事。 所有那些難題，技巧或 typeof null 都無法稱得上真正面試。
+要使一場面試成功，必須進行討論。 它必須是一個交換思想的地方。 它應該挑起人們思考並客觀地分析給定的問題。 它是理解人們做出的決策過程，也是了解一個人對技術和解決問題的熱情，也意味著了解未來可能的同事。 所有那些難題，技巧或 typeof null 都無法稱得上真正面試。  
 
-以下是我們在面試討論中提出的一些問題清單。我們希望此清單可以幫助面試官和面試者在正確的背景下設定期望，需求和現實。
+以下是我們在面試討論中提出的一些問題清單。我們希望此清單可以幫助面試官和面試者在正確的背景下設定期望，需求和現實。  
 
 TLDR; 我們要先把自己當成面試官。
 
@@ -52,9 +57,10 @@ TLDR; 我們要先把自己當成面試官。
 提示：只有兩種類型 – 主要數據類型和引用類型（對象）。 有 6 種主要類型。
 
 4. 解決以下異步代碼問題。  
-檢索並計算屬於同一教室中每個學生的平均分數，其中一些ID為75。每個學生可以在一年內參加一門或多門課程。 以下 API 可用於檢索所需數據。
-GET /api/students
-Response:  
+檢索並計算屬於同一教室中每個學生的平均分數，其中一些ID為75。每個學生可以在一年內參加一門或多門課程。 以下 API 可用於檢索所需數據。  
+
+    GET /api/students
+    Response:  
     ```javascript
     // GET LIST OF ALL THE STUDENTS
     [{
@@ -62,51 +68,50 @@ Response:
         "name": "John",
         "classroomId": 75
     }]
-    ```  
-    
+    ```
+    GET /api/courses?filter=studentId eq 1  
+    Response:   
+
+    ```javascript
     // GET COURSES FOR GIVEN A STUDENT  
-GET /api/courses?filter=studentId eq 1
-Response:  
-    ```javascript
-    [{
-       "id": "history",
-       "studentId": 1
-    }, {
-       "id": "algebra",
-       "studentId": 1
-    },]
+        [{
+            "id": "history",
+            "studentId": 1
+            
+        }, 
+        {
+            "id": "algebra",
+            "studentId": 1
+        },]
     ```
-
-    // GET EVALUATION FOR EACH COURSE
-GET /api/evaluation/history?filter=studentId eq 1
-Response:
+    GET /api/evaluation/history?filter=studentId eq 1
+    Response:
     ```javascript
-    {
-        "id": 200,
-        "score": 50,
-        "totalScore": 100
-    }
+        // GET EVALUATION FOR EACH COURSE
+        {
+            "id": 200,
+            "score": 50,
+            "totalScore": 100
+        }
     ```
-
     編寫一個接受教室 ID 的函數，您將根據該函數計算該教室中每個學生的平均值。該函數的最終輸出應該是具有平均分數的學生列表：  
     ```javascript
-    [
-      { "id": 1, "name": "John", "average": 70.5 },
-      { "id": 3, "name": "Lois", "average": 67 },
-    ]
+        [
+          { "id": 1, "name": "John", "average": 70.5 },
+          { "id": 3, "name": "Lois", "average": 67 },
+        ]
     ```
-    
     使用普通的 callbacks ，promises ，observables，generator 或 async-wait 編寫所需的函數。嘗試使用至少 3 種不同的技術解決這個問題。
 
 5. 使用 JavaScript Proxy 實現簡單的數據綁定  
 提示：ES Proxy 允許您攔截對任何對象屬性或方法的調用。首先，每當更改底層綁定對象時，都應更新 DOM 。  
 
-6. 解釋 JavaScript 並發模型  
-您是否熟悉 Elixir，Clojure，Java 等其他編程語言中使用的任何其他並發模型？  
+6. 解釋 JavaScript 併發模型  
+您是否熟悉 Elixir，Clojure，Java 等其他編程語言中使用的任何其他併發模型？  
 
     提示：查找事件循環，任務隊列，調用棧，堆等。  
 
-7. new 關鍵字在 JavaScript 中有什麽作用？  
+7. new 關鍵字在 JavaScript 中有什麽作用？   
 提示：在 JavaScript 中，new 是用於實例化對象的運算符。   
 另外，請註意 [[Construct]] 和 [[Call]]。  
 
@@ -117,7 +122,8 @@ Response:
 提示：比如 2018 的 BigInt，partial 函數，pipeline 操作符 等。  
 
 10. JavaScript 中的叠代器（iterators）和叠代（iterables）是什麽？ 你知道什麽是內置叠代器嗎？  
-11. 為什麽 JavaScript classes(類)被認為是壞的或反模式？  
+
+11. 為什麽 JavaScript classes(類)被認為是壞的或反面模式？  
 這是一個神話嗎？它是否遭受了誤傳？是否有一些有用的用例？
 
 12. 如何在 JSON 中序列化以下對象？
@@ -196,9 +202,10 @@ MVC 擁有大約 50 年的悠久歷史，並已演變為 MVP，MVVM 和 MV *。�
 1. HTML 中 Doctype 的用途是什麽？
 具體談談，以下每種情況下會發生什麽：
 
-    Doctype 不存在。
-使用了 HTML4 Doctype，但 HTML 頁面使用了 HTML5 的標簽，如 <audio> 或 <video> 。它會導致任何錯誤嗎？
-使用了無效的 Doctype。
+    - Doctype 不存在。
+使用了 HTML4 Doctype，但 HTML 頁面使用了 HTML5 的標簽，如 \<audio> 或 \<video> 。它會導致任何錯誤嗎？  
+
+    - 使用了無效的 Doctype。
 2. DOM 和 BOM 的區別是什麽？
 提示：BOM，DOM，ECMAScript 和 JavaScript 都是不同的東西。
 
