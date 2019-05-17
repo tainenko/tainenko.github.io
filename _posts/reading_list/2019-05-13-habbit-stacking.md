@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reflection: Habbit Stacking "
+title:  "Reflection: Habit Stacking "
 author: tony
 categories: [ reading ]
 image: assets/images/stacking_hobit.png
