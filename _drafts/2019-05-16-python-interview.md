@@ -4,7 +4,7 @@ title:  " Another Python interview questions "
 author: tony
 categories: [ Python, Interview ]
 image: assets/images/pythonfeatured.jpg
-tags: [python, interview]
+tags: [ python, interview ]
 ---
 
 
