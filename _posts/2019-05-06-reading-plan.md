@@ -20,6 +20,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
 [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
 [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
+[《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
 
 
 ---
@@ -108,5 +109,6 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《浪潮之巅》*Kindle*]()
 - [ ] [《精准表达》](https://book.douban.com/subject/30256364/?icn=index-latestbook-subject)
 - [ ] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
-
+- [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
+- [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
 ---
