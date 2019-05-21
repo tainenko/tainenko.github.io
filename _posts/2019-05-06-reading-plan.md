@@ -18,7 +18,8 @@ This is not a comprehensive list of every book I've read on any of these subject
 ### Reading Plan
 2019年5月
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
-[《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)    
+[《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
+[《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
 
 
 ---

@@ -6,3 +6,4 @@ categories: [ python, mock ]
 image: assets/images/mocktest.png
 tags: [ python, unittest, mock, TDD]
 ---
+
