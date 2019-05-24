@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "A mine from number"
+title:  "Reflection: A mind for numbers"
 author: tony
-categories: [ Reading ]
-image: 
-tags: [Reading List, recommended Books, soft skill]
+categories: [ Reflection ]
+image: assets/images/maxresdefault.jpg
+tags: [Reading List, Reflection, recommended Books, soft skill]
 ---
 “An ingeniously accessible introduction to the science of human cognition—along with practical advice on how to think better.”
 —James Taranto, The Wall Street Journal  
@@ -19,3 +19,4 @@ Skim the content, tables, formulas or pictures, section headings, summaries, or 
 The former is a mode of solving problems directly by means of rationality, coherence and decomposition.  
 
 The latter is when we are in a relaxed state. Different areas of the brain get a chance to connect with each other and give us valuable feedback.
+
