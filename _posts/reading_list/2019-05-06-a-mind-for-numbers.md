@@ -9,7 +9,7 @@ tags: [Reading List, Reflection, recommended Books, soft skill]
 “An ingeniously accessible introduction to the science of human cognition—along with practical advice on how to think better.”
 —James Taranto, The Wall Street Journal  
 
-## Chapter 1
+## thinking
 Strengthen your thinking.
 Skim the content, tables, formulas or pictures, section headings, summaries, or reflections at the end of the chapter before reading for the first time
 
@@ -20,3 +20,14 @@ The former is a mode of solving problems directly by means of rationality, coher
 
 The latter is when we are in a relaxed state. Different areas of the brain get a chance to connect with each other and give us valuable feedback.
 
+## habit
+habit consist of four parts
+- singal
+- reaction process
+- reward
+- mental strength
+
+focus on the path, not result.
+
+## practice
+practice would not make perfect but makes you better.
