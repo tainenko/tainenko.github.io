@@ -1,28 +1,64 @@
 ---
 layout: post
-title:  " 110 Python interview questions "
+title:  " 110 Python interview questions & solutions "
 author: tony
 categories: [ Python, Interview ]
 image: assets/images/pythonfeatured.jpg
-tags: [ python, interview]
+tags: [ python, interview, solutions]
 ---
 
 這是給Python開發者準備的110道筆試面試題，建議每道題都要認真刷一遍，有些題可以嘗試用多種方式來解答，甚至做延伸學習，   
 
 1. 一行代碼實現1—100之和
-
+    ```python
+    sum(range(1,101))
+    #5050
+    ```
 2. 如何在一個函數內部修改全局變量
-
+    ```python
+    num = 0
+    def foo():
+       #declare a global variable
+        global num
+       #assign a new value for variable
+        num =100
+        return
+    ```
 3. 列出5個python標準庫
+    ```python
+    os, time, collection, util, random
+    ```
 
 4. 字典如何刪除鍵和合併兩個字典
-
+    總共有四種方法
+    ```python
+    dct1={'a':1,'b':2,'c':3}
+    dct2={'d':4,'e':5}
+    #delete
+    #del dct1['a'] it would raise a KeyError if 'a' is not in dct1
+    dct1.pop('a',None)
+    #merge
+    dct1.update(dct2)
+    ```
 5. 談下python的GIL
 
 6. python實現列表去重的方法
+    ```python
+    set=set()
+    res=[]
+    for element in lst:
+        if element in dct:
+            continue
+        else:
+            res.append(element)
+            set.add(element)
+    return res
+    ```
 
 7. fun(*args,**kwargs)中的*args,**kwargs什麽意思？
-
+    ```python
+    
+    ```
 8. python2和python3的range（100）的區別
 
 9. 一句話解釋什麽樣的語言能夠用裝飾器?
