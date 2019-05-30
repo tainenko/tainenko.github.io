@@ -42,7 +42,6 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《Linux性能优化大师》]()
 - [ ] [《LINUX内核:技术手册》]()
 - [ ] [《深入理解LINUX内核》]()
-- [ ] [《》]()
 
 **Self-Discipline of Software Engineer**
 - [ ] [《程序员数学思维修炼》](http://product.dangdang.com/23447083.html)
@@ -76,7 +75,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《Nginx高性能Web服务器详解》](https://item.jd.com/11344355.html)
 - [ ] [《Kafka技术内幕》](https://item.jd.com/12234113.html)
 - [ ] [《基础设施即代码：云服务器管理 》](https://item.jd.com/31219349856.html)
-- [ ] [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》]()
+- [x] [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》]()
 
 
 **Program Language**
@@ -108,7 +107,8 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《单核工作法图解》](https://item.jd.com/12247896.html)
 - [ ] [《浪潮之巅》*Kindle*]()
 - [ ] [《精准表达》](https://book.douban.com/subject/30256364/?icn=index-latestbook-subject)
-- [ ] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
+- [x] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
 - [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
 - [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
+
 ---
