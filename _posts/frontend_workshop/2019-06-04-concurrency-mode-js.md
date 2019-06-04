@@ -44,11 +44,12 @@ console.log('script end');
 Ans.  
 script start  
 async1 start  
+async2  
 promise1  
 script end  
+async1 end   
 promise2  
 setTimeout  
-async1 end  
 
 ## Javascript concurrency mode
 ### 單線程（single threaded）
@@ -123,4 +124,94 @@ JavaScript通過事件循環和瀏覽器各線程協調共同實現異步。同�
 - 理解哪些語句會放入異步任務隊列
 - 理解語句放入異步任務隊列的時機
 
-更詳盡的內容可以看 Philip Roberts 在 JS Conf 的演講影片 [What the heck is the event loop anyway?](https://pjchender.blogspot.com/2017/08/javascript-learn-event-loop-stack-queue.html) 和 MDN [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+更詳盡的內容可以看 Philip Roberts 在 JS Conf 的演講影片 [What the heck is the event loop anyway?](https://pjchender.blogspot.com/2017/08/javascript-learn-event-loop-stack-queue.html) 和 MDN [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)  
+
+有興趣的可以試著做以下兩道練習題　　
+```javascript
+async function async1() {
+    console.log('async1 start');
+    await async2();
+    setTimeout(function() {
+        console.log('setTimeout1')
+    },0)
+}
+async function async2() {
+	setTimeout(function() {
+		console.log('setTimeout2')
+	},0)
+}
+console.log('script start');
+
+setTimeout(function() {
+    console.log('setTimeout3');
+}, 0)
+async1();
+
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    console.log('promise2');
+});
+console.log('script end');
+
+```
+
+
+```javascript
+async function async1() {
+   console.log('async1 start')
+   await async2()
+   console.log('async1 end')
+}
+async function async2() {
+   console.log('async2')
+	new Promise((resolve, reject) => {
+		console.log('promise3')
+		resolve()
+	})
+	.then(body => {
+		console.log('promise4')
+	})
+}
+console.log('script start')
+setTimeout(function () {
+   console.log('settimeout')
+})
+async1()
+new Promise(function (resolve) {
+   console.log('promise1')
+   resolve()
+}).then(function () {
+   console.log('promise2')
+})
+console.log('script end')
+
+```
+
+Ans.
+1  
+ ```javascript
+    script start
+    async1 start
+    promise1
+    script end
+    promise2
+    setTimeout3
+    setTimeout2
+    setTimeout1
+ ```
+    
+ 2  
+ ```javascript
+    script start
+    async1 start
+    async2
+    promise3
+    promise1
+    script end
+    promise4
+    async1 end
+    promise2
+    settimeout
+ ```
