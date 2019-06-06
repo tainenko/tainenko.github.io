@@ -28,7 +28,7 @@ tags: [frontend,interview,javascript,css,html,react]
 4. 如何居中一個浮動元素？
 
    方式1:設定容器的浮動方式為相對定位，然後確定容器的寬高比如寬500 高 300 的層，然後設定層的外邊距。
-    ``` 
+    ``` html
     <!DOCTYPEHTML>
     
     <html>
@@ -102,12 +102,12 @@ tags: [frontend,interview,javascript,css,html,react]
     <div>讓層垂直居中於瀏覽器視窗</div>
     ``` 
 5. 請簡述HTML和XHTML最重要的4點不同？  
-        - XHTML要求正確巢狀        
-        - XHTML 所有元素必須關閉       
-        - XHTML 區分大小寫             
-        - XHTML 屬性值要用雙引號      
-        - XHTML 用 id 屬性代替 name 屬性       
-        - XHTML 特殊字元的處理   
+    - XHTML要求正確巢狀        
+    - XHTML 所有元素必須關閉       
+    - XHTML 區分大小寫             
+    - XHTML 屬性值要用雙引號      
+    - XHTML 用 id 屬性代替 name 屬性       
+    - XHTML 特殊字元的處理   
         
 6. 頁面佈局中常聽說的“結構與表現”分離，“結構”是指？“表現”是指？    
     - “結構”：HTML
@@ -166,436 +166,402 @@ tags: [frontend,interview,javascript,css,html,react]
     - 特定符號：適用於能識別特定符號的瀏覽器
     - 核心符號：針對不同瀏覽器核心
     
-10.用JS擷取字串，asdfgh，要fgh;?   
+10. 用JS擷取字串，asdfgh，要fgh;?   
     - 方式1： ‘asdfgh’.substr(3,3)  
     - 方式2： ’asdfgh’.substring(3,5) 或者 ‘asdfgh’.substring(3)
 
-11.IE6的雙倍邊距BUG指的是什麼？怎麼解決？   
-
-- 雙邊距：當塊級元素有浮動樣式的時候，給元素新增margin-left和margin-right樣式，在ie6下就會出現雙倍邊距。   
-- 解決方案：給當前元素新增樣式，使當前元素不為塊，如：display:inline;display:list-item   
+11. IE6的雙倍邊距BUG指的是什麼？怎麼解決？   
+    - 雙邊距：當塊級元素有浮動樣式的時候，給元素新增margin-left和margin-right樣式，在ie6下就會出現雙倍邊距。   
+    - 解決方案：給當前元素新增樣式，使當前元素不為塊，如：display:inline;display:list-item   
 
 12. 如果製作一個訪問量很大的網站，對css，js和圖片應該怎麼處理?  
+    - 方法1：資原始檔按模組進行放置，有利於團隊開發
+    - 方法2：圖片儘量採取聚合技術
+    - 方法3：精簡壓縮css和js檔案，減少檔案大小
+    - 方法4：類庫、媒體使用CDN加速，減輕伺服器壓力  
 
-- 方法1：資原始檔按模組進行放置，有利於團隊開發
-- 方法2：圖片儘量採取聚合技術
-- 方法3：精簡壓縮css和js檔案，減少檔案大小
-- 方法4：類庫、媒體使用CDN加速，減輕伺服器壓力  
+13. 描述ajax原理，什麼是同步非同步(主觀題，答案不唯一)?
 
-13.描述ajax原理，什麼是同步非同步(主觀題，答案不唯一)?
-
-- Ajax的工作原理：相當於在使用者和伺服器之間加了—箇中間層，使使用者操作與伺服器響應非同步化。這樣把以前的一些伺服器負擔的工作轉嫁到客戶端，利於客戶端閒置的處理能力來處理，減輕伺服器和頻寬的負擔，從而達到節約ISP的空間及頻寬租用成本的目的。
-
-
-同步非同步：
+    Ajax的工作原理：相當於在使用者和伺服器之間加了—箇中間層，使使用者操作與伺服器響應非同步化。這樣把以前的一些伺服器負擔的工作轉嫁到客戶端，利於客戶端閒置的處理能力來處理，減輕伺服器和頻寬的負擔，從而達到節約ISP的空間及頻寬租用成本的目的。  
+    同步非同步：
 
 14. 平時有沒有使用xml和json，在ajax互動中，哪一種更易於開發和維護，js中怎麼序列化JSON字串?  
 
-- 有，json相比xml可讀性和可擴張性好、編碼及解碼難度較低、在資料互動中頻寬佔用少，並且在當下是最流行的資料互動格式。
-
- 
-
-序列化JSON字串：eval() 或者 JSON.parse()
-
- 
-
+    - 有，json相比xml可讀性和可擴張性好、編碼及解碼難度較低、在資料互動中頻寬佔用少，並且在當下是最流行的資料互動格式。 
+    - 序列化JSON字串：eval() 或者 JSON.parse()
+    
 15. JS怎麼建立一個類?
 
-方式1 : var obj = new Object();
+    方式1 : var obj = new Object();  
+    方式2 : var obj = {};
 
-方式2 : var obj = {};
+16. JS的typeof返回哪些資料型別?
 
- 
-
-16.JS的typeof返回哪些資料型別?
-
-string、number、object、boolean、function、undefined
-
- 
-
+    string、number、object、boolean、function、undefined
 17. HTTP請求有哪幾種？
 
-post、get
-
- 
+    post、get、delete、input
 
 18. 完成下面佈局（相容IE6-10以及FF、谷歌、蘋果瀏覽器）?
 
- 
-
-<!DOCTYPEhtml>
-
-<htmllang=”en”>
-
-<head>
-
-    <metahttp-equiv=”Content-Type” content=”text/html;charset=utf-8″/>
-
-    <title></title>
-
-    <style>
-
-        body {
-
-            margin: 0;
-
-            padding: 0;
-
-        }
-
- 
-
-        #body {
-
-            background-color: #0099CB;
-
-            width: 100%;
-
-            float: left;
-
-        }
-
- 
-
-        #header {
-
-            height: 60px;
-
-            background-color: #999999;
-
-        }
-
- 
-
-        #content {
-
-            background-color: #006766;
-
-            margin-left: 180px;
-
-        }
-
- 
-
-        #sidebar {
-
-            width: 180px;
-
-            float: left;
-
-        }
-
- 
-
-        #footer {
-
-            clear: both;
-
-            height: 60px;
-
-            background-color: #999999;
-
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-<divid=”header”></div>
-
-<divid=”body”>
-
-    <divid=”sidebar”></div>
-
-    <divid=”content”></div>
-
-</div>
-
-<divid=”footer”></div>
-
-</body>
-
-</html>
-
- 
-
-19.閉包是什麼？有什麼特性？請簡單書寫一個簡單事例？
-
-必包：閉包是指可以包含自由（未繫結到特定物件）變數的程式碼塊；這些變數不是在這個程式碼塊內或者任何全域性上下文中定義的，而是在定義程式碼塊的環境中定義（區域性變數）
-
- 
-
-特性：閉包是能夠讀取其他函式內部變數的函式，即在外面可以呼叫函式中的函式的變數，其實他就是將函式內外部連線起來的橋樑
-
- 
-
-事例：
-
-<scripttype=’text/javascript’>
-
-function a(){
-
-var i = 99;
-
-iAdd = function(){
-
-i ;
-
-}
-
-function b(){
-
-alert(i);
-
-}
-
-return b;
-
-}
-
-var result = a();
-
-result();//結果為99
-
-iAdd();
-
-result();//結果為100
-
-</script>
-
-20.  解釋jsonp的原理，以及為什麼不是真正的ajax（主觀題）？
-
-JSONP是一種非正式傳輸協議，該協議的一個要點就是允許使用者傳遞一個callback引數給服務端，然後服務端返回資料時會將這個callback引數作為函式名來包裹住JSON資料，這樣客戶端就可以隨意定製自己的函式來自動處理返回資料了。
-
- 
-
-21.  js延遲載入的方式有哪些？
-
-defer和async、動態建立DOM方式（用得最多）、按需非同步載入js
-
- 
+    ```html
+    <!DOCTYPEhtml>
+    
+    <htmllang=”en”>
+    
+    <head>
+    
+        <metahttp-equiv=”Content-Type” content=”text/html;charset=utf-8″/>
+    
+        <title></title>
+    
+        <style>
+    
+            body {
+    
+                margin: 0;
+    
+                padding: 0;
+    
+            }
+    
+     
+    
+            #body {
+    
+                background-color: #0099CB;
+    
+                width: 100%;
+    
+                float: left;
+    
+            }
+    
+     
+    
+            #header {
+    
+                height: 60px;
+    
+                background-color: #999999;
+    
+            }
+    
+     
+    
+            #content {
+    
+                background-color: #006766;
+    
+                margin-left: 180px;
+    
+            }
+    
+     
+    
+            #sidebar {
+    
+                width: 180px;
+    
+                float: left;
+    
+            }
+    
+     
+    
+            #footer {
+    
+                clear: both;
+    
+                height: 60px;
+    
+                background-color: #999999;
+    
+            }
+    
+        </style>
+    
+    </head>
+    
+    <body>
+    
+    <divid=”header”></div>
+    
+    <divid=”body”>
+    
+        <divid=”sidebar”></div>
+    
+        <divid=”content”></div>
+    
+    </div>
+    
+    <divid=”footer”></div>
+    
+    </body>
+    
+    </html>
+    ```
+
+19. 閉包是什麼？有什麼特性？請簡單書寫一個簡單事例？
+    必包：閉包是指可以包含自由（未繫結到特定物件）變數的程式碼塊；這些變數不是在這個程式碼塊內或者任何全域性上下文中定義的，而是在定義程式碼塊的環境中定義（區域性變數）  
+    特性：閉包是能夠讀取其他函式內部變數的函式，即在外面可以呼叫函式中的函式的變數，其實他就是將函式內外部連線起來的橋樑  
+    
+    事例：
+    ```javascript
+    <scripttype=’text/javascript’>
+    
+    function a(){
+    
+    var i = 99;
+    
+    iAdd = function(){
+    
+    i ;
+    
+    }
+    
+    function b(){
+    
+    alert(i);
+    
+    }
+    
+    return b;
+    
+    }
+    
+    var result = a();
+    
+    result();//結果為99
+    
+    iAdd();
+    
+    result();//結果為100
+    
+    </script>
+    ```
+    
+20. 解釋jsonp的原理，以及為什麼不是真正的ajax（主觀題）？
+
+    JSONP是一種非正式傳輸協議，該協議的一個要點就是允許使用者傳遞一個callback引數給服務端，然後服務端返回資料時會將這個callback引數作為函式名來包裹住JSON資料，這樣客戶端就可以隨意定製自己的函式來自動處理返回資料了。
+
+21. js延遲載入的方式有哪些？
+    defer和async、動態建立DOM方式（用得最多）、按需非同步載入js
 
 22. 對WEB標準以及W3C的理解與認識？
-標籤閉合、標籤小寫、不亂巢狀、提高搜尋機器人搜尋機率、使用外 鏈css和js指令碼、結構行為表現的分離、檔案下載與頁面速度更快、內容能被更多的使用者所訪問、內容能被更廣泛的裝置所訪問、更少的程式碼和元件，容易維 護、改版方便，不需要變動頁面內容、提供列印版本而不需要複製內容、提高網站易用性；
-
- 
-
+    標籤閉合、標籤小寫、不亂巢狀、提高搜尋機器人搜尋機率、使用外 鏈css和js指令碼、結構行為表現的分離、檔案下載與頁面速度更快、內容能被更多的使用者所訪問、內容能被更廣泛的裝置所訪問、更少的程式碼和元件，容易維 護、改版方便，不需要變動頁面內容、提供列印版本而不需要複製內容、提高網站易用性；
+    
 23. xhtml和html有什麼區別？
-HTML是一種基本的WEB網頁設計語言，XHTML是一個基於XML的置標語言
-最主要的不同：
-XHTML 元素必須被正確地巢狀。
-XHTML 元素必須被關閉。
-標籤名必須用小寫字母。
-XHTML 文件必須擁有根元素。
-
- 
-
+    HTML是一種基本的WEB網頁設計語言，XHTML是一個基於XML的置標語言
+    最主要的不同：  
+    XHTML 元素必須被正確地巢狀。  
+    XHTML 元素必須被關閉。  
+    標籤名必須用小寫字母。  
+    XHTML 文件必須擁有根元素。  
+    
 24. Doctype? 嚴格模式與混雜模式-如何觸發這兩種模式，區分它們有何意義?
-用於宣告文件使用那種規範（html/Xhtml）一般為嚴格 過度 基於框架的html文件
-加入XMl宣告可觸發，解析方式更改為IE5.5 擁有IE5.5的bug
+    用於宣告文件使用那種規範（html/Xhtml）一般為嚴格 過度 基於框架的html文件
+    加入XMl宣告可觸發，解析方式更改為IE5.5 擁有IE5.5的bug
 
- 
+25. 行內元素有哪些？塊級元素有哪些？CSS的盒模型？
 
-25.    行內元素有哪些？塊級元素有哪些？CSS的盒模型？
+    - 塊級元素：div p h1 h2 h3 h4 form ul
+    - 行內元素: a b br i span input select
+    - Css盒模型:內容，border ,margin，padding
 
-塊級元素：div p h1 h2 h3 h4 form ul
-行內元素: a b br i span input select
-Css盒模型:內容，border ,margin，padding
+26. CSS引入的方式有哪些?link和@import的區別是?
+    內聯 內嵌 外鏈 匯入  
+    區別 ：同時載入  
+    前者無相容性，後者CSS2.1以下瀏覽器不支援  
+    Link 支援使用javascript改變樣式，後者不可  
 
- 
+27. CSS選擇符有哪些？哪些屬性可以繼承？優先順序演算法如何計算？內聯和important哪個優先順序高？
+    標籤選擇符 類選擇符 id選擇符  
+    繼承不如指定 Id>class>標籤選擇  
+    後者優先順序高  
 
-26.CSS引入的方式有哪些?link和@import的區別是?
-內聯 內嵌 外鏈 匯入
-區別 ：同時載入
-前者無相容性，後者CSS2.1以下瀏覽器不支援
-Link 支援使用javascript改變樣式，後者不可
+28. 前端頁面有哪三層構成，分別是什麼？作用是什麼？
+    結構層 Html 表示層 CSS 行為層 js
 
- 
+29. css的基本語句構成是？
+    選擇器{屬性1:值1;屬性2:值2;……}
 
-27.CSS選擇符有哪些？哪些屬性可以繼承？優先順序演算法如何計算？內聯和important哪個優先順序高？
-標籤選擇符 類選擇符 id選擇符
-繼承不如指定 Id>class>標籤選擇
-後者優先順序高
+30. 你做的頁面在哪些流覽器測試過？這些瀏覽器的核心分別是什麼?
+    Ie(Ie核心)火狐（Gecko）谷歌（webkit） opear(Presto)
 
- 
+31. 寫出幾種IE6 BUG的解決方法？
 
-28.前端頁面有哪三層構成，分別是什麼？作用是什麼？
-結構層 Html 表示層 CSS 行為層 js
+    1. 雙邊距BUG float引起的使用display
+    2. 3畫素問題使用float引起的使用dislpay:inline-3px
+    3. 超連結hover 點選後失效使用正確的書寫順序link visited hover active
+    4. Ie z-index問題給父級新增position:relative
+    5. Png 透明使用js程式碼改
+    6. Min-height 最小高度！Important解決’
+    7. select 在ie6下遮蓋使用iframe巢狀
+    8. 為什麼沒有辦法定義1px左右的寬度容器（IE6預設的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）
 
-29.css的基本語句構成是？
-選擇器{屬性1:值1;屬性2:值2;……}
+32. <img>標籤上title與alt屬性的區別是什麼？
 
-30.你做的頁面在哪些流覽器測試過？這些瀏覽器的核心分別是什麼?
-Ie(Ie核心)火狐（Gecko）谷歌（webkit） opear(Presto)
+    Alt 當圖片不顯示是用文字代表。
+    Title 為該屬性提供資訊
 
-31.寫出幾種IE6 BUG的解決方法？
-1.雙邊距BUG float引起的使用display
-2.3畫素問題使用float引起的使用dislpay:inline-3px
-3.超連結hover 點選後失效使用正確的書寫順序link visited hover active
-4.Ie z-index問題給父級新增position:relative
-5.Png 透明使用js程式碼改
-6.Min-height 最小高度！Important解決’
-7.select 在ie6下遮蓋使用iframe巢狀
-8.為什麼沒有辦法定義1px左右的寬度容器（IE6預設的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）
+33. 描述css reset的作用和用途？
 
-32.<img>標籤上title與alt屬性的區別是什麼？
-Alt 當圖片不顯示是用文字代表。
-Title 為該屬性提供資訊
+    Reset重置瀏覽器的css預設屬性瀏覽器的品種不同，樣式不同，然後重置，讓他們統一
 
-33.描述css reset的作用和用途？
-Reset重置瀏覽器的css預設屬性瀏覽器的品種不同，樣式不同，然後重置，讓他們統一
+34. 解釋css sprites，如何使用？
 
-34.解釋css sprites，如何使用？
-Css 精靈把一堆小的圖片整合到一張大的圖片上，減輕伺服器對圖片的請求數量
+    Css 精靈把一堆小的圖片整合到一張大的圖片上，減輕伺服器對圖片的請求數量
 
-35.瀏覽器標準模式和怪異模式之間的區別是什麼？
-盒子模型渲染模式的不同
-使用 window.top.document.compatMode 可顯示為什麼模式
+35. 瀏覽器標準模式和怪異模式之間的區別是什麼？
+    盒子模型渲染模式的不同
+    使用 window.top.document.compatMode 可顯示為什麼模式
+    
+36. 你如何對網站的檔案和資源進行優化？期待的解決方案包括：
+    - 檔案合併
+    - 檔案最小化/檔案壓縮
+    - 使用CDN託管
+    - 快取的使用
 
-36.你如何對網站的檔案和資源進行優化？期待的解決方案包括：
-檔案合併
-檔案最小化/檔案壓縮
-使用CDN託管
-快取的使用
+37. 什麼是語義化的HTML？
+    直觀的認識標籤對於搜尋引擎的抓取有好處
 
-37.什麼是語義化的HTML？
-直觀的認識標籤對於搜尋引擎的抓取有好處
+38. 清除浮動的幾種方式，各自的優缺點？
+    1. 使用空標籤清除浮動 clear:both（理論上能清楚任何標籤，，，增加無意義的標籤）
+    2. 使用overflow:auto（空標籤元素清除浮動而不得不增加無意程式碼的弊端,,使用zoom:1用於相容IE）
+    3. 是用afert偽元素清除浮動(用於非IE瀏覽器)
 
-38.清除浮動的幾種方式，各自的優缺點？
-1.使用空標籤清除浮動 clear:both（理論上能清楚任何標籤，，，增加無意義的標籤）
-2.使用overflow:auto（空標籤元素清除浮動而不得不增加無意程式碼的弊端,,使用zoom:1用於相容IE）
-3.是用afert偽元素清除浮動(用於非IE瀏覽器)
+39. javascript的typeof返回哪些資料型別？
 
-39.javascript的typeof返回哪些資料型別？
-Object number function boolean underfind
+    - Object 
+    - number 
+    - function 
+    - boolean 
+    - underfind
 
-40.例舉3種強制型別轉換和2種隱式型別轉換？
-強制（parseInt,parseFloat,number）
-隱式（== – ===）
+40. 例舉3種強制型別轉換和2種隱式型別轉換？
 
-41.split() join() 的區別？
-前者是切割成陣列的形式，後者是將陣列轉換成字串
+    強制（parseInt,parseFloat,number）  
+    隱式（== – ===）
 
-42.陣列方法pop() push() unshift() shift()？
-Push()尾部新增 pop()尾部刪除
-Unshift()頭部新增 shift()頭部刪除
+41. split() join() 的區別？
 
-43.14.JS中的call()和apply()方法的區別？
+    前者是切割成陣列的形式，後者是將陣列轉換成字串
 
-例子中用 add 來替換 sub，add.call(sub,3,1) == add(3,1) ，所以執行結果為：alert(4);
+42. 陣列方法pop() push() unshift() shift()？
 
-注意：js 中的函式其實是物件，函式名是對 Function 物件的引用。
+    Push()尾部新增 pop()尾部刪除  
+    Unshift()頭部新增 shift()頭部刪除  
 
-function add(a,b)
+43. JS中的call()和apply()方法的區別？
 
-{
+    例子中用 add 來替換 sub，add.call(sub,3,1) == add(3,1) ，所以執行結果為：alert(4);  
+    注意：js 中的函式其實是物件，函式名是對 Function 物件的引用。
+    ```javascript
+    function add(a,b)
+    
+    {
+    
+       alert(a b);
+    
+    }
+    
+     
+    
+    function sub(a,b)
+    
+    {
+    
+       alert(a-b);
+    
+    }
+    
+     
+    
+    add.call(sub,3,1);
+    ```
+    
+44. IE和DOM事件流的區別？
+    1. 執行順序不一樣、
+    2. 引數不一樣
+    3. 事件加不加on
+    4. this指向問題
 
-   alert(a b);
+45. IE和標準下有哪些相容性的寫法？  
+    Var ev = ev || window.event
+    document.documentElement.clientWidth || document.body.clientWidth
+    Var target = ev.srcElement||ev.target
 
-}
+46. ajax請求的時候get 和post方式的區別？  
+    一個在url後面一個放在虛擬載體裡面  
+    有大小限制  
+    安全問題  
+    應用不同一個是論壇等只需要請求的，一個是類似修改密碼的  
 
- 
+47. call和apply的區別？  
+    Object.call(this,obj1,obj2,obj3)  
+    Object.apply(this,arguments)  
 
-function sub(a,b)
+48. ajax請求時，如何解釋json資料？ 
+    使用eval parse 鑑於安全性考慮使用parse更靠譜
 
-{
-
-   alert(a-b);
-
-}
-
- 
-
-add.call(sub,3,1);
-
-44.IE和DOM事件流的區別？
-1.執行順序不一樣、
-2.引數不一樣
-3.事件加不加on
-4.this指向問題
-
-45.IE和標準下有哪些相容性的寫法？
-Var ev = ev || window.event
-document.documentElement.clientWidth || document.body.clientWidth
-Var target = ev.srcElement||ev.target
-
-46.ajax請求的時候get 和post方式的區別？
-一個在url後面一個放在虛擬載體裡面
-有大小限制
-安全問題
-應用不同一個是論壇等只需要請求的，一個是類似修改密碼的
-
-47.call和apply的區別？
-Object.call(this,obj1,obj2,obj3)
-Object.apply(this,arguments)
-
-48.ajax請求時，如何解釋json資料？
-使用eval parse 鑑於安全性考慮使用parse更靠譜
-
-49.new操作符具體幹了什麼呢?
-
- 1、建立一個空物件，並且 this 變數引用該物件，同時還繼承了該函式的原型。
-
- 2、屬性和方法被加入到 this 引用的物件中。
-
- 3、新建立的物件由 this 所引用，並且最後隱式的返回 this 。
-
- 
-
-   var obj  = {};
-
-   obj.__proto__ = Base.prototype;
-
+49. new操作符具體幹了什麼呢?  
+    1. 建立一個空物件，並且 this 變數引用該物件，同時還繼承了該函式的原型。
+    2. 屬性和方法被加入到 this 引用的物件中。
+    3. 新建立的物件由 this 所引用，並且最後隱式的返回 this 。
+    ```javascript
+    var obj  = {};
+    obj.__proto__ = Base.prototype;
     Base.call(obj);
+    ```
+    
+50. 寫一個獲取非行間樣式的函式？
+    ```javascript
+    functiongetStyle(obj,attr,value)
+    {
+    if(!value)
+    {
+    if(obj.currentStyle)
+    {
+    return obj.currentStyle(attr)
+    }
+    else
+    {
+    obj.getComputedStyle(attr,false)
+    }
+    }
+    else
+    {
+    obj.style[attr]=value
+    }
+    }
+    ```
+    
+51. 事件委託是什麼？
+    讓利用事件冒泡的原理，讓自己的所觸發的事件，讓他的父元素代替執行！  
+    http://www.webasily.com/?p=78 例子可見此連結  
 
-50.寫一個獲取非行間樣式的函式？
+52. 閉包是什麼，有什麼特性，對頁面有什麼影響？
+    閉包就是能夠讀取其他函式內部變數的函式。  
+    http://blog.csdn.net/gaoshanwudi/article/details/7355794 此連結可檢視（問這個問題的不是一個公司）
 
-functiongetStyle(obj,attr,value)
-{
-if(!value)
-{
-if(obj.currentStyle)
-{
-return obj.currentStyle(attr)
-}
-else
-{
-obj.getComputedStyle(attr,false)
-}
-}
-else
-{
-obj.style[attr]=value
-}
-}
+53. 如何阻止事件冒泡和預設事件？
+    canceBubble return false
 
-51.事件委託是什麼？
-讓利用事件冒泡的原理，讓自己的所觸發的事件，讓他的父元素代替執行！
-http://www.webasily.com/?p=78 例子可見此連結
+54. 新增刪除替換插入到某個接點的方法？
+    obj.appendChidl()  
+    obj.innersetBefore  
+    obj.replaceChild  
+    obj.removeChild  
 
-52.閉包是什麼，有什麼特性，對頁面有什麼影響？
-閉包就是能夠讀取其他函式內部變數的函式。
-http://blog.csdn.net/gaoshanwudi/article/details/7355794 此連結可檢視（問這個問題的不是一個公司）
+55. 解釋jsonp的原理，以及為什麼不是真正的ajax？
+    動態建立script標籤，回撥函式  
+    Ajax是頁面無重新整理請求資料操作  
 
-53.如何阻止事件冒泡和預設事件？
-canceBubble return false
-
-54.新增刪除替換插入到某個接點的方法？
-obj.appendChidl()
-obj.innersetBefore
-obj.replaceChild
-obj.removeChild
-
-55.解釋jsonp的原理，以及為什麼不是真正的ajax？
-動態建立script標籤，回撥函式
-Ajax是頁面無重新整理請求資料操作
-
-56.javascript的本地物件，內建物件和宿主物件？
-本地物件為array obj regexp等可以new例項化
-內建物件為gload Math 等不可以例項化的
-宿主為瀏覽器自帶的document,window 等
+56. javascript的本地物件，內建物件和宿主物件？  
+    本地物件為array obj regexp等可以new例項化  
+    內建物件為gload Math 等不可以例項化的  
+    宿主為瀏覽器自帶的document,window 等  
 
 57.document load 和document ready的區別？
 Document.onload 是在結構和樣式載入完才執行js
