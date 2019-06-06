@@ -563,209 +563,147 @@ tags: [frontend,interview,javascript,css,html,react]
     內建物件為gload Math 等不可以例項化的  
     宿主為瀏覽器自帶的document,window 等  
 
-57.document load 和document ready的區別？
-Document.onload 是在結構和樣式載入完才執行js
+57. document load 和document ready的區別？
+    Document.onload 是在結構和樣式載入完才執行js  
 Document.ready原生種沒有這個方法，jquery中有 $().ready(function)
 
-58.”==”和“===”的不同？
-前者會自動轉換型別
-後者不會
-
-59.javascript的同源策略？
-一段指令碼只能讀取來自於同一來源的視窗和文件的屬性，這裡的同一來源指的是主機名、協議和埠號的組合
-
-60.編寫一個陣列去重的方法？
-
-function oSort(arr)
-
-{
-
-varresult ={};
-
-varnewArr=[];
-
-for(vari=0;i<arr.length;i )
-
-{
-
-if(!result[arr])
-
-{
-
-newArr.push(arr)
-
-result[arr]=1
-
-}
-
-}
-
-returnnewArr
-
-}
-
- 
-
-61.Doctype作用? 嚴格模式與混雜模式-如何觸發這兩種模式，區分它們有何意義?
-
-（1）、<!DOCTYPE> 宣告位於文件中的最前面，處於 <html>標籤之前。告知瀏覽器的解析器，用什麼文件型別 規範來解析這個文件。
-
-（2）、嚴格模式的排版和 JS 運作模式是 以該瀏覽器支援的最高標準執行。
-
-（3）、在混雜模式中，頁面以寬鬆的向後相容的方式顯示。模擬老式瀏覽器的行為以防止站點無法工作。
-
-（4）、DOCTYPE不存在或格式不正確會導致文件以混雜模式呈現。
-
-62.行內元素有哪些？塊級元素有哪些？空(void)元素有那些？
-
-（1）CSS規範規定，每個元素都有display屬性，確定該元素的型別，每個元素都有預設的display值，比如div預設display屬性值為“block”，成為“塊級”元素；span預設display屬性值為“inline”，是“行內”元素。 
-
-（2）行內元素有：a b span img input select strong（強調的語氣） 塊級元素有：div ul ol li dl dt dd h1 h2 h3 h4…p 
-
-（3）知名的空元素： <br> <hr> <img> <input> <link><meta>
-
-鮮為人知的是： <area><base> <col> <command> <embed> <keygen><param> <source> <track> <wbr>
-
-63.CSS的盒子模型？
-
-（1）兩種， IE 盒子模型、標準 W3C 盒子模型；IE 的content部分包含了border 和 pading;
-
-（2）盒模型： 內容(content)、填充(padding)、邊界(margin)、 邊框(border).
-
-64.link 和@import 的區別是?
-
-（1）、link屬於XHTML標籤，而@import是CSS提供的;
-
-（2）、頁面被載入的時，link會同時被載入，而@import引用的CSS會等到頁面被載入完再載入;
-
-（3）、import只在IE5以上才能識別，而link是XHTML標籤，無相容問題;
-
-（4）、link方式的樣式的權重 高於@import的權重.
-
-65.CSS 選擇符有哪些？哪些屬性可以繼承？優先順序演算法如何計算？ CSS3新增偽類有那些？
-
-1.id選擇器（ # myid）
-
-2.類選擇器（.myclassname）
-
-3.標籤選擇器（div, h1, p）
-
-4.相鄰選擇器（h1 p）
-
-5.子選擇器（ul < li）
-
-6.後代選擇器（li a）
-
-7.萬用字元選擇器（ * ）
-
-8.屬性選擇器（a[rel = “external”]）
-
-9.偽類選擇器（a: hover, li: nth – child）
-
-可繼承： font-sizefont-family color, UL LI DL DD DT;
-
-不可繼承 ：border paddingmargin width height ;
-
-優先順序就近原則，樣式定義最近者為準;
-
-載入樣式以最後載入的定位為準;
-
-優先順序為:
-
-!important >  id > class > tag 
-
-important 比 內聯優先順序高
-
-CSS3新增偽類舉例：
-
-p:first-of-type 選擇屬於其父元素的首個 <p> 元素的每個 <p> 元素。
-
-p:last-of-type  選擇屬於其父元素的最後 <p> 元素的每個 <p> 元素。
-
-p:only-of-type  選擇屬於其父元素唯一的 <p> 元素的每個 <p> 元素。
-
-p:only-child    選擇屬於其父元素的唯一子元素的每個 <p> 元素。
-
-p:nth-child(2)  選擇屬於其父元素的第二個子元素的每個 <p> 元素。
-
-:enabled、:disabled控制表單控制元件的禁用狀態。
-
-:checked，單選框或核取方塊被選中。
-
-66.如何居中div,如何居中一個浮動元素?
-
-·        給div設定一個寬度，然後新增margin:0 auto屬性
-
-·            div{
-
-·                width:200px;
-
-·                margin:0 auto;
-
-·             } 
-
-·        居中一個浮動元素
-
-·              確定容器的寬高 寬500 高 300 的層
-
-·              設定層的外邊距
-
-·         
-
-·             .div {
-
-·              Width:500px ; height:300px;//高度可以不設
-
-·              Margin: -150px 0 0 -250px;
-
-·              position:relative;相對定位
-
-·              background-color:pink;//方便看效果
-
-·              left:50%;
-
-·              top:50%;
-
-·            }
-
-67.瀏覽器的核心分別是什麼?經常遇到的瀏覽器的相容性有哪些？原因，解決方法是什麼，常用hack的技巧？
-
-   * IE瀏覽器的核心Trident、 Mozilla的Gecko、google的WebKit、Opera核心Presto；
-
- 
-
-   * png24為的圖片在iE6瀏覽器上出現背景，解決方案是做成PNG8.
-
- 
-
-   * 瀏覽器預設的margin和padding不同。解決方案是加一個全域性的*{margin:0;padding:0;}來統一。
-
- 
-
-   * IE6雙邊距bug:塊屬性標籤float後，又有橫行的margin情況下，在ie6顯示margin比設定的大。
-
- 
-
-     浮動ie產生的雙倍距離 #box{float:left; width:10px; margin:0 0 0 100px;}
-
- 
-
-    這種情況之下IE會產生20px的距離，解決方案是在float的標籤樣式控制中加入 ——_display:inline;將其轉化為行內屬性。(_這個符號只有ie6會識別)
-
- 
-
-     漸進識別的方式，從總體中逐漸排除區域性。
-
- 
-
-     首先，巧妙的使用“\9”這一標記，將IE遊覽器從所有情況中分離出來。
-
+58. ”==”和“===”的不同？
+    前者會自動轉換型別  
+    後者不會
+
+59. javascript的同源策略？
+    一段指令碼只能讀取來自於同一來源的視窗和文件的屬性，這裡的同一來源指的是主機名、協議和埠號的組合
+
+60. 編寫一個陣列去重的方法？
+    ```javascript
+    function oSort(arr)
+    
+    {
+    
+    varresult ={};
+    
+    varnewArr=[];
+    
+    for(vari=0;i<arr.length;i )
+    
+    {
+    
+    if(!result[arr])
+    
+    {
+    
+    newArr.push(arr)
+    
+    result[arr]=1
+    
+    }
+    
+    }
+    
+    returnnewArr
+    
+    }
+    ``` 
+
+61. Doctype作用? 嚴格模式與混雜模式-如何觸發這兩種模式，區分它們有何意義?
+    1. \<!DOCTYPE> 宣告位於文件中的最前面，處於\<html>標籤之前。告知瀏覽器的解析器，用什麼文件型別 規範來解析這個文件。
+    
+    2. 嚴格模式的排版和 JS 運作模式是 以該瀏覽器支援的最高標準執行。
+    
+    3. 在混雜模式中，頁面以寬鬆的向後相容的方式顯示。模擬老式瀏覽器的行為以防止站點無法工作。
+    
+    4. DOCTYPE不存在或格式不正確會導致文件以混雜模式呈現。
+
+62. 行內元素有哪些？塊級元素有哪些？空(void)元素有那些？
+    1. CSS規範規定，每個元素都有display屬性，確定該元素的型別，每個元素都有預設的display值，比如div預設display屬性值為“block”，成為“塊級”元素；span預設display屬性值為“inline”，是“行內”元素。 
+    2. 行內元素有：a b span img input select strong（強調的語氣） 塊級元素有：div ul ol li dl dt dd h1 h2 h3 h4…p 
+    3. 知名的空元素： \<br> \<hr> \<img> \<input> \<link> \<meta>
+    4. 鮮為人知的是： \<area> \<base> \<col> \<command> \<embed> \<keygen> \<param> \<source> \<track> \<wbr>  
+
+63. CSS的盒子模
+    1. 兩種， IE 盒子模型、標準 W3C 盒子模型；IE 的content部分包含了border 和 pading;
+    2. 盒模型： 內容(content)、填充(padding)、邊界(margin)、 邊框(border).
+
+64. link 和@import 的區別是?
+    1. link屬於XHTML標籤，而@import是CSS提供的;
+    2. 頁面被載入的時，link會同時被載入，而@import引用的CSS會等到頁面被載入完再載入;
+    3. port只在IE5以上才能識別，而link是XHTML標籤，無相容問題;
+    4. link方式的樣式的權重 高於@import的權重.
+
+65. CSS 選擇符有哪些？哪些屬性可以繼承？優先順序演算法如何計算？ CSS3新增偽類有那些？
+    1. id選擇器（ # myid）
+    2. 類選擇器（.myclassname）
+    3. 標籤選擇器（div, h1, p）
+    4. 相鄰選擇器（h1 p）
+    5. 子選擇器（ul < li）
+    6. 後代選擇器（li a）
+    7. 萬用字元選擇器（ * ）
+    8. 屬性選擇器（a[rel = “external”]）
+    9. 偽類選擇器（a: hover, li: nth – child）
+    可繼承： font-sizefont-family color, UL LI DL DD DT;  
+    不可繼承 ：border paddingmargin width height ;  
+    優先順序就近原則，樣式定義最近者為準;  
+    載入樣式以最後載入的定位為準;  
+    優先順序為:  
+    !important >  id > class > tag   
+    important 比 內聯優先順序高  
+    CSS3新增偽類舉例：  
+    p:first-of-type 選擇屬於其父元素的首個 \<p> 元素的每個 \<p> 元素。  
+    p:last-of-type  選擇屬於其父元素的最後 \<p> 元素的每個 \<p> 元素。  
+    p:only-of-type  選擇屬於其父元素唯一的 \<p> 元素的每個 \<p> 元素。  
+    p:only-child    選擇屬於其父元素的唯一子元素的每個 \<p> 元素。  
+    p:nth-child(2)  選擇屬於其父元素的第二個子元素的每個 \<p> 元素。  
+    :enabled、:disabled控制表單控制元件的禁用狀態。  
+    :checked，單選框或核取方塊被選中。 
+     
+66. 如何居中div,如何居中一個浮動元素?  
+    給div設定一個寬度，然後新增margin:0 auto屬性
+    ```html
+              div{
+    
+    ·                width:200px;
+    
+    ·                margin:0 auto;
+    
+    ·             } 
+    
+    ·        居中一個浮動元素
+    
+    ·              確定容器的寬高 寬500 高 300 的層
+    
+    ·              設定層的外邊距
+    
+    ·         
+    
+    ·             .div {
+    
+    ·              Width:500px ; height:300px;//高度可以不設
+    
+    ·              Margin: -150px 0 0 -250px;
+    
+    ·              position:relative;相對定位
+    
+    ·              background-color:pink;//方便看效果
+    
+    ·              left:50%;
+    
+    ·              top:50%;
+    
+    ·            }
+    
+    ```
+    
+67. 瀏覽器的核心分別是什麼?經常遇到的瀏覽器的相容性有哪些？原因，解決方法是什麼，常用hack的技巧？  
+    * IE瀏覽器的核心Trident、 Mozilla的Gecko、google的WebKit、Opera核心Presto；
+    * png24為的圖片在iE6瀏覽器上出現背景，解決方案是做成PNG8.  
+    * 瀏覽器預設的margin和padding不同。解決方案是加一個全域性的*{margin:0;padding:0;}來統一。  
+    * IE6雙邊距bug:塊屬性標籤float後，又有橫行的margin情況下，在ie6顯示margin比設定的大。  
+     浮動ie產生的雙倍距離 #box{float:left; width:10px; margin:0 0 0 100px;}  
+    這種情況之下IE會產生20px的距離，解決方案是在float的標籤樣式控制中加入 ——_display:inline;將其轉化為行內屬性。(_這個符號只有ie6會識別)  
+     漸進識別的方式，從總體中逐漸排除區域性。  
+     首先，巧妙的使用“\9”這一標記，將IE遊覽器從所有情況中分離出來。  
      接著，再次使用“ ”將IE8和IE7、IE6分離開來，這樣IE8已經獨立識別。
-
- 
-
-     css
-
+         ```
           .bb{
 
            background-color:#f1ee18;/*所有識別*/
@@ -776,305 +714,113 @@ p:nth-child(2)  選擇屬於其父元素的第二個子元素的每個 <p> 元�
 
           _background-color:#1e0bd1;/*IE6識別*/
 
- 
-
           }
-
- 
-
-   *  IE下,可以使用獲取常規屬性的方法來獲取自定義屬性,
-
-      也可以使用getAttribute()獲取自定義屬性;
-
-      Firefox下,只能使用getAttribute()獲取自定義屬性.
-
+        ```
+    *  IE下,可以使用獲取常規屬性的方法來獲取自定義屬性,
+      也可以使用getAttribute()獲取自定義屬性;  
+      Firefox下,只能使用getAttribute()獲取自定義屬性.  
       解決方法:統一通過getAttribute()獲取自定義屬性.
-
- 
-
-   *  IE下,even物件有x,y屬性,但是沒有pageX,pageY屬性;
-
-     Firefox下,event物件有pageX,pageY屬性,但是沒有x,y屬性.
-
- 
-
-   * （條件註釋）缺點是在IE瀏覽器下可能會增加額外的HTTP請求數。
-
- 
-
-   * Chrome 中文介面下預設會將小於 12px 的文字強制按照 12px 顯示, 可通過加入 CSS 屬性 -webkit-text-size-adjust: none; 解決.
-
- 
-
-   超連結訪問過後hover樣式就不出現了 被點選訪問過的超連結樣式不在具有hover和active瞭解決方法是改變CSS屬性的排列順序:
-
-   L-V-H-A :  a:link {} a:visited {}a:hover {} a:active {}
-
-68.html5\CSS3有哪些新特性、移除了那些元素？如何處理HTML5新標籤的瀏覽器相容問題？如何區分 HTML 和 HTML5？
-
-·        HTML5 現在已經不是 SGML 的子集，主要是關於影象，位置，儲存，地理定位等功能的增加。
-
-·        * 繪畫 canvas 元素
-
-·         
-
-·          用於媒介回放的 video和 audio 元素
-
-·         
-
-·          本地離線儲存localStorage 長期儲存資料，瀏覽器關閉後資料不丟失；
-
-·          sessionStorage 的資料在瀏覽器關閉後自動刪除
-
-·         
-
-·          語意化更好的內容元素，比如 article、footer、header、nav、section
-
-·         
-
-·          表單控制元件，calendar、date、time、email、url、search
-
-·         
-
-·          CSS3實現圓角，陰影，對文字加特效，增加了更多的CSS選擇器 多背景 rgba
-
-·         
-
-·          新的技術webworker,websockt, Geolocation
-
-·      移除的元素
-
-·        純表現的元素：basefont，big，center，font, s，strike，tt，u；
-
-·         
-
-·        對可用性產生負面影響的元素：frame，frameset，noframes；
-
-·         
-
-·        * 是IE8/IE7/IE6支援通過document.createElement方法產生的標籤，
-
-·          可以利用這一特性讓這些瀏覽器支援HTML5新標籤，
-
-·         
-
-·          瀏覽器支援新標籤後，還需要新增標籤預設的樣式：
-
-·         
-
-·        * 當然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
-
-·           <!–[if lt IE 9]>
-
-·           <script>src=”http://html5shim.googlecode.com/svn/trunk/html5.js”</script>
-
-·           <![endif]–>
-
-69.你怎麼來實現頁面設計圖，你認為前端應該如何高質量完成工作? 一個滿屏品字佈局如何設計?
-
-* 首先劃分成頭部、body、腳部；。。。。。
-
- 
-
- 實現效果圖是最基本的工作，精確到2px；
-
- 
-
- 與設計師，產品經理的溝通和專案的參與
-
- 
-
- 做好的頁面結構，頁面重構和使用者體驗
-
- 
-
- 處理hack，相容、寫出優美的程式碼格式
-
- 
-
- 針對伺服器的優化、擁抱 HTML5。
-
-70.常使用的庫有哪些？常用的前端開發工具？開發過什麼應用或元件？
-
-   * 使用率較高的框架有jQuery、YUI、Prototype、Dojo、Ext.js、Mootools等。尤其是jQuery，超過91%。
-
- 
-
- 輕量級框架有Modernizr、underscore.js、backbone.js、Raphael.js等。
-
- （理解這些框架的功能、效能、設計原理）
-
- 
-
-   * Sublime Text 、Eclipse、Notepad、Firebug、HttpWatch、Yslow。
-
- 
-
-   * 城市選擇外掛，汽車型號選擇外掛、幻燈片外掛。彈出層。（寫過開源程式，載入器，js引擎更好）
-
-1.    JavaScript原型，原型鏈 ? 有什麼特點？
-
-2.  *  原型物件也是普通的物件，是物件一個自帶隱式的 __proto__ 屬性，原型也有可能有自己的原型，如果一個原型物件的原型不為null的話，我們就稱之為原型鏈。
-
-3.  *  原型鏈是由一些用來繼承和共享屬性的物件組成的（有限的）物件鏈。
-
-4.   
-
-5.  * JavaScript的資料物件有那些屬性值？
-
-6.   
-
-7.  　　writable：這個屬性的值是否可以改。
-
-8.   
-
-9.  　　configurable：這個屬性的配置是否可以刪除，修改。
-
-10.  
-
-11. 　　enumerable：這個屬性是否能在for…in迴圈中遍歷出來或在Object.keys中列舉出來。
-
-12.  
-
-13. 　　value：屬性值。
-
-14.  
-
-15. * 當我們需要一個屬性的時，Javascript引擎會先看當前物件中是否有這個屬性，如果沒有的話，就會查詢他的Prototype物件是否有這個屬性。
-
-16.  
-
-17.  function clone(proto) {
-
-18.  
-
-19. 　　function Dummy() { }
-
-20.  
-
-21. 　　Dummy.prototype = proto;
-
-22.  
-
-23. 　　Dummy.prototype.constructor = Dummy;
-
-24.  
-
-25. 　　return new Dummy(); //等價於Object.create(Person);
-
-26.  
-
-27.  }
-
-28.  
-
-29.         functionobject(old) {
-
-30.          function F() {};
-
-31.          F.prototype =old;
-
-32.          return new F();
-
-33.         }
-
-34.     var newObj = object(oldObject);
-
-71.列出display的值，說明他們的作用。position的值， relative和absolute定位原點是？
-
- 1.    block 象塊型別元素一樣顯示。
-
- none 預設值。向行內元素型別一樣顯示。
-
- inline-block 象行內元素一樣顯示，但其內容象塊型別元素一樣顯示。
-
- list-item 象塊型別元素一樣顯示，並新增樣式列表標記。
-
- 
-
- 2.
-
- *absolute
-
-       生成絕對定位的元素，相對於 static 定位以外的第一個父元素進行定位。
-
- *fixed （老IE不支援）
-
-       生成絕對定位的元素，相對於瀏覽器視窗進行定位。
-
- *relative
-
-       生成相對定位的元素，相對於其正常位置進行定位。
-
- * static  預設值。沒有定位，元素出現在正常的流中
-
- *（忽略 top, bottom, left,right z-index 宣告）。
-
- * inherit 規定從父元素繼承 position 屬性的值。
-
-72.頁面重構怎麼操作？
-
-編寫 CSS、讓頁面結構更合理化，提升使用者體驗，實現良好的頁面效果和提升效能。
-
-73.語義化的理解？
-
-html語義化就是讓頁面的內容結構化，便於對瀏覽器、搜尋引擎解析；
-
-在沒有樣式CCS情況下也以一種文件格式顯示，並且是容易閱讀的。
-
-搜尋引擎的爬蟲依賴於標記來確定上下文和各個關鍵字的權重，利於 SEO。
-
-使閱讀原始碼的人對網站更容易將網站分塊，便於閱讀維護理解。
-
-74.HTML5的離線儲存？
-
-localStorage    長期儲存資料，瀏覽器關閉後資料不丟失；
-
-sessionStorage  資料在瀏覽器關閉後自動刪除。
-
- 
-
-75.為什麼要初始化CSS樣式。
-
-·     因為瀏覽器的相容問題，不同瀏覽器對有些標籤的預設值是不同的，如果沒對CSS初始化往往會出現瀏覽器之間的頁面顯示差異。
-
-·     當然，初始化樣式會對SEO有一定的影響，但魚和熊掌不可兼得，但力求影響最小的情況下初始化。
-
-*最簡單的初始化方法就是： * {padding: 0;margin: 0;} （不建議）
-
-   淘寶的樣式初始化：
-
-   body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li,pre, form, fieldset, legend, button, input, textarea, th, td { margin:0;padding:0; }
-
-   body, button, input, select, textarea { font:12px/1.5tahoma, arial,\5b8b\4f53; }
-
-   h1, h2, h3, h4, h5, h6{ font-size:100%; }
-
-   address, cite, dfn, em, var { font-style:normal; }
-
-   code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
-
-   small{ font-size:12px; }
-
-   ul, ol { list-style:none; }
-
-   a { text-decoration:none; }
-
-   a:hover { text-decoration:underline; }
-
-   sup { vertical-align:text-top; }
-
-   sub{ vertical-align:text-bottom; }
-
-   legend { color:#000; }
-
-   fieldset, img { border:0; }
-
-   button, input, select, textarea { font-size:100%; }
-
-   table { border-collapse:collapse; border-spacing:0; }
-
-76.(寫)描述一段語義的html程式碼吧。
+    *  IE下,even物件有x,y屬性,但是沒有pageX,pageY屬性;  
+        Firefox下,event物件有pageX,pageY屬性,但是沒有x,y屬性.
+    * （條件註釋）缺點是在IE瀏覽器下可能會增加額外的HTTP請求數。
+    * Chrome 中文介面下預設會將小於 12px 的文字強制按照 12px 顯示, 可通過加入 CSS 屬性 -webkit-text-size-adjust: none; 解決.
+     超連結訪問過後hover樣式就不出現了 被點選訪問過的超連結樣式不在具有hover和active瞭解決方法是改變CSS屬性的排列順序:
+     ```
+     L-V-H-A :  a:link {} a:visited {}a:hover {} a:active {}
+     ```
+    
+68. html5\CSS3有哪些新特性、移除了那些元素？如何處理HTML5新標籤的瀏覽器相容問題？如何區分 HTML 和 HTML5？
+
+     HTML5 現在已經不是 SGML 的子集，主要是關於影象，位置，儲存，地理定位等功能的增加。
+    * 繪畫 canvas 元素
+     用於媒介回放的 video和 audio 元素
+    本地離線儲存localStorage 長期儲存資料，瀏覽器關閉後資料不丟失；
+    sessionStorage 的資料在瀏覽器關閉後自動刪除
+    語意化更好的內容元素，比如 article、footer、header、nav、section
+    表單控制元件，calendar、date、time、email、url、search
+     CSS3實現圓角，陰影，對文字加特效，增加了更多的CSS選擇器 多背景 rgba
+     新的技術webworker,websockt, Geolocation
+    移除的元素
+    純表現的元素：basefont，big，center，font, s，strike，tt，u；
+    對可用性產生負面影響的元素：frame，frameset，noframes；    
+    * 是IE8/IE7/IE6支援通過document.createElement方法產生的標籤，
+    可以利用這一特性讓這些瀏覽器支援HTML5新標籤，
+    瀏覽器支援新標籤後，還需要新增標籤預設的樣式：
+    * 當然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
+        ```html
+        <!–[if lt IE 9]>
+        <script>src=”http://html5shim.googlecode.com/svn/trunk/html5.js”</script>
+        <![endif]–>
+        ```
+    
+69. 你怎麼來實現頁面設計圖，你認為前端應該如何高質量完成工作? 一個滿屏品字佈局如何設計?
+
+    - 首先劃分成header、body、foot
+    - 實現效果圖是最基本的工作，精確到2px；
+    - 與設計師，產品經理的溝通和專案的參與
+    - 做好的頁面結構，頁面重構和使用者體驗
+    - 處理hack，相容、寫出優美的程式碼格式
+    - 針對伺服器的優化、擁抱 HTML5。
+
+70. 常使用的庫有哪些？常用的前端開發工具？開發過什麼應用或元件？
+    * 使用率較高的框架有jQuery、YUI、Prototype、Dojo、Ext.js、Mootools等。尤其是jQuery，超過91%。
+    輕量級框架有Modernizr、underscore.js、backbone.js、Raphael.js等。
+    （理解這些框架的功能、效能、設計原理）
+    * Sublime Text 、Eclipse、Notepad、Firebug、HttpWatch、Yslow。
+    * 城市選擇外掛，汽車型號選擇外掛、幻燈片外掛。彈出層。（寫過開源程式，載入器，js引擎更好）
+
+72. 頁面重構怎麼操作？  
+    編寫 CSS、讓頁面結構更合理化，提升使用者體驗，實現良好的頁面效果和提升效能。
+
+73. 語義化的理解？  
+    html語義化就是讓頁面的內容結構化，便於對瀏覽器、搜尋引擎解析；  
+    在沒有樣式CCS情況下也以一種文件格式顯示，並且是容易閱讀的。
+    搜尋引擎的爬蟲依賴於標記來確定上下文和各個關鍵字的權重，利於 SEO。
+  使閱讀原始碼的人對網站更容易將網站分塊，便於閱讀維護理解。
+
+74. HTML5的離線儲存？  
+    localStorage    長期儲存資料，瀏覽器關閉後資料不丟失；
+    sessionStorage  資料在瀏覽器關閉後自動刪除。
+    
+75. 為什麼要初始化CSS樣式。  
+    因為瀏覽器的相容問題，不同瀏覽器對有些標籤的預設值是不同的，如果沒對CSS初始化往往會出現瀏覽器之間的頁面顯示差異。   
+    當然，初始化樣式會對SEO有一定的影響，但魚和熊掌不可兼得，但力求影響最小的情況下初始化。
+    最簡單的初始化方法就是： * {padding: 0;margin: 0;} （不建議）
+
+    淘寶的樣式初始化：
+    ```css
+       body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li,pre, form, fieldset, legend, button, input, textarea, th, td { margin:0;padding:0; }
+    
+       body, button, input, select, textarea { font:12px/1.5tahoma, arial,\5b8b\4f53; }
+    
+       h1, h2, h3, h4, h5, h6{ font-size:100%; }
+    
+       address, cite, dfn, em, var { font-style:normal; }
+    
+       code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+    
+       small{ font-size:12px; }
+    
+       ul, ol { list-style:none; }
+    
+       a { text-decoration:none; }
+    
+       a:hover { text-decoration:underline; }
+    
+       sup { vertical-align:text-top; }
+    
+       sub{ vertical-align:text-bottom; }
+    
+       legend { color:#000; }
+    
+       fieldset, img { border:0; }
+    
+       button, input, select, textarea { font-size:100%; }
+    
+       table { border-collapse:collapse; border-spacing:0; }
+    ```
+    
+76. (寫)描述一段語義的html程式碼吧。
 
    （HTML5中新增加的很多標籤（如：<article>、<nav>、<header>和<footer>等）
 
@@ -1114,7 +860,7 @@ sessionStorage  資料在瀏覽器關閉後自動刪除。
 
 ·        類或 ID 中不引用顏色或位置。
 
-77.iframe有那些缺點？
+77. iframe有那些缺點？
 
    *iframe會阻塞主頁面的Onload事件；
 
@@ -1172,7 +918,7 @@ div{
 
 如果權重相同，則最後定義的樣式會起作用，但是應該避免這種情況出現
 
-78.eval是做什麼的？
+78. eval是做什麼的？
 
 它的功能是把對應的字串解析成JS程式碼並執行；
 
@@ -1334,11 +1080,11 @@ markyun.Event = {
 
 };
 
-24.99%的網站都需要被重構是那本書上寫的？
+24. 99%的網站都需要被重構是那本書上寫的？
 
 * 網站重構：應用web標準進行設計（第2版）
 
-79.什麼叫優雅降級和漸進增強？
+79. 什麼叫優雅降級和漸進增強？
 
 優雅降級：Web站點在所有新式瀏覽器中都能正常工作，如果使用者使用的是老式瀏覽器，則程式碼會檢查以確認它們是否能正常工作。由於IE獨特的盒模型佈局問題，針對不同版本的IE的hack實踐過優雅降級了,為那些無法支援功能的瀏覽器增加候選方案，使之在舊式瀏覽器上以某種形式降級體驗卻不至於完全失效.
 
@@ -1346,11 +1092,11 @@ markyun.Event = {
 
 漸進增強：從被所有瀏覽器支援的基本功能開始，逐步地新增那些只有新式瀏覽器才支援的功能,向頁面增加無害於基礎瀏覽器的額外樣式和功能的。當瀏覽器支援時，它們會自動地呈現出來並發揮作用。
 
-80.Node.js的適用場景？
+80. Node.js的適用場景？
 
 高併發、聊天、實時訊息推送
 
-81.WEB應用從伺服器主動推送Data到客戶端有那些方式？
+81. WEB應用從伺服器主動推送Data到客戶端有那些方式？
 
    html5 websoket
 
@@ -1366,7 +1112,7 @@ markyun.Event = {
 
  
 
-82.js的幾種資料型別？
+82. js的幾種資料型別？
 
 number,string,boolean,object,undefined
 
@@ -1392,7 +1138,7 @@ js的常見內建物件類：Date,Array,Math、Number、Boolean、String、Array
 
 ·         console.log(‘Value is ‘ (val === ‘smtg’) ?’Something’ : ‘Nothing’);
 
-83.建立一個物件？
+83. 建立一個物件？
 
      function Person(name, age) {
 
@@ -1404,7 +1150,7 @@ js的常見內建物件類：Date,Array,Math、Number、Boolean、String、Array
 
      }
 
-84.談談This物件的理解？
+84. 談談This物件的理解？
 
 this是js的一個關鍵字，隨著函式使用場合不同，this的值會發生變化。
 
@@ -1416,7 +1162,7 @@ this是js的一個關鍵字，隨著函式使用場合不同，this的值會發�
 
 this一般情況下：是全域性物件Global。 作為方法呼叫，那麼this就是指這個物件
 
-85.事件、IE與火狐的事件機制有什麼區別？如何阻止冒泡？
+85. 事件、IE與火狐的事件機制有什麼區別？如何阻止冒泡？
 
  1. 我們在網頁中的某個操作（有的操作對應多個事件）。例如：當我們點選一個按鈕就會產生一個事件。是可以被 JavaScript 偵測到的行為。 
 
@@ -1424,7 +1170,7 @@ this一般情況下：是全域性物件Global。 作為方法呼叫，那麼thi
 
  3. ev.stopPropagation();
 
-86.什麼是閉包（closure），為什麼要用？
+86. 什麼是閉包（closure），為什麼要用？
 
 ·      待完善
 
@@ -1452,7 +1198,7 @@ this一般情況下：是全域性物件Global。 作為方法呼叫，那麼thi
 
  
 
-87.如何判斷一個物件是否屬於某個類？
+87. 如何判斷一個物件是否屬於某個類？
 
 使用instanceof （待完善）
 
@@ -1464,7 +1210,7 @@ this一般情況下：是全域性物件Global。 作為方法呼叫，那麼thi
 
  
 
-88.JSON 的瞭解？
+88. JSON 的瞭解？
 
 JSON(JavaScript Object Notation) 是一種輕量級的資料交換格式。它是基於JavaScript的一個子集。資料格式簡單, 易於讀寫, 佔用頻寬小
 
@@ -1515,8 +1261,8 @@ JSON(JavaScript Object Notation) 是一種輕量級的資料交換格式。它�
 ·          5、不容易除錯。
 
 ·        跨域： jsonp、 iframe、window.name、window.postMessage、伺服器上設定代理頁面
-
-90.模組化怎麼做？
+ 
+90. 模組化怎麼做？
 
 立即執行函式,不暴露私有成員
 
@@ -1546,7 +1292,7 @@ var module1 = (function(){
 
 　　})();
 
-91.對Node的優點和缺點提出了自己的看法？
+91. 對Node的優點和缺點提出了自己的看法？
 
    *（優點）因為Node是基於事件驅動和無阻塞的，所以非常適合處理併發請求，
 
@@ -1562,7 +1308,7 @@ var module1 = (function(){
 
       而且缺少足夠多的第三方庫支援。看起來，就像是Ruby/Rails當年的樣子。
 
-92.非同步載入的方式？
+92. 非同步載入的方式？
 
  (1) defer，只支援IE
 
@@ -1576,7 +1322,7 @@ var module1 = (function(){
 
      innerHTML可以重繪頁面的一部分
 
-93.告訴我答案是多少？
+93. 告訴我答案是多少？
 
 (function(x){
 
@@ -1592,7 +1338,7 @@ var module1 = (function(){
 
 當然，刪除失敗也不會報錯，所以程式碼執行會彈出“1”。
 
-94.Jquery與jQuery UI 有啥區別？
+94. Jquery與jQuery UI 有啥區別？
 
    *jQuery是一個js庫，主要提供的功能是選擇器，屬性修改和事件繫結等等。
 
@@ -1602,7 +1348,7 @@ var module1 = (function(){
 
     提供了一些常用的介面元素，諸如對話方塊、拖動行為、改變大小行為等等
 
-95.jquery 中如何將陣列轉化為json字串，然後再轉化回來？
+95. jquery 中如何將陣列轉化為json字串，然後再轉化回來？
 
 jQuery中沒有提供這個功能，所以你需要先編寫兩個jQuery的擴充套件：
 
@@ -1632,7 +1378,7 @@ $(“”).stringifyArray(array)
 
  
 
-96.前端開發的優化問題？
+96. 前端開發的優化問題？
 
 ·          （1）減少http請求次數：CSS Sprites, JS、CSS原始碼壓縮、圖片大小控制合適；網頁Gzip，CDN託管，data快取 ，圖片伺服器。
 
@@ -1664,7 +1410,7 @@ $(“”).stringifyArray(array)
 
 ·          （8）避免在頁面的主體佈局中使用table，table要等其中的內容完全下載之後才會顯示出來，顯示比div css佈局慢。
 
-97.http狀態碼有那些？分別代表是什麼意思？
+97. http狀態碼有那些？分別代表是什麼意思？
 
    100-199 用於指定客戶端應相應的某些動作。
 
@@ -1676,7 +1422,7 @@ $(“”).stringifyArray(array)
 
    500-599 用於支援伺服器錯誤。 503 – 服務不可用
 
-98.平時如何管理你的專案，如何設計突發大規模併發架構？
+98. 平時如何管理你的專案，如何設計突發大規模併發架構？
 
 先期團隊必須確定好全域性樣式（globe.css），編碼模式(utf-8) 等
 
@@ -1710,7 +1456,7 @@ JS 分資料夾存放 命民以該JS 功能為準英文翻譯；
 
 沒有標準答案。
 
-100。.JavaScript的資料型別都有什麼？
+100. JavaScript的資料型別都有什麼？
 
 基本資料型別：String,boolean,Number,Undefined, Null
 
@@ -1752,7 +1498,7 @@ if(typeof Array.isArray===”undefined”)
 
 }
 
-102.已知ID的Input輸入框，希望獲取這個輸入框的輸入值，怎麼做？(不使用第三方框架)
+102. 已知ID的Input輸入框，希望獲取這個輸入框的輸入值，怎麼做？(不使用第三方框架)
 
 JavaScript
 
@@ -1760,7 +1506,7 @@ JavaScript
 
 document.getElementById(“ID”).value
 
-103.希望獲取到頁面中所有的checkbox怎麼做？(不使用第三方框架)
+103. 希望獲取到頁面中所有的checkbox怎麼做？(不使用第三方框架)
 
 JavaScript
 
@@ -1796,7 +1542,7 @@ if (domList[len].type == ‘checkbox’) {
 
 }
 
-104.設定一個已知ID的DIV的html內容為xxxx，字型顏色設定為黑色(不使用第三方框架)
+104. 設定一個已知ID的DIV的html內容為xxxx，字型顏色設定為黑色(不使用第三方框架)
 
 JavaScript
 
@@ -1812,7 +1558,7 @@ dom.innerHTML = “xxxx”
 
 dom.style.color = “#000”
 
-105.當一個DOM節點被點選時候，我們希望能夠執行一個函式，應該怎麼做？
+105. 當一個DOM節點被點選時候，我們希望能夠執行一個函式，應該怎麼做？
 
 ·         直接在DOM裡繫結事件：<div onclick=”test()”></div>
 
@@ -1828,7 +1574,7 @@ dom.style.color = “#000”
 
 ·        “DOM事件流”：三個階段：事件捕捉，目標階段，事件冒泡
 
-106.什麼是Ajax和JSON，它們的優缺點?
+106. 什麼是Ajax和JSON，它們的優缺點?
 
 Ajax是非同步JavaScript和XML，用於在Web頁面中實現非同步資料互動。
 
@@ -1854,7 +1600,7 @@ JSON是一種輕量級的資料交換格式，ECMA的一個子集
 
  
 
-107.看下列程式碼輸出為何？解釋原因。
+107. 看下列程式碼輸出為何？解釋原因。
 
 JavaScript
 
@@ -1872,7 +1618,7 @@ alert(b); // 報錯
 
 解釋：Undefined是一個只有一個值的資料型別，這個值就是“undefined”，在使用var宣告變數但並未對其賦值進行初始化時，這個變數的值就是undefined。而b由於未宣告將報錯。注意未申明的變數和宣告瞭未賦值的是不一樣的。
 
-108.看下列程式碼,輸出什麼？解釋原因。
+108. 看下列程式碼,輸出什麼？解釋原因。
 
 JavaScript
 
@@ -1886,7 +1632,7 @@ alert(typeof a); //object
 
 解釋：null是一個只有一個值的資料型別，這個值就是null。表示一個空指標物件，所以用typeof檢測會返回”object”。
 
-109.看下列程式碼,輸出什麼？解釋原因。
+109. 看下列程式碼,輸出什麼？解釋原因。
 
 JavaScript
 
@@ -1954,7 +1700,7 @@ console.log(typeof foo);
 
 執行完後foo的值為111，foo的型別為String。
 
-110.看程式碼給答案。
+110. 看程式碼給答案。
 
 JavaScript
 
@@ -1980,7 +1726,7 @@ alert(a.value);
 
 答案：2（考察引用資料型別細節）
 
-111.已知陣列var stringArray = [“This”, “is”, “Baidu”, “Campus”]，Alert出”This is Baidu Campus”。
+111. 已知陣列var stringArray = [“This”, “is”, “Baidu”, “Campus”]，Alert出”This is Baidu Campus”。
 
 答案：alert(stringArray.join(“”))
 
@@ -2022,7 +1768,7 @@ function combo(msg){
 
 (考察基礎API)
 
-112.var numberArray = [3,6,2,4,1,5]; （考察基礎API）
+112. var numberArray = [3,6,2,4,1,5]; （考察基礎API）
 
 1) 實現對該陣列的倒排，輸出[5,1,4,2,6,3]
 
@@ -2062,7 +1808,7 @@ function combo(msg){
 
 }
 
-113.輸出今天的日期，以YYYY-MM-DD的方式，比如今天是2014年9月26日，則輸出2014-09-26
+113. 輸出今天的日期，以YYYY-MM-DD的方式，比如今天是2014年9月26日，則輸出2014-09-26
 
 JavaScript
 
@@ -2114,7 +1860,7 @@ alert(year ‘-‘ month ‘-‘ day);
 
 答案：”<tr><td>{$id}</td><td>{$id}_{$name}</td></tr>”.replace(/{\$id}/g, ’10’).replace(/{\$name}/g, ‘Tony’);
 
-115.為了保證頁面輸出安全，我們經常需要對一些特殊的字元進行轉義，請寫一個函式escapeHtml，將<, >, &, “進行轉義
+115. 為了保證頁面輸出安全，我們經常需要對一些特殊的字元進行轉義，請寫一個函式escapeHtml，將<, >, &, “進行轉義
 
 JavaScript
 
@@ -2174,7 +1920,7 @@ return str.replace(/[<>”&]/g, function(match) {
 
 }
 
-116.foo =foo||bar ，這行程式碼是什麼意思？為什麼要這樣寫？
+116. foo =foo||bar ，這行程式碼是什麼意思？為什麼要這樣寫？
 
 答案：if(!foo) foo = bar; //如果foo存在，值不變，否則把bar的值賦給foo。
 
@@ -2302,7 +2048,7 @@ var cArray = array1.concat(bArray);
 
 cArray.splice(1,1);
 
-120.怎樣新增、移除、移動、複製、建立和查詢節點（原生JS，實在基礎，沒細寫每一步）
+120 .怎樣新增、移除、移動、複製、建立和查詢節點（原生JS，實在基礎，沒細寫每一步）
 
 1）建立新節點
 
@@ -2501,41 +2247,7 @@ caller是返回一個對函式的引用，該函式呼叫了當前函式；
 callee是返回正在被執行的function函式，也就是所指定的function物件的正文。
 
 那麼問題來了？如果一對兔子每月生一對兔子；一對新生兔，從第二個月起就開始生兔子；假定每對兔子都是一雌一雄，試問一對兔子，第n個月能繁殖成多少對兔子？（使用callee完成）
-
-JavaScript
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
+```javascript
 var result=[];
 
 function fn(n){  //典型的斐波那契數列
@@ -2567,14 +2279,16 @@ function fn(n){  //典型的斐波那契數列
    }
 
 }
+```
+
 
  
 
-126.你說你熱愛前端，那麼應該WEB行業的發展很關注吧？說說最近最流行的一些東西吧？
+126. 你說你熱愛前端，那麼應該WEB行業的發展很關注吧？說說最近最流行的一些東西吧？
 
 Node.js、Mongodb、npmM、MVVM、MEAN
 
-127.你有了解我們公司嗎？說說你的認識？
+127. 你有了解我們公司嗎？說說你的認識？
 
  因為我想去阿里，所以我針對阿里的說
 
@@ -2582,32 +2296,32 @@ Node.js、Mongodb、npmM、MVVM、MEAN
 
  
 
-128.absolute的containingblock計算方式跟正常流有什麼不同？
+128. absolute的containingblock計算方式跟正常流有什麼不同？
 
-129.position跟display、margin collapse、overflow、float這些特性相互疊加後會怎麼樣？
+129. position跟display、margin collapse、overflow、float這些特性相互疊加後會怎麼樣？
 
-130.對BFC規範的理解？（W3C CSS 2.1 規範中的一個概念,它決定了元素如何對其內容進行定位,以及與其他元素的關係和相互作用。）
+130. 對BFC規範的理解？（W3C CSS 2.1 規範中的一個概念,它決定了元素如何對其內容進行定位,以及與其他元素的關係和相互作用。）
 
-131.事件繫結和普通事件有什麼區別？
+131. 事件繫結和普通事件有什麼區別？
 
-132.b繼承a的方法？
+132. b繼承a的方法？
 
-133..JavaScript中的作用域與變數宣告提升？
+133. JavaScript中的作用域與變數宣告提升？
 
-134.一個頁面從輸入 URL 到頁面載入顯示完成，這個過程中都發生了什麼？（流程說的越詳細越好）
+134. 一個頁面從輸入 URL 到頁面載入顯示完成，這個過程中都發生了什麼？（流程說的越詳細越好）
 
-135.你所知道的頁面效能優化方法有那些？
+135. 你所知道的頁面效能優化方法有那些？
 
-136.除了前端以外還了解什麼其它技術麼？你最最厲害的技能是什麼？
+136. 除了前端以外還了解什麼其它技術麼？你最最厲害的技能是什麼？
 
-137.AMD（Modules/Asynchronous-Definition）、CMD（Common ModuleDefinition）規範區別？
+137. AMD（Modules/Asynchronous-Definition）、CMD（Common ModuleDefinition）規範區別？
 
-138.談談你認為怎樣做能是專案做的更好？
+138 .談談你認為怎樣做能是專案做的更好？
 
-139.你對前端介面工程師這個職位是怎麼樣理解的？它的前景會怎麼樣？
+139. 你對前端介面工程師這個職位是怎麼樣理解的？它的前景會怎麼樣？
 
-140.移動端（比如：Android IOS）怎麼做好使用者體驗?
+140. 移動端（比如：Android IOS）怎麼做好使用者體驗?
 
-141.加班的看法
+141. 加班的看法
 
 加班就像借錢，原則應當是——救急不救窮
