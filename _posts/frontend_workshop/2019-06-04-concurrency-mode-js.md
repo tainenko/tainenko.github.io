@@ -51,6 +51,17 @@ async1 end
 promise2  
 setTimeout  
 
+#### 執行過程的分析
+- 遇到 console.log('script start'), 放在主線程中立即執行，所以第一步先輸出 script start
+- 遇到 setTimeout，因為 setTimeout 是異步的，所以將回調函數放入異步隊列中去等待，等待主線程中的任務執行完之後，再通過事件輪詢的方式去調用
+- 遇到 async1 函數的調用，此時走到 async1 函數裏面輸出 async1 start
+- 遇到 await 關鍵字，進入到 async2 函數中輸出 async2,將 await 後面的代碼放入微任務中，執行後面的操作
+- 遇到 Promise 直接輸出promise1,將回調函數放入微任務中，執行後面的操作
+- 遇到 console.log('script end'), 放在主線程中立即執行，所以第一步先輸出 script end，到這個時候主線程中的代碼就執行完了
+- 主線程中的代碼執行完之後，立即執行所有的微任務。分別輸出 async1 end，promise2
+- 最後通過事件輪詢的方式將異步隊列中代碼，拿到主線程中來執行 (輸出 settimeout)
+- 重覆上個步驟，直到異步隊列清空．
+
 ## Javascript concurrency mode
 ### 單線程（single threaded）
 首先，我們要知道 JavaScript 是單線程（single threaded runtime）的程式語言，所有的程式碼片段都會在堆疊中（stack）被執行，而且一次只會執行一個程式碼片段（one thing at a time）。
