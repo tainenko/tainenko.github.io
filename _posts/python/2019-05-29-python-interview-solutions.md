@@ -18,9 +18,9 @@ tags: [ python, interview, solutions]
     ```python
     num = 0
     def foo():
-       #declare a global variable
+       #declare variable as global
         global num
-       #assign a new value for variable
+       #now can revise the value
         num =100
         return
     ```
@@ -55,25 +55,54 @@ tags: [ python, interview, solutions]
     return res
     ```
 
-7. fun(*args,**kwargs)中的*args,**kwargs什麽意思？
-    ```python
+7. fun(*args,**kwargs)中的*args,**kwargs什麽意思？  
+    *args為參數，**kwargs為關鍵字參數。
     
+8. python2和python3的range（100）的區別  
+    in python2 range() would produce a list object.
+    ```python
+    >>>A=range(0,5)
+    [0,1,2,3,4]
     ```
-8. python2和python3的range（100）的區別
+    but python3 no longer produce list, it produce a range object which allows iterations.
+    ```python
+    >>>A=range(0,5)
+    range(0.5)
+    ```
 
 9. 一句話解釋什麽樣的語言能夠用裝飾器?
+函式可以用來傳遞的語言，可以使用裝飾器。
 
 10. python內建數據類型有哪些
+    ```python
+    int
+    float
+    string
+    dict
+    set
+    list
+    
+    ```
 
 11. 簡述面向對象中__new__和__init__區別
+```python
+__new__
+呼叫constructor建立新的實例
+__init__
+附與實例初始值
+
+```
 
 12. 簡述with方法打開處理文件幫我我們做了什麽？
 
 13. 列表[1,2,3,4,5],請使用map()函數輸出[1,4,9,16,25]，並使用列表推導式提取出大於10的數，最終輸出[16,25]
-
+    ```python
+    [x for x in map(lambda x:x**2,[1,2,3,4,5]) if x >10]
+    ```
 14. python中生成隨機整數. 隨機小數. 0—1之間小數方法
 
 15. 避免轉義給字符串加哪個字母表示原始字符串？
+    在string前加r，ex r'string'
 
 16. 
 
