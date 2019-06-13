@@ -63,7 +63,7 @@ image: assets/images/f2e_workshop.jpg
     ```
 
 2. Object
-    ```javascript
+    ```javascript {.line-numbers}
     var a = {};b = {key:'b'};c = {key:'c'};a[b] = 123;a[c] = 456;console.log(a[b]);
     
     ```
@@ -74,7 +74,7 @@ image: assets/images/f2e_workshop.jpg
     ```
 
 3. setTimeout
-    ```javascript
+    ```javascript {.line-numbers}
     console.log("a");
     setTimeout(()=>{
         console.log("b")
