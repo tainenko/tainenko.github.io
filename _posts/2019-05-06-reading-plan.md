@@ -4,7 +4,7 @@ title:  "Reading Plan"
 author: tony
 categories: [ Reading Plan ]
 image: assets/images/book-list.jpg
-tags: [featured,reading, learning, recommend, books list]
+tags: [featured,reading, learning, recommend, books list, sticky]
 comments: true
 ---
 “The more you read, the more things you know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!  
@@ -16,7 +16,10 @@ If there's something that you think I ought to read, then open an issue.
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
 ### Reading Plan
-2019年5月
+2019年6月  
+[《洗腦術》]()  
+[《Keras快速上手：基於Python的深度學習實戰》]()  
+2019年5月  
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
 [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
 [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
@@ -26,7 +29,6 @@ This is not a comprehensive list of every book I've read on any of these subject
 ---
 
 ### Employee book lists
-
 ** Fundamental and Optimization Theory of Operating System **
 - [ ] [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)
 - [ ] [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)
@@ -97,6 +99,9 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《Perl Cookbook》]()
 - [ ] [《Perl实例精解》]()
 
+**Deep Learning**
+- [x] [《Keras快速上手：基於Python的深度學習實戰》]()
+
 **Soft Skills and Mental Toughness**
 - [ ] [《软技能 代码之外的生存指南》]()
 - [ ] [《奔跑吧，程序员：从零开始打造产品、技术和团队》]()
@@ -110,5 +115,6 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [x] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
 - [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
 - [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
-
+- [x] [《Mind Control》]()
+- [ ] [《》]()
 ---
