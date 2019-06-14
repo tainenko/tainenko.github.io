@@ -55,19 +55,20 @@ return str[i-1];
 //str.length>3&& str.from.map((item,index)=>index%3==0?`${item},`:item);
 
 //TonyK
-inter->array (['123','456'])->return array.join(',')
-let sign='';
-if(num<0){
-    sign='-';
-    num*=(-1);
-  }
-
-let res= new Array();
-
-while(num>0){
-  let temp=str(num%1000);
-  res.splice(0,0,temp);
-  num/=1000;
+//input->array (['123','456'])->return array.join(',')
+function solution2(num){ 
+    let sign='';
+    if(num<0){
+        sign='-';
+        num*=(-1);
+      }
+    let res= new Array();
+    while(num>0){
+      let temp=str(num%1000);
+      res.splice(0,0,temp);
+      num/=1000;
+      }
+      return res.join(',');
 }
 ```
 延伸討論：  
