@@ -3,7 +3,7 @@ layout: post
 title:  "Essential Javascript Interview Questions"
 author: tony
 categories: [ Frontend, Interview ]
-image: assets/images/js.png
+image: assets/images/js.jpg
 tags: [frontend, interview, javascript, questions]
 ---
 In software development interviews have different stages and go beyond the usual “where do you see yourself in five years?” cliche. In order to know if someone is right for the job you need to know how they think, not just what they know. Software development is a fickle business and you need to get all the insights you can from the person standing in front of you: how they think, how they approach problems, how they deal under pressure. In order to get there you need questions, good and, often enough, weird questions, to determine not only character but technique as well.  
