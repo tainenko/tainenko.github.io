@@ -3,7 +3,7 @@ layout: post
 title:  "Reading Plan"
 author: tony
 categories: [ Reading Plan ]
-image: assets/images/book-list.jpg
+image: assets/images/reading.jpg
 tags: [featured,reading, learning, recommend, books list, sticky]
 comments: true
 ---

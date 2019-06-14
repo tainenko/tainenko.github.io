@@ -3,7 +3,7 @@ layout: post
 title:  " Console getty respawns and crashes. "
 author: tony
 categories: [ Linux ]
-image: assets/images/Linux-has-you.png
+image: assets/images/Linux-has-you.jpg
 tags: [ linux, issue]
 ---
 An error was reported in log files (var/log/).   
