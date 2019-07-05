@@ -18,7 +18,8 @@ This is not a comprehensive list of every book I've read on any of these subject
 ### Reading Plan
 2019年6月  
 [《洗腦術》]()  
-[《Keras快速上手：基於Python的深度學習實戰》]()  
+[《Keras快速上手：基於Python的深度學習實戰》]() 
+[《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913) 
 2019年5月  
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
 [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
@@ -98,6 +99,8 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《使用Perl实现系统管理自动化》]()
 - [ ] [《Perl Cookbook》]()
 - [ ] [《Perl实例精解》]()
+- [x] [《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913) 
+
 
 **Deep Learning**
 - [x] [《Keras快速上手：基於Python的深度學習實戰》]()
@@ -116,5 +119,4 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
 - [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
 - [x] [《Mind Control》]()
-- [ ] [《》]()
 ---
