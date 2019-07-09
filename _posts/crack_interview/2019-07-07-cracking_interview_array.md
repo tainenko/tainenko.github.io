@@ -142,7 +142,15 @@ tags: [ interview ]
     ```
 7. Rotate Matrix:
     ```python
-    
+    def rotateMatrix(mat): 
+        N = len(mat)  
+        for x in range(0, int(N/2)): 
+            for y in range(x, N-x-1): 
+                temp = mat[x][y] 
+                mat[x][y] = mat[y][N-1-x] 
+                mat[y][N-1-x] = mat[N-1-x][N-1-y] 
+                mat[N-1-x][N-1-y] = mat[N-1-y][x] 
+                mat[N-1-y][x] = temp 
     ```
 8. Zero Matrix:
     ```python
@@ -158,5 +166,16 @@ tags: [ interview ]
     ```
 9. String Rotation:
     ```python
-    
+    def isSubstring(a,b):
+        #check if b is substring of a
+        if b in a:
+            return True
+        else:
+            return False
+        
+    def isRotationString(a,b):
+        if len(a) == len(b) != 0:
+            return isSubstring( b+b, a )
+        else:
+            return False
     ```
