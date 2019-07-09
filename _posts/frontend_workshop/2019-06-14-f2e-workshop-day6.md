@@ -19,7 +19,7 @@ output:
 [[2,4],[5,8],[8,2],[1,0],[5,9]]
 
 
-a=[2,5,8,1,5,,,]
+a=[2,5,8,1,5]
 b=[4,8,2,0,9]
 function problem1(...arr){
     return [...arr].reduce((total, current, index) => {
@@ -32,6 +32,17 @@ function problem1(...arr){
     }, [])
 }
 ```
+```javascript
+var a = [1, 2, 3]
+var b = ['a', 'b', 'c']
+
+var c = a.map(function(e, i) {
+  return [e, b[i]];
+});
+
+console.log(c)
+```
+
 延伸討論：
 1. 如果兩組array的長度不相等？
 2. input有三組或以上的array時怎麼處理。
