@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: 
+post
 title:  "2019-05-31 F2E workshop Day"
 author: tony
 categories: [ workshop, frontend ]
