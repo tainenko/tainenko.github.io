@@ -2,9 +2,9 @@
 layout: post
 title:  " Cracking the coding interview - Array "
 author: tony
-categories: [ interview ]
+categories: [ interview,array ]
 image: assets/images/Cracking-The-Coding-INterviw.png
-tags: [ interview ]
+tags: [ interview, array ]
 ---
 
 ## Questions
