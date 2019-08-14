@@ -16,10 +16,16 @@ If there's something that you think I ought to read, then open an issue.
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
 ### Reading Plan
+2019年8月  
+[《网络是怎样连接的》](http://product.dangdang.com/24174119.html)  
+[《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+
+2019年7月  
+[《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)  
 2019年6月  
 [《洗腦術》]()  
 [《Keras快速上手：基於Python的深度學習實戰》]() 
-[《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913) 
+[《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913)   
 2019年5月  
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
 [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
@@ -31,8 +37,8 @@ This is not a comprehensive list of every book I've read on any of these subject
 
 ### Employee book lists
 ** Fundamental and Optimization Theory of Operating System **
-- [ ] [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)
-- [ ] [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)
+- [x] [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)
+- [x] [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)
 - [ ] [《图解网络硬件》*日.三轮贤一*](https://item.jd.com/11506709.html#crumb-wrap)
 - [x] [《图解TCP/IP》]()
 - [x] [《图解HTTP》]()
@@ -59,6 +65,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《代码整洁之道》]()
 - [ ] [《编程风格：好代码的逻辑》](https://item.jd.com/12153873.html)
 - [ ] [《leetbook》]()
+- [x] [《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
 
 **DevOops**
