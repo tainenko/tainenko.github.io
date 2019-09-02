@@ -6,7 +6,7 @@ categories: [ rpm ]
 image: /assets/images/climb-the-treeRPM-Commands-Linux.png
 tags: [rpm, spec, linux, guilde]
 ---
-RPM的功能，就是把程式用 RPM 封裝成一個軟體，然後再透過 RPM 的方式安裝到Linux平台。
+RPM 是以一種資料庫記錄的方式來將你所需要的套件安裝到你的 Linux 主機的一套管理程式。  
 
 ## RPM Build 資料夾結構
 RPM Package 的目錄結構如下:
@@ -20,7 +20,7 @@ RPM Package 的目錄結構如下:
 
 ## RPM Build 前置作業
 ```bash
-mkdir -p /home/software/myrpm : 先建立我的RPM Builder 資料夾
+mkdir -p /home/software/myrpm : 先建立RPM Builder 資料夾
 cd /home/software/myrpm
 mkdir RPMS SOURCES SPECS SRPMS BUILD : 建立RPM相關資料夾
 ```

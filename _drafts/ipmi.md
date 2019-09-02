@@ -3,7 +3,7 @@ layout: post
 title:  "Introduction of IPMI Tools"
 author: tony
 categories: [ Linux ]
-image: assets/images/Linux-has-you.png
+image: assets/images/Linux-has-you.jpg
 tags: [ linux, ipmi]
 ---
 
