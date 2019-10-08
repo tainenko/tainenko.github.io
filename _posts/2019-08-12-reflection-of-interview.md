@@ -6,9 +6,7 @@ categories: [interview]
 image: assets/images/job-interview.jpg
 tags: [interview]
 ---
-
 # AI類題目
-
    1) 給input size和convolution kernel size，然後問output大小和參數量
    2) data augmentation的方法有什麼
    3) supervised、unsupervised、semi-supervised learning的差異
@@ -80,21 +78,21 @@ linked list中的位置等等)
       ex: [1,3,5,0,0] & [2,4] => [1,2,3,4,5]
   20) 用linked list實作queue
   21) given row and column number, return the corresponding Pascal's triangle
-number
-      ex: row 4, col 2 => 6
-      因為巴斯卡三角形長這樣：
-          1       (row 0)
-         1 1      (row 1)
-        1 2 1
-       1 3 3 1
-      1 4 6 4 1   (row 4)
+number  
+      ex: row 4, col 2 => 6  
+      因為巴斯卡三角形長這樣：  
+          1       (row 0)  
+         1 1      (row 1)  
+        1 2 1  
+       1 3 3 1  
+      1 4 6 4 1   (row 4)  
   22) given an unsorted array, find the number that is closet to a given
 target
-      ex: {1,3,6,8,11,2,5}
-      target: 6 => result: 6
-      target:12 => result: 11
+      ex: {1,3,6,8,11,2,5}  
+      target: 6 => result: 6  
+      target:12 => result: 11  
   23) check if two strings are anagram
-      ex: "evil" v.s "viel" => true
+      ex: "evil" v.s "viel" => true  
   24) find the max depth of a tree
 
 
