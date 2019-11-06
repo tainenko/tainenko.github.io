@@ -8,11 +8,11 @@ tags: [javascript, flatten,array]
 ---
 # Merge/Flatten Array
 在 StackOverflow 上看到了一個經典問題 - [Array Flatten](https://stackoverflow.com/questions/10865025/merge-flatten-an-array-of-arrays) ，七年前提問的，但是到15天前還有人回應，引起了我的興趣，那麼就來記錄&實作 Flatten有哪些實現的方法吧。  
-![flatten](assets/images/stackoverflow/flatten.png)
+![flatten](../assets/images/stackoverflow/flatten.png)
 
 # Question
 原始的題目是這樣的
-有一個嵌套的Array如下，現在想要實現一個 Array 解構的方法，消除掉 Array 裡的層次。
+有一個嵌套的Array如下，現在想要實現一個 Array 解構的方法，消除掉 Array 裡的嵌套 Array。
 ```javascript
 //Origin:
 [["$6"], ["$12"], ["$25"], ["$25"], ["$18"], ["$22"], ["$10"]]
