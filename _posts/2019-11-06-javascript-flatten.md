@@ -1,10 +1,10 @@
 ---
-layout| post
-title|  "Javascript - Flatten/Merge Array"
-author| tony
-categories| [javascript]
-image| assets/images/flatten_array.png
-tags| [javascript, flatten,array]
+layout: post
+title:  "Javascript - Flatten/Merge Array"
+author: tony
+categories: [ javascript]
+image: assets/images/flatten_array.png
+tags: [javascript, flatten,array]
 ---
 # Merge/Flatten Array
 在 StackOverflow 上看到了一個經典問題 - [Array Flatten](https://stackoverflow.com/questions/10865025/merge-flatten-an-array-of-arrays) ，七年前提問的，但是到15天前還有人回應，引起了我的興趣，那麼就來記錄&實作 Flatten有哪些實現的方法吧。  
