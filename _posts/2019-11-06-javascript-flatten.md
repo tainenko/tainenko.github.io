@@ -1,9 +1,9 @@
 ---
 layout| post
-title|  "Javascript - Flatten"
+title|  "Javascript - Flatten/Merge Array"
 author| tony
 categories| [javascript]
-image| assets/images/python/setup.jpg
+image| assets/images/flatten_array.png
 tags| [javascript, flatten,array]
 ---
 # Merge/Flatten Array
