@@ -12,36 +12,36 @@ include: ["_pages"]
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+
 authors:
-    tony:
-      name:           Tony
-      site:           https://tainenko.github.io
-      avatar:         assets/images/avatar3.png
-      bio:            "Hi, I am Tony, the author of Learning Journey blog. I hope you like what I sharing!"
-      email:          tainenko@gmail.com
-      twitter:        https://twitter.com/tainenko
+  tony:
+    name:           Tony
+    site:           https://tainenko.github.io
+    avatar:         assets/images/avatar3.png
+    bio:            "Hi, I am Tony, the author of Learning Journey blog. I hope you like what I sharing!"
+    email:          tainenko@gmail.com
+    twitter:        https://twitter.com/tainenko
 
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+  sal:
+    name:           Sal
+    site:           https://www.wowthemes.net
+    avatar:         assets/images/avatar1.jpg
+    bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+    email:          wowthemesnet@gmail.com
+    twitter:        https://twitter.com/wowthemesnet
 
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+  jane:
+    name:           Jane
+    site:           https://www.wowthemes.net
+    avatar:         assets/images/avatar2.jpg
+    bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+    email:          fakemail@gmail.com
+    twitter:        https://twitter.com/wowthemesnet
 
 # Defaults
 defaults:
@@ -51,15 +51,15 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
-      
+      author: tony
+      avatar: /assets/images/avatar3.png
+
   # all pages
   - scope:
       path: "_pages"
     values:
       layout: page
-      
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
