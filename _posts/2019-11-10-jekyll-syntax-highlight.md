@@ -39,6 +39,6 @@ tags: [jekyll, rouge, kramdown, syntax highlight]
     ```
 做完上述的調整便可以將所有的變動push到github，等待github編釋新的頁面，重新整理瀏覽器後就可以看到 syntax highlight 的效果出現在文章裡頭。
 
-Ref.
-[Add Syntax Highlighting to your Jekyll site with Rouge](https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html)
-[Kramdown/Rouge doesn't highlight syntax?](https://stackoverflow.com/questions/43905103/kramdown-rouge-doesnt-highlight-syntax)
+Ref.  
+[Add Syntax Highlighting to your Jekyll site with Rouge](https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html)  
+[Kramdown/Rouge doesn't highlight syntax?](https://stackoverflow.com/questions/43905103/kramdown-rouge-doesnt-highlight-syntax)  
