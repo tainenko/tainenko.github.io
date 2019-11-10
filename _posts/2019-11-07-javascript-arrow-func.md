@@ -17,7 +17,7 @@ a => {
 //顯式Return, 單行
 a => { return a }
 
-//顯式Return, 多行
+//隱式Return, 多行
 a => {
     a
 }
