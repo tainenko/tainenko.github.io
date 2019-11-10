@@ -22,12 +22,13 @@ tags: [jekyll, rouge, kramdown, syntax highlight]
 3. 產生你想要的 highlight 風格 css檔案: 
     rouge1.11支援的theme有以下幾種   
     base16, base16.dark, base16.monokai, base16.monokai.light, base16.solarized, base16.solarized.dark, colorful, github, gruvbox, gruvbox.light, molokai, monokai, monokai.sublime, thankful_eyes  
-    舉例來說，我們想要產生 molokai 的 css檔案：
+    
+    舉例來說，我們可以用以下指令產生 molokai 的 css檔案：
     ```bash
     rougify style monokai > assets/css/syntax.css
     ```
-    filepath可以改成你自己存放 css 的路徑，我自己的 css 都存在 assets/css/ 底下。  
-4. 在 html template 中引用新增的 sylesheet。 (通常加在 \<head>\</head> ) 裡面。  
+    filepath可以改成你自己存放 css 的路徑，一般 jekyll 的 css 都存放在 assets/css/ 底下。  
+4. 在 html template 中引用新增的 stylesheet。 (通常加在 \<head>\</head> ) 裡面。  
     我自己的主題，是在 _layouts/default.html 的 head 新增如下：
     ```html
     <head>
