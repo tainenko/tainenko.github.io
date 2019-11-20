@@ -851,12 +851,40 @@ article blockquote:before {
     float: left;
     line-height: 1;
 }*/
-article blockquote {
-    border-left: 7px solid #b83131;
-    background: #ebebeb;
-    margin: 1.5em 25px;
-    padding: 1px 10px;
-    quotes:"\201C""\201D""\2018""\2019";
+article blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+article blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+article blockquote::after{
+  content: '';
+}
+
+article blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }
 
 /*
