@@ -16,6 +16,11 @@ If there's something that you think I ought to read, then open an issue.
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
 ### Reading Plan
+2019年12月
+[《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)
+[《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)
+[《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)
+
 2019年8月  
 [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)  
 [《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
