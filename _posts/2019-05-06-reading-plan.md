@@ -17,6 +17,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 
 ### Reading Plan
 2019年12月
+[《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)
 [《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)
 [《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)
 [《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)
