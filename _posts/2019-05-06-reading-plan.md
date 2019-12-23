@@ -17,6 +17,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 
 ### Reading Plan
 2019年12月
+[《我的第一本思維導圖入門書》](https://www.books.com.tw/products/CN11180389)
 [《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)
 [《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)
 [《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)
@@ -28,10 +29,12 @@ This is not a comprehensive list of every book I've read on any of these subject
 
 2019年7月  
 [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)  
+
 2019年6月  
 [《洗腦術》]()  
 [《Keras快速上手：基於Python的深度學習實戰》]() 
 [《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913)   
+
 2019年5月  
 [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
 [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
