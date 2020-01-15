@@ -16,12 +16,15 @@ If there's something that you think I ought to read, then open an issue.
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
 ### Reading Plan
+2020年01月
+[《明智行動的藝術：成功決策必須避免的52個思維陷阱》](https://www.books.com.tw/products/CN11368537?sloc=main)  
+
 2019年12月
-[《我的第一本思維導圖入門書》](https://www.books.com.tw/products/CN11180389)
-[《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)
-[《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)
-[《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)
-[《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)
+[《我的第一本思維導圖入門書》](https://www.books.com.tw/products/CN11180389)  
+[《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)  
+[《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)  
+[《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)  
+[《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)  
 
 2019年8月  
 [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)  
@@ -121,18 +124,21 @@ This is not a comprehensive list of every book I've read on any of these subject
 **Deep Learning**
 - [x] [《Keras快速上手：基於Python的深度學習實戰》]()
 
-**Soft Skills and Mental Toughness**
-- [ ] [《软技能 代码之外的生存指南》]()
-- [ ] [《奔跑吧，程序员：从零开始打造产品、技术和团队》]()
-- [ ] [《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》]()
-- [ ] [《CSS网页设计入门》]()
-- [ ] [《程序员的英语》]()
-- [ ] [《番茄工作法图解》](http://product.dangdang.com/21021603.html)
-- [ ] [《单核工作法图解》](https://item.jd.com/12247896.html)
-- [ ] [《浪潮之巅》*Kindle*]()
-- [ ] [《精准表达》](https://book.douban.com/subject/30256364/?icn=index-latestbook-subject)
-- [x] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)
-- [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
-- [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
-- [x] [《Mind Control》]()
+**Soft Skills and Mental Toughness**  exit
+- [ ] [《软技能 代码之外的生存指南》]()  
+- [ ] [《奔跑吧，程序员：从零开始打造产品、技术和团队》]()  
+- [ ] [《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》]()  
+- [ ] [《CSS网页设计入门》]()  
+- [ ] [《程序员的英语》]()  
+- [ ] [《番茄工作法图解》](http://product.dangdang.com/21021603.html)  
+- [ ] [《单核工作法图解》](https://item.jd.com/12247896.html)  
+- [ ] [《浪潮之巅》*Kindle*]()  
+- [ ] [《精准表达》](https://book.douban.com/subject/30256364/?icn=index-latestbook-subject)  
+- [x] [《习惯力：打造让你终身受益的微习惯》](https://www.amazon.cn/dp/B07FQCMXY6)  
+- [ ] [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)     
+- [ ] [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)  
+- [x] [《Mind Control》]()   
+- [x] [《明智行動的藝術：成功決策必須避免的52個思維陷阱》](https://www.books.com.tw/products/CN11368537?sloc=main)   
+
+
 ---
