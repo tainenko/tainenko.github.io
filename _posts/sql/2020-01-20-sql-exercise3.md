@@ -22,7 +22,7 @@ POPULATION|	NUMBER	|
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 # 解題思路
-我們有兩個方法可以Query出所要的資料，第一個是使用 WHERE ... LIKE ... 關鍵字，本題需要多重條件，因此必須使用多個LIKE條件並且用OR串接。第二個方法是使用正則表示法，關鍵字是REGEX
+我們有兩個方法可以Query出所要的資料，第一個是使用 WHERE ... LIKE ... 關鍵字，本題需要多重條件，因此必須使用多個LIKE條件並且用OR串接。第二個方法是使用正則表示法，關鍵字是REGEXP
 
 
 ## ANS  
@@ -37,7 +37,7 @@ OR CITY LIKE 'o%'
 OR CITY LIKE 'u%'
 ```
 
-### REGEX
+### REGEXP
 ```mysql
 SELECT CITY
 FROM STATION
@@ -113,4 +113,6 @@ Upperco
 Urbana
 ```
 
-
+## Extended question
+1. Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+2. Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates. 
