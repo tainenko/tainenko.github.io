@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SQL Exercise 4"
+title:  "SQL Exercise 4:SUBSTR,ORDERBY"
 author: tony
 categories: [ sql ]
 image: assets/images/sql/hackerrank.jpg
@@ -38,14 +38,36 @@ Explanation
 Only Ashley, Julia, and Belvet have Marks > **75**. If you look at the last three characters of each of their names, there are no duplicates and 'ley' < 'lia' < 'vet'.
 
 # 解題思路
-我們有兩個方法可以Query出所要的資料，第一個是使用 WHERE ... LIKE ... 關鍵字，本題需要多重條件，因此必須使用多個LIKE條件並且用OR串接。第二個方法是使用正則表示法，關鍵字是REGEXP
-
+1. 使用 WHERE 關鍵字設定過濾條件 MARKS >75
+2. 使用 ORDER BY 關鍵字排序，排序條件是NAME的末三位string，再來是ID。
+3. SUBSTR是用來截取子字串的函數，其用法為SUBSTR(str, pos)或SUBSTR(str, pos, len)。
 
 # SOLUTION  
-
+```mysql
+SELECT NAME
+FROM STUDENTS
+WHERE MARKS > 75
+ORDER BY SUBSTR(NAME,-3),ID
+```
 # Expected Output  
 ```
-
+Stuart 
+Kristeen 
+Christene 
+Amina 
+Aamina 
+Priya 
+Heraldo 
+Scarlet 
+Julia 
+Salma 
+Britney 
+Priyanka 
+Samantha 
+Vivek 
+Belvet 
+Devil 
+Evil
 ```
 
 # Extended question
