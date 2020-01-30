@@ -1,122 +1,83 @@
 ---
 layout: post
-title:  "SQL Exercise 6"
+title:  "SQL Exercise 6:CONCAT"
 author: tony
 categories: [ sql ]
 image: assets/images/sql/sql_problems.jpg
 tags: [sql,exercise]
 ---
-Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+Generate the following two result sets:
+
+1. Query an alphabetically ordered list of all names in **OCCUPATIONS**, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).
+2. Query the number of ocurrences of each occupation in **OCCUPATIONS**. Sort the occurrences in ascending order, and output them in the following format: 
+    ```mysql
+    There are a total of [occupation_count] [occupation]s.
+    ```
+    where \[occupation_count] is the number of occurrences of an occupation in **OCCUPATIONS** and \[occupation] is the lowercase occupation name. If more than one Occupation has the same \[occupation_count], they should be ordered alphabetically.
+**Note**: There will be at least two entries in the table for each type of occupation.
 ## Input Format  
 
-The STATION table is described as follows:  
+The **OCCUPATIONS** table is described as follows:
 
 |Filed     | Type  |
 |---|---|
-|ID|	NUMBER	|
-NAME|	VARCHAR2(17)	|
-COUNTRYCODE|	VARCHAR2(3)	|
-DISTRICT|VARCHAR2(20)
-POPULATION|	NUMBER	|
+NAME|	STRING
+OCCUPATION|	STRING
 
-where LAT_N is the northern latitude and LONG_W is the western longitude.
+Occupation will only contain one of the following values: **Doctor**, **Professor**, **Singer** or **Actor**.
 
-# 解題思路
-我們有兩個方法可以Query出所要的資料，第一個是使用 WHERE ... LIKE ... 關鍵字，本題需要多重條件，因此必須使用多個LIKE條件並且用OR串接。第二個方法是使用正則表示法，關鍵字是REGEXP
-
+# Analysis
+1. Use CONCAT() to combine the string we want. 
+    ```mysql
+    Syntax
+    CONCAT(expression1, expression2, expression3,...)
+    ```
+2.  To get the abbreviation of occupation, we can use the SUBSTR() function.
+    ```mysql
+    Syntax
+    SUBSTR(string, start, length)
+    # In this case
+    # SUBSTR(OCCUPATION, 1, 1)
+    ```
+3. sort the result with ORDER BY keyword.
+3. Do the same things in second query.
 
 ## ANS  
-### MULTIPLE LIKE
+#
 ```mysql
-SELECT CITY
-FROM STATION
-WHERE CITY LIKE 'a%' 
-OR CITY LIKE 'e%'
-OR CITY LIKE 'i%'
-OR CITY LIKE 'o%'
-OR CITY LIKE 'u%'
-```
+SELECT CONCAT(NAME,'(',SUBSTR(OCCUPATION,1,1),')')
+FROM OCCUPATIONS
+ORDER BY NAME;
 
-### REGEXP
-```mysql
-SELECT CITY
-FROM STATION
-WHERE CITY REGEXP '^(a|e|i|o|u)'
+SELECT CONCAT('There are a total of ',COUNT(OCCUPATION),' ',LOWER(OCCUPATION),'s.')
+FROM OCCUPATIONS
+GROUP BY OCCUPATION
+ORDER BY COUNT(OCCUPATION),OCCUPATION;
+
 ```
 
 ## Expected Output  
 ```
-Acme 
-Addison 
-Agency 
-Aguanga 
-Alanson 
-Alba 
-Albany 
-Albion 
-Algonac 
-Aliso Viejo 
-Allerton 
-Alpine 
-Alton 
-Amazonia 
-Amo 
-Andersonville 
-Andover 
-Anthony 
-Archie 
-Arispe 
-Arkadelphia 
-Arlington 
-Arrowsmith 
-Athens 
-Atlantic Mine 
-Auburn 
-East China 
-East Haddam 
-East Irvine 
-Eastlake 
-Edgewater 
-Effingham 
-Eleele 
-Elkton 
-Elm Grove 
-Emmett 
-Equality 
-Eriline 
-Ermine 
-Eros 
-Eskridge 
-Esmond 
-Eufaula 
-Eureka Springs 
-Eustis 
-Everton 
-Irvington 
-Oakfield 
-Oconee 
-Odin 
-Ojai 
-Olmitz 
-Onaway 
-Orange City 
-Orange Park 
-Osage City 
-Osborne 
-Oshtemo 
-Ottertail 
-Ozona 
-Udall 
-Ukiah 
-Union Star 
-Upperco 
-Urbana
+Aamina(D) 
+Ashley(P) 
+Belvet(P) 
+Britney(P) 
+Christeen(S) 
+Eve(A) 
+Jane(S) 
+Jennifer(A) 
+Jenny(S) 
+Julia(D) 
+Ketty(A) 
+Kristeen(S) 
+Maria(P) 
+Meera(P) 
+Naomi(P) 
+Priya(D) 
+Priyanka(P) 
+Samantha(A) 
+There are a total of 3 doctors. 
+There are a total of 4 actors. 
+There are a total of 4 singers. 
+There are a total of 7 professors. 
 ```
-
-## Extended question
-1. Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
-2. Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates. 
-3. Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
-4. Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
-5. Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
-
