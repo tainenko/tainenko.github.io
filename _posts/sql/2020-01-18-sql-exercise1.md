@@ -11,6 +11,8 @@ Query all columns for all American cities in CITY with populations larger than 1
 ## Input Format
 The CITY table is described as follows:  
 
+
+
 |Filed     | Type  |
 |---|---|
 |ID|	NUMBER	|
