@@ -58,6 +58,7 @@ React diff 的執行過程為， create A -> create B -> create C -> delete A �
 ## 避免將同層級的最後一個節點移到列表首位
 當節點處於同一層級時，React 提出優化策略：允許開發者對同一層級的同組子節點，添加唯一 key 進行區分。同時React diff 提供了三種節點操作，分別為：INSERT_MARKUP（插入）、MOVE_EXISTING（移動）和 REMOVE_NODE（刪除）。若節點只是位置改變，則透過移動操作重複使用該節點，其他的情況才使用插入和刪除節點的操作。  
 ![](../../assets/images/javascript/vdom-level-moving.png )
+
 當然，React diff 還是存在些許不足與待優化的地方，如下圖所示，若新集合的節點更新為：D、A、B、C，與老集合對比只有 D 節點移動，而 A、B、C 仍然保持原有的順序，理論上 diff 應該只需對 D 執行移動操作，然而由於 D 在老集合的位置是最大的，導致其他節點的 _mountIndex < lastIndex，造成 D 沒有執行移動操作，而是 A、B、C 全部移動到 D 節點後面的現象。
 
 > 建議：在開發過程中，盡量減少類似將最後一個節點移動到列表首部的操作，當節點數量過大或更新操作過於頻繁時，在一定程度上會影響 React 的渲染性能。
