@@ -6,7 +6,7 @@ categories: [ frontend ]
 image: assets/images/javascript/dom-diff.png
 tags: [workshop, frontend,react]
 ---
-簡單整理有關 React Vitual DOM的面試題，同時釐清常被誤解的一些觀念，有空再回來補遣 Virtual DOM 的詳細介紹。
+簡單整理有關 React Vitual DOM的面試題，同時釐清常被誤解的一些觀念，有空再回來補遺 Virtual DOM 的詳細介紹。
 
 # 什麼是 Virtual DOM
 **本質上是 JavaScript 對象，這個對象就是更加輕量級的對 DOM 的描述。**
@@ -51,7 +51,7 @@ React diff 的執行過程為， create A -> create B -> create C -> delete A �
 因此** React 官方建議不要進行 DOM 節點跨層級的操作**。
 因此 React 官方建议不要进行 DOM 节点跨层级的操作。
 
-> 注意： 在開發組件時，保持穩定的 DOM 結構有助於性能的提升。 例如，可過 CSS 隱藏或顯示節點，而不是真的移除或添加 DOM 節點。
+> 注意： 在開發組件時，保持穩定的 DOM 結構有助於性能的提升。 例如，可通過 CSS 隱藏或顯示節點，而不是真的移除或添加 DOM 節點。
 
 ![](../../assets/images/javascript/vdom-cross-level-moving.png )
 
