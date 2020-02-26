@@ -48,7 +48,8 @@ React diff 的執行過程為， create A -> create B -> create C -> delete A �
 因此** React 官方建議不要進行 DOM 節點跨層級的操作**。
 因此 React 官方建议不要进行 DOM 节点跨层级的操作。
 
-> 注意： 在開發組件時，保持穩定的 DOM 結構有助於性能的提升。 例如，可過 CSS 隱藏或顯示節點，而不是真的移除或添加 DOM 節點。  
+> 注意： 在開發組件時，保持穩定的 DOM 結構有助於性能的提升。 例如，可過 CSS 隱藏或顯示節點，而不是真的移除或添加 DOM 節點。
+
 ![](../../assets/images/javascript/vdom-cross-level-moving.png )
 
 ## 避免將同層級的最後一個節點移到列表首位
@@ -56,7 +57,8 @@ React diff 的執行過程為， create A -> create B -> create C -> delete A �
 ![](../../assets/images/javascript/vdom-level-moving.png )
 當然，React diff 還是存在些許不足與待優化的地方，如下圖所示，若新集合的節點更新為：D、A、B、C，與老集合對比只有 D 節點移動，而 A、B、C 仍然保持原有的順序，理論上 diff 應該只需對 D 執行移動操作，然而由於 D 在老集合的位置是最大的，導致其他節點的 _mountIndex < lastIndex，造成 D 沒有執行移動操作，而是 A、B、C 全部移動到 D 節點後面的現象。
 
-建議：在開發過程中，盡量減少類似將最後一個節點移動到列表首部的操作，當節點數量過大或更新操作過於頻繁時，在一定程度上會影響 React 的渲染性能。  
+> 建議：在開發過程中，盡量減少類似將最後一個節點移動到列表首部的操作，當節點數量過大或更新操作過於頻繁時，在一定程度上會影響 React 的渲染性能。
+
 ![](../../assets/images/javascript/vdom-last-to-first.png )
 
 # Ref.
