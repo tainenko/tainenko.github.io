@@ -77,7 +77,7 @@ jekyll-crosspost_to_medium:
   cache: .jekyll-crosspost_to_medium
   status: public
   license: all-rights-reserved
-  text: '<p>This was originally posted <a href="https://tainenko.github.io/"><em> on my own site</em></a>.</p>',
+  text: '<p>This was originally posted <a href="https://tainenko.github.io/"><em> on my own site</em></a>.</p>'
   backdate: true
 
 
