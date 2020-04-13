@@ -6,6 +6,7 @@ categories: [ Reading Plan ]
 image: assets/images/reading.jpg
 tags: [featured,reading, learning, recommend, books list, sticky]
 comments: true
+crosspost_to_medium: true
 ---
 “The more you read, the more things you know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!  
 
