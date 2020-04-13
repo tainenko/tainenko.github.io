@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-crosspost-to-medium
 
 authors:
   tony:
@@ -69,6 +70,15 @@ paginate: 10
 
 # Google Analytics
 google_analytics: UA-139590916-1
+
+# jekyll crosspost to medium
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: all-rights-reserved
+  text: '<p>This was originally posted <a href="https://tainenko.github.io/"><em> on my own site</em></a>.</p>',
+  backdate: true
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
