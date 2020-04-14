@@ -10,4 +10,4 @@ jobs:
         env:
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
           MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
-        uses: tainenko/tainenko.github.io@master
+        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
