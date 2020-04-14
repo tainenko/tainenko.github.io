@@ -17,33 +17,41 @@ If there's something that you think I ought to read, then open an issue.
 This is not a comprehensive list of every book I've read on any of these subjects. Just the ones that I can wholeheartedly recommend because they are interesting, entertaining, and/or educational enough to be worth the experience.
 
 ### Reading Plan
+2020年04月  
+- [《Clean Code Summary: Agile Software Craftmanship Guidelines - Developer Deconstructed》](https://www.amazon.com/Clean-Code-Summary-Craftmanship-Deconstructed-ebook/dp/B01AAS8T4A)   
+- [《React 進階之路》](https://book.douban.com/subject/30210697//)
+
+
+2020年03月
+- [《React 实战：设计模式和最佳实践》](https://juejin.im/book/5ba42844f265da0a8a6aa5e9)
+
 2020年01月
-[《明智行動的藝術：成功決策必須避免的52個思維陷阱》](https://www.books.com.tw/products/CN11368537?sloc=main)  
+- [《明智行動的藝術：成功決策必須避免的52個思維陷阱》](https://www.books.com.tw/products/CN11368537?sloc=main)  
 
 2019年12月
-[《我的第一本思維導圖入門書》](https://www.books.com.tw/products/CN11180389)  
-[《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)  
-[《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)  
-[《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)  
-[《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)  
+- [《我的第一本思維導圖入門書》](https://www.books.com.tw/products/CN11180389)  
+- [《How to Read a Book》](https://www.amazon.com/Revised-Updated-Mortimer-Aug-15-1972-Paperback/dp/B005O89RBQ)  
+- [《The New One minute Manager》](https://www.amazon.com/New-One-Minute-Manager-ebook/dp/B00MMG19OG)  
+- [《深入淺出React和Redux》](https://www.tenlong.com.tw/products/9787111565635)  
+- [《Know Can Do!: Put Your Know-How into Action 》](https://www.amazon.com/Know-Can-Do-Know-How-Action/dp/1576754685)  
 
 2019年8月  
-[《网络是怎样连接的》](http://product.dangdang.com/24174119.html)  
-[《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- [《网络是怎样连接的》](http://product.dangdang.com/24174119.html)  
+- [《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
 2019年7月  
-[《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)  
+- [《程序是怎么跑起来的》*日.矢泽久雄*](https://item.jd.com/11676683.html)  
 
 2019年6月  
-[《洗腦術》]()  
-[《Keras快速上手：基於Python的深度學習實戰》]() 
-[《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913)   
+- [《洗腦術》]()  
+- [《Keras快速上手：基於Python的深度學習實戰》]() 
+- [《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913)   
 
 2019年5月  
-[《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
-[《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
-[《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
-[《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
+- [《A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), Oakley, Barbara, Ph.D.》](../_drafts/2019-05-06-a-mind-from-number.md)  
+- [《習慣力:打造讓你終身受益的微習慣》](https://www.amazon.cn/dp/B07FQCMXY6)    
+- [《一分鐘溝通課》](https://www.amazon.cn/dp/B07KZGKX7J)    
+- [《Reasons to stay alive》](https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive)
 
 
 ---
@@ -79,6 +87,7 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《编程风格：好代码的逻辑》](https://item.jd.com/12153873.html)
 - [ ] [《leetbook》]()
 - [x] [《Cracking the Coding Interview: 189 Programming Questions and Solutions》](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- [x] [《Clean Code Summary: Agile Software Craftmanship Guidelines - Developer Deconstructed》](https://www.amazon.com/Clean-Code-Summary-Craftmanship-Deconstructed-ebook/dp/B01AAS8T4A)   
 
 
 **DevOops**
@@ -121,11 +130,15 @@ This is not a comprehensive list of every book I've read on any of these subject
 - [ ] [《Perl实例精解》]()
 - [x] [《Mastering OpenCV4 with Python》](https://www.amazon.com/Mastering-OpenCV-Python-practical-processing/dp/1789344913) 
 
+**Web Development**
+- [x] [《React 進階之路》](https://book.douban.com/subject/30210697//)
+- [x] [《React 实战：设计模式和最佳实践》](https://juejin.im/book/5ba42844f265da0a8a6aa5e9)
+
 
 **Deep Learning**
 - [x] [《Keras快速上手：基於Python的深度學習實戰》]()
 
-**Soft Skills and Mental Toughness**  exit
+**Soft Skills and Mental Toughness**
 - [ ] [《软技能 代码之外的生存指南》]()  
 - [ ] [《奔跑吧，程序员：从零开始打造产品、技术和团队》]()  
 - [ ] [《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》]()  

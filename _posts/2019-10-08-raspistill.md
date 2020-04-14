@@ -1,10 +1,10 @@
 ---
-layout| post
-title|  "Raspberry pi camera tutorial"
-author| tony
-categories| [ raspberry pi, camera]
-image| assets/images/pi_camera.jpg
-tags| [raspberry pi]
+layout: post
+title: "Raspberry pi camera tutorial"
+author: tony
+categories: [ raspberry pi, camera]
+image: assets/images/pi_camera.jpg
+tags: [raspberry pi]
 ---
 # 目錄
 
