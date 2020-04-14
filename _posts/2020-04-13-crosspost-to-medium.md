@@ -4,7 +4,7 @@ title:  "How to crosspost article from jekyll to medium"
 author: tony
 categories: [ jekyll ]
 image: assets/images/jykell_crosspost_to_medium.png
-tags: [ jekyll ]
+tags: [ jekyll , medium]
 comments: true
 crosspost_to_medium: true
 ---
@@ -76,7 +76,7 @@ jekyll-crosspost_to_medium:
   cache: .jekyll-crosspost_to_medium
   status: public (default) | draft | unlisted
   license: all-rights-reserved (default) | cc-40-by | cc-40-by-sa | cc-40-by-nd | cc-40-by-nc | cc-40-by-nc-nd | cc-40-by-nc-sa | cc-40-zero | public-domain
-  text: '<p><i>Your (optional) signoff for the post.</i></p>',
+  text: '<p><i>Your (optional) signoff for the post.</i></p>'
   backdate: true (default) | false
 ```
 
