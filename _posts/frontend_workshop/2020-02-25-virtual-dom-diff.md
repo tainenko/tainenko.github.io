@@ -3,7 +3,7 @@ layout: post
 title:  "Short talk about Virtual DOM and React diff"
 author: tony
 categories: [ frontend ]
-image: {{ site.url }}/assets/images/javascript/dom-diff.png
+image: assets/images/javascript/dom-diff.png
 tags: [workshop, frontend,react]
 ---
 簡單整理有關 React Vitual DOM的面試題，同時釐清常被誤解的一些觀念，有空再回來補遺 Virtual DOM 的詳細介紹。
