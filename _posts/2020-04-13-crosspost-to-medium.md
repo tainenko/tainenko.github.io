@@ -15,10 +15,10 @@ It's a pure record about how to crosspost from jekyll to medium with jekyll-cros
 1. [Sign up for a Medium account](https://medium.com/m/signin?redirect=https%3A%2F%2Fmedium.com%3A443%2F) (if you don’t already have one). Log in.
 2. [Request an integration token](https://help.medium.com/hc/en-us/articles/213480228-Get-an-integration-token-for-your-writing-app) by emailing [yourfriends@medium.com](mailto:yourfriends@medium.com). Medium will then grant you access to a clientId and a clientSecret on your settings page. [Read their API docs for more information](https://github.com/Medium/medium-api-docs#21-browser-based-authentication).  
 3. Go to [your settings page](https://medium.com/me/settings) and look for "Integration Tokens". Generate one and save it to your Environment Variables as MEDIUM_INTEGRATION_TOKEN.
-![MEDIUM_INTEGRATION_TOKEN](/assets/images/MEDIUM_INTEGRATION_TOKEN.png)
+![MEDIUM_INTEGRATION_TOKEN]({{ site.url }}/assets/images/MEDIUM_INTEGRATION_TOKEN.png)
 4. Visit https://api.medium.com/v1/me?accessToken=, adding your Integration Token to the end of that URL
 5. Grab the id from the JSON provided and save that to your Environment Variables as MEDIUM_USER_ID.
-![MEDIUM_USER_ID](/assets/images/MEDIUM_USER_ID.png)
+![MEDIUM_USER_ID]({{ site.url }}/assets/images/MEDIUM_USER_ID.png)
 
 # Installation of crosspost plugin
 This plugin can be installed in two ways:
