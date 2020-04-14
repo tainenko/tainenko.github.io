@@ -11,7 +11,7 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
-      uses: docker://faph/action-jekyll:1.5
+      uses: docker://faph/action-jekyll
       env:
         MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
         MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
