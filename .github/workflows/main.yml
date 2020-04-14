@@ -2,12 +2,16 @@ name: Jekyll Deploy
 on: [push]
 
 jobs:
-  build_and_deploy:
+  build:
+    name: Build website
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Build & Deploy to MEDIUM
-        env:
-          MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
-          MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Run Jekyll
+      uses: docker://faph/action-jekyll:1.5
+      env:
+        MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+        MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
