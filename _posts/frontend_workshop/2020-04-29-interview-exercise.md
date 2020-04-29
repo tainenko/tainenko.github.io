@@ -12,15 +12,16 @@ Front Interview Questions and Answers including javascript, css, vanilla.js and 
 
 # Question 1
 Given a string and determine whether is a palindrome  
-Example 1  
+
+Example 1.  
 **Input**: aabbaa  
 **Output**: true  
 
-Example 2  
+Example 2.  
 **Input**: abcde  
 **Output**: false  
 
-##Solution
+## Solution
 ```typescript
 function isPalindrome(str: string): boolean{
      let re = /[^A-Za-z0-9]/g;
@@ -35,7 +36,7 @@ function isPalindrome(str: string): boolean{
 ``` 
 
 # Question 2
-Please refactor the followingCSS snippets
+Please refactor the following CSS snippets
 ```css
 .wrap .container .row{
     display: block;
@@ -72,11 +73,12 @@ By using native-js (vanilla JS) and simple CSS, please try to render an UI looks
 
 # Question 4
 There are following data need to save in **client-side storage**:  
-    - User access token: **f706Ne%f|N]dy/[BisS^C2%J=/i8Ncx)#ZuyqDuGs**
-    - User age: ** 25 **
-    - User name:  ** George **
-    - Video autoplay toggle: true
-    - User search records: ["car", "android", "iphone" ...]
+- User access token: **f706Ne%f|N]dy/[BisS^C2%J=/i8Ncx)#ZuyqDuGs**
+- User age: ** 25 **
+- User name:  ** George **
+- Video autoplay toggle: true
+- User search records: ["car", "android", "iphone" ...]
+
 Please explain which client-side storage you will choose to store each item and __the reason__ compared with others.
 
 ## Solution
@@ -84,7 +86,6 @@ Please explain which client-side storage you will choose to store each item and 
 - Session storage: User age、 User name
 - Local storage: video autoplay toggle、 user search records
 
-**Reason**  
 
 # Question 4
 We have 3 div elements, each of them has a click handler associated.
@@ -152,13 +153,11 @@ const OverlapDiv=()=>{
 
 # Question 5
 What happens after the browser receives the first HTML response from the server until the full page is displayed and cn be interactedwith?  
-__Please  try to list the steps in order.__
+__Please try to list the steps in order.__
 
 # Question 6
-Please share with us one frontend trending topic you are researching recently, what it is about and why.  
-(answers can be simple.)  
+Please share with us one frontend trending topic you are researching recently, what it is about and why.(answers can be simple.)  
 
 example:  
 svelte, a new frontend framework which can be compared with react/vuejs/angular.  
-
 I'd like to study why it can be faster than other esistingframework and the benefit to apply into my current projects.
