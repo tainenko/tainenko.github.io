@@ -67,6 +67,31 @@ Please refactor the following CSS snippets
     position: relative;
 }
 ```
+## Solution
+Just remove redundant values from css and alphabetize the properties.
+```css
+.wrap .container .row{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.wrap .container .row .column-1 .row{
+    border-bottom: 1px solid red;
+}
+.wrap .container .row .column-2 .container.flex{
+    display: flex;
+}
+.wrap .container .row .column-3{
+    font-size: 16px;
+}
+.wrap .container .row .column-3 .text {
+    line-height: 20px;
+}
+.wrap .container .row .column-4 .darkContainer{
+    background: rgba(0,0,0,0.5);
+}
+```
 # Question 3
 By using native-js (vanilla JS) and simple CSS, please try to render an UI looks like this image below:  
 ![East end](../../assets/images/javascript/eastend.png)
@@ -155,6 +180,8 @@ const OverlapDiv=()=>{
 What happens after the browser receives the first HTML response from the server until the full page is displayed and cn be interactedwith?  
 __Please try to list the steps in order.__
 
+## Solution
+See ref. [https://vanseodesign.com/web-design/browser-requests/](https://vanseodesign.com/web-design/browser-requests/)
 # Question 6
 Please share with us one frontend trending topic you are researching recently, what it is about and why.(answers can be simple.)  
 
