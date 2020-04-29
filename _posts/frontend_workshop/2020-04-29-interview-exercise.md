@@ -23,6 +23,8 @@ Example 2
 ##Solution
 ```typescript
 function isPalindrome(str: string): boolean{
+     let re = /[^A-Za-z0-9]/g;
+     str = str.toLowerCase().replace(re, '');
     for(let i=0,j=str.length;i<j;i++,j--){
         if(str[i]!==str[j]){
             return false;
@@ -75,7 +77,14 @@ There are following data need to save in **client-side storage**:
     - User name:  ** George **
     - Video autoplay toggle: true
     - User search records: ["car", "android", "iphone" ...]
-Please explain which client-side storage you will choo to store each item and __the reason__ compared with others.
+Please explain which client-side storage you will choose to store each item and __the reason__ compared with others.
+
+## Solution
+- Cookie: User access token
+- Session storage: User age、 User name
+- Local storage: video autoplay toggle、 user search records
+
+**Reason**  
 
 # Question 4
 We have 3 div elements, each of them has a click handler associated.
@@ -93,6 +102,53 @@ We have 3 div elements, each of them has a click handler associated.
 ```
 Please write code for assigning these event handlers in a way, that when Div is clicked, following sequence is printed in console:  
 div-2->div-3->div-1
+
+## Solution
+According to the description, the div component would look like below:
+```javascript
+//individual Div element
+const DivElement=({content,className,onClick})=>{
+    return(
+        <div className={className} onClick={onClick}>
+            <p>{content}</p>
+            {this.props.children}
+        </div>
+    )
+}
+```
+Overall structure would look like:
+```javascript
+const OverlapDiv=()=>{
+    const onClick=(e)=>{
+        for(let i in [2,3,1]){
+            console.log(`Div${i} is clicked!`);
+        }
+    }
+    return(
+        <DivElement className="div-1" content="Div 1" onClick={onClick}>
+                    <DivElement className="div-2" content="Div 2">
+                                <DivElement className="div-3" content="Div 3"/>
+                    </DivElement>
+        </DivElement>
+    )
+}
+```
+
+```css
+.div-1{
+    position: relative;
+}
+.div-2{
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+.div-3{
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+}
+```
 
 # Question 5
 What happens after the browser receives the first HTML response from the server until the full page is displayed and cn be interactedwith?  
