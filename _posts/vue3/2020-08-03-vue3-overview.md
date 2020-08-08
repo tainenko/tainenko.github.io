@@ -60,7 +60,6 @@ Vue.js（讀音 /vjuː/, 類似於 view） 是一套構建用戶界面的 漸進
 
 此外還有Vue 3 Cheat Sheet ，簡單厄要地描繪了 Vue3 主要特性，同學可以借此資源快速上手。  
 
-| Vue3 Cheat Sheet | Vue Essential Cheat Sheet | Nuxtjs Cheat Sheet |  
-| ---- | ---- |---- |  
-|[Vue-3-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf) |[Vue-Essentials-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf) | [Nuxtjs-Cheat-Sheet](https://www.vuemastery.com/pdf/Nuxtjs-Cheat-Sheet.pdf) |
-
+[Vue-3-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf)   
+[Vue-Essentials-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf)  
+[Nuxtjs-Cheat-Sheet](https://www.vuemastery.com/pdf/Nuxtjs-Cheat-Sheet.pdf)
