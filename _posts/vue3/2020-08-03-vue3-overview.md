@@ -3,7 +3,7 @@ layout: post
 title:  " Vue3 Overview"
 author: tony
 categories: [ frontend ]
-image: assets/images/vue/vue3.jpg
+image: assets/images/vue/vue3-overview.jpg
 tags: [ frontend,vue]
 comments: true
 crosspost_to_medium: true
@@ -58,8 +58,9 @@ Vue.js（讀音 /vjuː/, 類似於 view） 是一套構建用戶界面的 漸進
 ## Vue Mastery
 [Vue Mastery](https://www.vuemastery.com) 是一個不錯的教學網站，同時提供[Vue3課程](https://www.vuemastery.com/courses-path/vue3)
 
-此外還有Vue 3 Cheat Sheet ，簡單厄要地描繪了 Vue3 主要特性，同學可以借此資源快速上手。
-| Vue3 Cheat Sheet | Vue Essential Cheat Sheet |Nuxtjs-Cheat-Sheet |
-| ---- | ---- |---- |
-|[Vue-3-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf) |[Vue-Essentials-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf) |[Nuxtjs-Cheat-Sheet](https://www.vuemastery.com/pdf/Nuxtjs-Cheat-Sheet.pdf) |
+此外還有Vue 3 Cheat Sheet ，簡單厄要地描繪了 Vue3 主要特性，同學可以借此資源快速上手。  
+
+| Vue3 Cheat Sheet | Vue Essential Cheat Sheet | Nuxtjs Cheat Sheet |  
+| ---- | ---- |---- |  
+|[Vue-3-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf) |[Vue-Essentials-Cheat-Sheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf) | [Nuxtjs-Cheat-Sheet](https://www.vuemastery.com/pdf/Nuxtjs-Cheat-Sheet.pdf) |
 
