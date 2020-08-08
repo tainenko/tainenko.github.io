@@ -21,7 +21,6 @@ crosspost_to_medium: true
 # 第1部分:Vue、React和Angular的簡要歷史
 在我們進入技術細節之前，為了更好地理解這些框架的哲學和它們隨時間的演變過程，讓我們先談談它們背後的歷史發展。
 ## 這一切是如何開始的
-### Angular
 ![Angular](/assets/images/vue/angular-logo.png)
 Angular由谷歌開發，於2010年首次發布，是三個框架中歷史最悠久的一個。它是一個基於類型的JavaScript框架。在2016年Angular 2發布的時候發生了重大的變化(去掉了原來名為AngularJS的“JS”)。 Angular 2+就是Angular。儘管AngularJS(版本1)仍在更新，我們將集中討論Angular。最新的穩定版本是Angular 10，它於2020年6月發布。
 
