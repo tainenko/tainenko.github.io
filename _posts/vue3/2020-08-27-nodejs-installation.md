@@ -26,15 +26,15 @@ Node.js是一個基於Chrome V8引擎的javascript的運行環境，其特點是
 ## Node.js安裝與配置
 首先，我們將向大家介紹Node.js的安裝方法，Node.js將會在之後的Vue3項目管理發揮作用，舉凡vue-cli、webpack等工具我們都會用npm進行安裝配置。
 
-> Vue CLI需要Node.js 8.9或更高版本(推薦8.11.0+)，你可以使用nvmb或nvm-windows在同一台電腦中管理多個Node版本。
+> Vue CLI需要Node.js 8.9或更高版本(推薦8.11.0+)，你可以使用nvm或nvm-windows在同一台電腦中管理多個Node版本。  
 > 假使在環境配置過程中發生不可預期的錯誤，可以試著將Node.js降級後再試第二次。 
 
 本安裝教程以 Node.js 12.18.3 LTS版本為例。  
-Node.js的官方網站為:[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-
+Node.js的官方網站為:[https://nodejs.org/en/download/](https://nodejs.org/en/download/)  
+你可以根據你的作業系統選擇Node.js安裝包。
 ![nodelist](../../assets/images/vue/node-list.png)
 
-你可以根據你的作業系統選擇Node.js安裝包。  
+或是根據需求安裝特定版本的Node.js  
 Node.js歷史版本下載地址： [https://nodejs.org/dist/](https://nodejs.org/dist/)
 
 ### 在 Windows 上安裝Node.js
@@ -54,14 +54,15 @@ Node.js歷史版本下載地址： [https://nodejs.org/dist/](https://nodejs.org
 ![node-installation-step6](../../assets/images/vue/install-node-msi-version-on-windows-step4.png)
 
 #### 檢查Node是否安裝成功
-檢查Node.js是否安裝成功，並且PATH環境變數是否配置了Node.js。  
+檢查Node.js是否安裝成功以及PATH環境變數是否配置了Node.js。  
 點擊開始->執行->輸入"cmd"並打開->輸入 node --version，你應該會看到以下訊息：
 ```
 C:\>node --version
 v12.18.3
 ```
-假使出現 node' is not recognized as an internal or external command operable program or batch file，可以是PATH沒配置成功，需要在cmd裡輸入以下指令
+假使出現 node' is not recognized as an internal or external command operable program or batch file，可能是PATH沒配置成功，需要在cmd裡輸入以下指令
 ```
+// C:\Program Files\Nodejs 自行代換成你自己的Nodejs安裝路徑
 C:\>set PATH=%PATH%;C:\Program Files\Nodejs
 ```
 ### 在 Linux 上安裝Node.js
