@@ -8,7 +8,7 @@ tags: [vue,frontend,webpack,vue-cli]
 comments: true
 crosspost_to_medium: true
 ---
-網頁(Web Page)進化對網頁應用程式(Web Application, 以下簡稱Web App)會具現以下特點：
+網頁(Web Page)進化成網頁應用程式(Web Application, 以下簡稱Web App)會具現以下特點：
 - 更多的JavaScript
 - 更多的用戶界面
 - 網頁在提供服務的過程中，盡可能少刷新整個頁面
