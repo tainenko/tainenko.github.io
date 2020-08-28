@@ -35,7 +35,7 @@ crosspost_to_medium: true
 我們知道瀏覽器加載模塊很慢，即使是 HTTP/2 支持有效的加載許多小文件，但其性能都不如加載一個更加有效（即使不做任何優化)。
 因此，最好將所有 4 個文件合併為1個：  
 ![after-bundle](../../assets/images/vue/after-bundle.jpg)
-通過打包(Bundle)，我們將 http 請求次數減低到一次，也去除了文件是否依照順序引用的問題。
+通過打包(Bundle)，我們將 http 請求次數減低到一次，也避免了文件是否依照順序引用的問題。
 
 # 什麼是Webpack
 Webpack是一個現代JavaScript應用程序的靜態模塊打包器(module bundler)。它的功用是把前端開發時用到的諸多靜態資源打包，如JavaScript、CSS和圖片等檔案。  
