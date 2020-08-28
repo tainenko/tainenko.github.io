@@ -25,7 +25,7 @@ crosspost_to_medium: true
 <script src="/src/name.js"></script>
 </html>
 ```
-這四個引入文件之間存在如下依賴關係：
+這四個引入文件之間存在如下依賴關係：  
 ![import-dependancy](../../assets/images/vue/import-dependency.jpg)
 在引用時還要特別注意文件的依賴關係，如果你把它們的引用順序顛倒就會報錯，在大型項目中，這種依賴關係就顯得尤其重要，而且極難維護，除此之外，它還有以下問題：
 - 一切都加載到全局上下文中，導致名稱衝突和覆蓋
@@ -33,13 +33,13 @@ crosspost_to_medium: true
 
 另外，當瀏覽器打開該網頁時，每個 js 文件都需要一個單獨的 http 請求，在此範例中，我們需要 4 個往返請求，才能啟動項目。
 我們知道瀏覽器加載模塊很慢，即使是 HTTP/2 支持有效的加載許多小文件，但其性能都不如加載一個更加有效（即使不做任何優化。
-因此，最好將所有 4 個文件合併為1個：
+因此，最好將所有 4 個文件合併為1個：  
 ![after-bundle](../../assets/images/vue/after-bundle.jpg)
 這就是打包(Bundle)!
 
 
 # 什麼是Webpack
-Webpack是一個現代JavaScript應用程序的靜態模塊打包器(module bundler)。它的功用是把前端開發時用到的諸多靜態資源打包，如JavaScript、CSS和圖片等檔案。
+Webpack是一個現代JavaScript應用程序的靜態模塊打包器(module bundler)。它的功用是把前端開發時用到的諸多靜態資源打包，如JavaScript、CSS和圖片等檔案。  
 ![webpack-flow](../../assets/images/vue/webpack-flow.png)
 
 ## webpack 核心概念
