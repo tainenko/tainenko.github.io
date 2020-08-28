@@ -31,26 +31,26 @@ Node.js是一個基於Chrome V8引擎的javascript的運行環境，其特點是
 
 本安裝教程以 Node.js 12.18.3 LTS版本為例。  
 Node.js的官方網站為:[https://nodejs.org/en/download/](https://nodejs.org/en/download/)  
-你可以根據你的作業系統選擇Node.js安裝包。
+你可以根據你的作業系統選擇Node.js安裝包。  
 ![nodelist](../../assets/images/vue/node-list.png)
 
 或是根據需求安裝特定版本的Node.js  
 Node.js歷史版本下載地址： [https://nodejs.org/dist/](https://nodejs.org/dist/)
 
 ### 在 Windows 上安裝Node.js
-1. 從官網下載所需要的安裝包
+1. 從官網下載所需要的安裝包  
 ![node-installation-step1](../../assets/images/vue/node-msi-downloader.png)
-2. 雙擊下載好的安裝包，並點擊run，會進到Node.js的安裝界面，點擊下一步
+2. 雙擊下載好的安裝包，並點擊run，會進到Node.js的安裝界面，點擊下一步  
 ![node-installation-step1](../../assets/images/vue/install-node-msi-version-on-windows-step1.png)
-3. 勾選“我同意協議“，點擊下一步
+3. 勾選“我同意協議“，點擊下一步  
 ![node-installation-step2](../../assets/images/vue/install-node-msi-version-on-windows-step5.png)
-4. Node.js默認安裝路徑為 "C:\Program Files]nodejs\"，有想要更改就點擊Change，路徑確定後就點擊下一步
+4. Node.js默認安裝路徑為 "C:\Program Files]nodejs\"，有想要更改就點擊Change，路徑確定後就點擊下一步  
 ![node-installation-step3](../../assets/images/vue/install-node-msi-version-on-windows-step6.png)
-5. 點擊圖示來選擇你需要的安裝模式，然後點擊下一步
+5. 點擊圖示來選擇你需要的安裝模式，然後點擊下一步  
 ![node-installation-step4](../../assets/images/vue/install-node-msi-version-on-windows-step2.png)
-6. 安裝Node.js中，需要等待一段時間
+6. 安裝Node.js中，需要等待一段時間  
 ![node-installation-step5](../../assets/images/vue/install-node-msi-version-on-windows-step3.png)
-7. 安裝完成，如果出現錯誤訊息就返回步驟2重新再走一次安裝過程
+7. 安裝完成，如果出現錯誤訊息就返回步驟2重新再走一次安裝過程  
 ![node-installation-step6](../../assets/images/vue/install-node-msi-version-on-windows-step4.png)
 
 #### 檢查Node是否安裝成功
