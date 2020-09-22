@@ -2,7 +2,7 @@
 layout: post
 title:  " Vue3 Overview"
 author: tony
-categories: [ frontend ]
+categories: [ vue3 tutorial ]
 image: assets/images/vue/vue3-overview.jpg
 tags: [ frontend,vue]
 comments: true

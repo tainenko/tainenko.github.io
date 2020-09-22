@@ -40,10 +40,10 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 |當前版本|9| 16.x|3.0.0|
 |使用公司|谷歌、wix|facebook、優步|阿里巴巴、GitLab|
 
-##許可證
+## 許可證
 在使用開放源碼框架之前，請確保通過其許可。有趣的是，這三個框架都使用[MIT License](https://opensource.org/licenses/MIT) ，它對重用提供了有限的限制，即使在專有軟件中也是如此。在使用任何框架或軟件之前，請確保了解許可的含義。
 
-##熱門程度
+## 熱門程度
 由於“angular”和“react”是常用詞，從谷歌的趨勢中很難把握它們的流行度。儘管如此，他們的[GitHub存儲庫獲得的星星數量](https://star-history.t9t.io/#facebook/react&vuejs/vue&angular/angular) 可以很好地說明他們的受歡迎程度。 Vue的星星數量在2016年年中發生了劇烈的變化，最近，Vue已經和React一起成為了最受歡迎的框架。
 ![github-star](/asset/images/vue/github-star.png)
 
