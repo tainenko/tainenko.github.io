@@ -31,13 +31,13 @@ Part 4: [使用Vue vs Angular vs React](./2021-05-07-vue-react-angular-comparisi
 在我們進入技術細節之前，為了更好地理解這些框架的哲學和它們隨時間的演變過程，讓我們先談談它們背後的歷史發展。
 ## 這一切是如何開始的
 ![Angular](/assets/images/vue/angular-logo.png)
-Angular由谷歌開發，於2010年首次發布，是三個框架中歷史最悠久的一個。它是一個基於類型的JavaScript框架。在2016年Angular 2發布的時候發生了重大的變化(去掉了原來名為AngularJS的“JS”)。 Angular 2+就是Angular。儘管AngularJS(版本1)仍在更新，我們將集中討論Angular。最新的穩定版本是Angular 10，它於2020年6月發布。
+Angular由谷歌開發，於2010年首次發布，是三個框架中歷史最悠久的一個。它是一個基於類型的JavaScript框架。在2016年Angular 2發布的時候發生了重大的變化(去掉了原來名為AngularJS的“JS”)。 Angular 2+就是Angular。儘管AngularJS(版本1)仍在更新，我們將集中討論Angular。最新的穩定版本是Angular 11，它於2020年11月發布。
 
 ![React](/assets/images/vue/react-logo.png)
-React由Facebook開發，最初於2013年發布。 Facebook在其產品(Facebook、Instagram和WhatsApp)中廣泛使用React。當前的穩定版本是16.X，於2018年11月發布(此後進行了較小的增量更新)。
+React由Facebook開發，最初於2013年發布。 Facebook在其產品(Facebook、Instagram和WhatsApp)中廣泛使用React。當前的穩定版本是17.X，於2020年10月發布(此後進行了較小的增量更新)。
 
 ![Vue](/assets/images/vue/vue-logo.png)
-Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Evan You在2014年開發的。在過去的三年裡，儘管Vue沒有大公司的支持，但它的受歡迎程度已經有了很大的轉變。目前的穩定版本是2.6，於2019年2月發布(此後會有一些小的增量發布)。 Patreon支持Vue的貢獻者。 Vue 3目前處於rc階段，正計劃轉移到TypeScript。
+Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Evan You在2014年開發的。在過去的三年裡，儘管Vue沒有大公司的支持，但它的受歡迎程度已經有了很大的轉變。目前的穩定版本是3.0，於2020年9月發布(此後會有一些小的增量發布)。 Patreon支持Vue的貢獻者。 需要注意的是，Vue 3目前處於自己的GitHub repo中，並且已經轉移到TypeScript中。
 
 以下是Angular、React和Vue在地位和歷史方面的簡短總結:
 
@@ -73,14 +73,14 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 
 現在您已經熟悉了每個框架的歷史和最近的趨勢，我們將查看社區以評估這些框架的開發。我們已經看到，在過去的一年中，所有框架都定期發布增量版本，這表明開發正在全面展開。
 
-讓我們來看看Angular、React和Vue在GitHub庫中的統計數據:
+讓我們來看看Angular、React和Vue在GitHub庫中的統計數據(注意： Vue的數字也包括單獨的Vue 3.0庫):
 
 |~|Angular| React| Vue|
 |---|---|---|---|
-|Watchers| 3.2k |6.7k |6.2k
-|Stars |62k |151k |166k|
-|Forks| 16.9k |29.4k |25.2k|
-|Contributors |1,129 |1,390 |293|
+|Watchers| 3.2k |6.7k |6.3k
+|Stars |70.9k |164k |200.8k|
+|Forks| 18.6k |32.9k |31.7k|
+|Contributors |1,352 |1,533 |382|
 
 當比較Vue和React時，Vue有大量的觀察者、星星和fork。這顯示了Vue在用戶中的受歡迎程度和相對於React的價值。然而，Vue的貢獻者數量低於Angular和React。
 
@@ -88,7 +88,7 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 
 從統計數據來看，所有三個項目都顯示了顯著的開發活動，而且這肯定會在未來繼續下去——僅僅是這些統計數據不可能成為決定使用其中任何一個的基礎。
 
-您需要考慮的另一個指標是GitHub的[“Used By”標記](https://twitter.com/github/status/1131468413983961088) ，它需要由存儲庫作者啟用。這顯示了GitHub上有多少其他存儲庫依賴於該存儲庫。 Angular的GitHub庫還沒有啟用這個功能，但是React目前顯示了將近4,000,000，而Vue顯示了超過93,000。兩者之間有很大的區別，但這主要是因為Vue是較新的框架，並且不能反映總體需求的全貌。
+您需要考慮的另一個指標是GitHub的[“Used By”標記](https://twitter.com/github/status/1131468413983961088) ，它需要由存儲庫作者啟用。這顯示了GitHub上有多少其他存儲庫依賴於該存儲庫。 Angular的GitHub repo顯示170萬，React目前顯示了將近570萬，而Vue兩個repo加起來顯示了超過16.7萬。這三個框架之間有很大的不同，但這很大程度上是由於Vue是較新的框架，並且不能反映總體需求的全貌。
 
 # 第3部分:遷移
 
