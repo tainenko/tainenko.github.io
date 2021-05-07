@@ -1,8 +1,12 @@
 ---
-layout: post title:  "[翻釋]2021最值得學習的前端框架：React vs Angular vs Vue "
-author: tony categories: [ frontend ]
-image: assets/images/vue/angular-vs-vue-vs-react.jpg tags: [frontend,vue,react,angular,framework ]
-comments: true crosspost_to_medium: true
+layout: post 
+title:  "[翻釋]2021最值得學習的前端框架：React vs Angular vs Vue "
+author: tony 
+categories: [ frontend ]
+image: assets/images/vue/angular-vs-vue-vs-react.jpg 
+tags: [frontend,vue,react,angular,framework ]
+comments: true 
+crosspost_to_medium: true
 ---
 這篇文章是一個全面的指南，告訴你哪個才是最適合你的解決方案: **Angular vs React vs Vue**。
 
