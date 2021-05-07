@@ -53,16 +53,16 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 在使用開放源碼框架之前，請確保通過其許可。有趣的是，這三個框架都使用[MIT License](https://opensource.org/licenses/MIT) ，它對重用提供了有限的限制，即使在專有軟件中也是如此。在使用任何框架或軟件之前，請確保了解許可的含義。
 
 ## 熱門程度
-由於“angular”和“react”是常用詞，從谷歌的趨勢中很難把握它們的流行度。儘管如此，他們的[GitHub存儲庫獲得的星星數量](https://star-history.t9t.io/#facebook/react&vuejs/vue&angular/angular) 可以很好地說明他們的受歡迎程度。 Vue的星星數量在2016年年中發生了劇烈的變化，最近，Vue已經和React一起成為了最受歡迎的框架。
+由於“angular”和“react”是常用詞，從谷歌的趨勢中很難把握它們的流行度。儘管如此，他們的[GitHub存儲庫獲得的星星數量](https://star-history.t9t.io/#facebook/react&vuejs/vue&angular/angular) 可以很好地說明他們的受歡迎程度。 Vue的星星數量在2016年年中發生了劇烈的變化，最近，Vue已經和React一起成為了最受歡迎的框架。  
 ![github-star](/asset/images/vue/github-star.png)
 
 ## 就業市場
 接著我們來看看Angular、React和Vue的就業市場情況，這也是衡量受歡迎程度的一個好指標:  
-最好的[資料來源](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)  各種各樣的工作公告板表明了就業市場的趨勢。
+最好的[資料來源](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)  各種各樣的工作公告板表明了就業市場的趨勢。  
 ![job-market](/asset/images/vue/job-market.png)
 從2018年末的趨勢來看，需要Angular或React技能的職位數量大致相同，而Vue的職位仍然只是這個數字的一小部分(約20%)。
 
-如果您想要一個更最新的分析，您可以嘗試這個[谷歌趨勢搜索](https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs) ，它將過去12個月的搜索趨勢分為React工作、Angular工作和Vue工作。數據如下:
+如果您想要一個更最新的分析，您可以嘗試這個[谷歌趨勢搜索](https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs) ，它將過去12個月的搜索趨勢分為React工作、Angular工作和Vue工作。數據如下:  
 ![google-trends-of-jobs](/asset/images/vue/2021google-trend-of-job.png)
 
 如果你想了解你所在地區的求職趨勢，谷歌Trends還將其按地理位置進行了細分。
