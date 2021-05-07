@@ -19,11 +19,11 @@ crosspost_to_medium: true
 在這篇文章中，我們假設你有JavaScript的基本知識，並使用過JavaScript框架。
 
 # 目錄
-Part 1: [Vue、React和Angular的簡要歷史](#第1部分:Vue、React和Angular的簡要歷史)  
+Part 1: [Vue、React和Angular的簡要歷史](./2021-05-07-vue-react-angular-comparision.md#第1部分:Vue、React和Angular的簡要歷史)  
 [這一切是如何開始的](##這一切是如何開始的) 🐣 | [許可證](##許可證) 👮‍♂️ | [熱門程度](##熱門程度) 🔥 | [就業市場](##就業市場) 👷‍♂️  
-Part 2: [社群與發展](#第2部分:社群與發展)  
-Part 3: [遷移](#第3部分:遷移)  
-Part 4: [使用Vue vs Angular vs React](#第4部分:使用Vue vs Angular vs React)  
+Part 2: [社群與發展](./2021-05-07-vue-react-angular-comparision.md#第2部分:社群與發展)  
+Part 3: [遷移](./2021-05-07-vue-react-angular-comparision.md#第3部分:遷移)  
+Part 4: [使用Vue vs Angular vs React](./2021-05-07-vue-react-angular-comparision.md#第4部分:使用Vue vs Angular vs React)  
 [大小和加載時間](##大小和加載時間) ⏲️ | [組件](##組件) 🏗️ | [學習曲線](##學習曲線) 🎓  
 [Angular vs React vs Vue:誰贏了?](#Angular vs React vs Vue:誰贏了?)
 
