@@ -1,0 +1,36 @@
+  Go语言”奇怪用法“实践总结
+本文通过对A Tour of Go的实践，总结Go语言的基础用法。
+
+
+
+1 Go语言”奇怪用法“有哪些？
+
+1，go的变量声明顺序是：”先写变量名，再写类型名“，此与C/C++的语法孰优孰劣，可见下文解释：
+http://blog.golang.org/gos-declaration-syntax
+
+2，go是通过package来组织的（与python类似），只有package名为main的包可以包含main函数，一个可执行程序有且仅有一个main包，通过import关键字来导入其他非main包。
+
+3，可见性规则。go语言中，使用大小写来决定该常量、变量、类型、接口、结构或函数是否可以被外部包含调用。根据约定，函数名首字母小写即为private，函数名首字母大写即为public。
+
+4，go内置关键字（25个均为小写）。
+
+5，函数不用先声明，即可使用。
+
+6，在函数内部可以通过 := 隐士定义变量。（函数外必须显示使用var定义变量）
+
+7，go程序使用UTF-8编码的纯Unicode文本编写。
+
+8，使用big.Int的陷阱：
+http://stackoverflow.com/questions/11270547/go-big-int-factorial-with-recursion
+
+9，从技术层面讲，go语言的语句是以分号分隔的，但这些是由编译器自动添加的，不用手动输入，除非需要在同一行中写入多个语句。没有分号及只需少量的逗号和圆括号，使得go语言的程序更容易阅读。
+
+10，go语言只有一个循环结构——for循环。
+
+11，go里的自增运算符只有——“后++”
+
+12，go语言中的slice用法类似python中数组，关于slice的详细用法可见：http://blog.golang.org/go-slices-usage-and-internals
+
+13，函数也是一个值，使用匿名函数返回一个值。
+
+14，函数闭包的使用，闭包是一个匿名函数值，会引用到其外部的变量。

@@ -1,0 +1,29 @@
+一. Go语言内置关键字
+Go内置关键字
+
+二. Go语言注释方法
+//单行注释
+/* */多行注释
+三. 项目结构
+Go程序是通过package来组织的
+只有package 名称为main的包可以包含main函数
+一个可执行程序有且仅有一个main包
+初步练习时可以使用这种结构
+初步练习
+四. 程序结构
+package 包名
+import 要导入的包
+多个包可以用import(包名1 包名2 …)
+如果导入包但是并没有对包进行相关操作就会编译异常
+import another_name “包名” 为当前导入的包起别名
+const 用来定义常量
+var 用来定义全局变量
+type 定义普通的变量 语法：type variable_name int
+type 定义结构体类型 type variable_name struct{}
+type 定义接口类型 type variable_name interface{}
+main函数 func main(){}
+基本语句
+基础
+五. 可见性规则
+函数名首字母为小写则为private
+函数名首字母为大写则为public

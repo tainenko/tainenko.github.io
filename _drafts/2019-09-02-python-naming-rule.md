@@ -6,6 +6,7 @@ categories: [python]
 image: assets/images/naming_conventions.png
 tags: [python]
 ---
+# Guidelines derived from Guido's Recommendations enter image description here
 ![python naming conventions](../assets/images/naming.png)
 Coding standards are a set of guidelines to produce maintainable and scalable code. And how good are you at following them could decide the longevity of your career in Software Development. Since I code in Python, so I’ll be talking about the Python naming conventions in this post.
 I’ve derived this information from Python’s PEP8 documentation and tried to put it in simple word. So I could make it easier for the readers to digest.

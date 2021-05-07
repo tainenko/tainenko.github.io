@@ -1,0 +1,59 @@
+Go语言string，int，int64 ,float之间类型转换方法
+ 更新时间：2017年07月20日 15:40:32   作者：哪来的查克拉    我要评论
+
+Go语言中int类型和string类型都是属于基本数据类型,两种类型的转化都非常简单。下面通过本文给大家分享Go语言string，int，int64 ,float之间类型转换方法，感兴趣的朋友一起看看吧
+(1)int转string
+
+s := strconv.Itoa(i)
+等价于s := strconv.FormatInt(int64(i), 10)
+
+(2)int64转string
+
+i := int64(123)
+s := strconv.FormatInt(i, 10)
+第二个参数为基数，可选2~36
+
+注：对于无符号整形，可以使用FormatUint(i uint64, base int)
+
+(3)string转int
+
+i, err := strconv.Atoi(s)
+(4)string转int64
+
+i, err := strconv.ParseInt(s, 10, 64)
+第二个参数为基数（2~36），第三个参数位大小表示期望转换的结果类型，其值可以为0, 8, 16, 32和64，分别对应 int, int8, int16, int32和int64
+
+(5)float相关
+
+float转string：
+
+v := 3.1415926535
+s1 := strconv.FormatFloat(v, 'E', -1, 32)//float32s2 := strconv.FormatFloat(v, 'E', -1, 64)//float64
+函数原型及参数含义具体可查看：https://golang.org/pkg/strconv/#FormatFloat
+
+string转float：
+
+s := "3.1415926535"
+v1, err := strconv.ParseFloat(v, 32)
+v2, err := strconv.ParseFloat(v, 64)
+ PS：go语言string、int、int64互相转换
+
+//string到int
+int,err:=strconv.Atoi(string)
+//string到int64
+int64, err := strconv.ParseInt(string, 10, 64)
+//int到string
+string:=strconv.Itoa(int)
+//int64到string
+string:=strconv.FormatInt(int64,10)
+//string到float32(float64)
+float,err := strconv.ParseFloat(string,32/64)
+//float到string
+string := strconv.FormatFloat(float32, 'E', -1, 32)
+string := strconv.FormatFloat(float64, 'E', -1, 64)
+// 'b' (-ddddp±ddd，二进制指数)
+// 'e' (-d.dddde±dd，十进制指数)
+// 'E' (-d.ddddE±dd，十进制指数)
+// 'f' (-ddd.dddd，没有指数)
+// 'g' ('e':大指数，'f':其它情况)
+// 'G' ('E':大指数，'f':其它情况)

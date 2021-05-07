@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[翻釋]2021最值得學習的前端框架：React vs Angular vs Vue "
+title:  "[翻釋]2020最值得學習的前端框架：React vs Angular vs Vue "
 author: tony
 categories: [ frontend ]
 image: assets/images/vue/angular-vs-vue-vs-react.jpg
@@ -8,24 +8,15 @@ tags: [frontend,vue,react,angular,framework ]
 comments: true
 crosspost_to_medium: true
 ---
-這篇文章是一個全面的指南，告訴你哪個才是最適合你的解決方案: **Angular vs React vs Vue**。
+這篇文章是一個全面的指南，告訴你哪個才是最適合你的解決方案:Angular vs React vs Vue。
 
-就在幾年前，開發人員還在爭論他們的項目應該使用Angular還是React。但在過去的幾年裡，我們看到了對第三家公司Vue.js的興趣有所增長。
+就在幾年前，開發人員還在爭論他們的項目應該使用Angular還是React。但在過去的幾年裡，我們看到了興趣不斷增長的第三個選擇Vue.js。
 
-如果您是一個剛開始開發項目的開發人員，卻難以決定使用哪個JavaScript框架作為項目的開發基礎，那麼本指南將幫助您做出決定。
+如果您是一個項目的開發人員，卻難以決定使用哪個JavaScript框架作為項目的開發基礎，那麼本指南將幫助您解決這個問題。
 
 我們會從不同角度去分析Angular、React和Vue這三個框架，看看它們如何滿足您的需求。這篇文章不只是關於Angular、React和Vue的指南，而是旨在提供一個結構來幫助判斷前端JavaScript框架。如果明年有新的框架出現，您將確切地知道需要查看哪些參數!
 
-在這篇文章中，我們假設你有JavaScript的基本知識，並使用過JavaScript框架。
-
-# 目錄
-Part 1: [Vue、React和Angular的簡要歷史](#第1部分:Vue、React和Angular的簡要歷史)  
-[這一切是如何開始的](##這一切是如何開始的) 🐣 | [許可證](##許可證) 👮‍♂️ | [熱門程度](##熱門程度) 🔥 | [就業市場](##就業市場) 👷‍♂️  
-Part 2: [社群與發展](#第2部分:社群與發展)  
-Part 3: [遷移](#第3部分:遷移)  
-Part 4: [使用Vue vs Angular vs React](#第4部分:使用Vue vs Angular vs React)  
-[大小和加載時間](##大小和加載時間) ⏲️ | [組件](##組件) 🏗️ | [學習曲線](##學習曲線) 🎓  
-[Angular vs React vs Vue:誰贏了?](#Angular vs React vs Vue:誰贏了?)
+在這篇文章中，我們假設你有JavaScript的基本知識，也使用過JavaScript框架。
 
 # 第1部分:Vue、React和Angular的簡要歷史
 在我們進入技術細節之前，為了更好地理解這些框架的哲學和它們隨時間的演變過程，讓我們先談談它們背後的歷史發展。
@@ -56,14 +47,13 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 由於“angular”和“react”是常用詞，從谷歌的趨勢中很難把握它們的流行度。儘管如此，他們的[GitHub存儲庫獲得的星星數量](https://star-history.t9t.io/#facebook/react&vuejs/vue&angular/angular) 可以很好地說明他們的受歡迎程度。 Vue的星星數量在2016年年中發生了劇烈的變化，最近，Vue已經和React一起成為了最受歡迎的框架。
 ![github-star](/asset/images/vue/github-star.png)
 
-## 就業市場
 接著我們來看看Angular、React和Vue的就業市場情況，這也是衡量受歡迎程度的一個好指標:  
 最好的[資料來源](https://zerotomastery.io/blog/tech-trends-showdown-react-vs-angular-vs-vue/)  各種各樣的工作公告板表明了就業市場的趨勢。
 ![job-market](/asset/images/vue/job-market.png)
 從2018年末的趨勢來看，需要Angular或React技能的職位數量大致相同，而Vue的職位仍然只是這個數字的一小部分(約20%)。
 
 如果您想要一個更最新的分析，您可以嘗試這個[谷歌趨勢搜索](https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs) ，它將過去12個月的搜索趨勢分為React工作、Angular工作和Vue工作。數據如下:
-![google-trends-of-jobs](/asset/images/vue/2021google-trend-of-job.png)
+![google-trends-of-jobs](/asset/images/vue/google-trends-of-jobs.png)
 
 如果你想了解你所在地區的求職趨勢，谷歌Trends還將其按地理位置進行了細分。
 
@@ -159,15 +149,15 @@ Extra 這裡有一些[Angular管理儀表板模板](https://www.codeinwp.com/blo
 ![Vue](/assets/images/vue/vue-logo.png)
 **Vue**是最新加入這個舞台的，沒有大公司的支持。
 
-然而，在過去的幾年裡，它確實做得很好，成為了Angular和React的強大競爭對手。特別是隨著Vue 3.0的發布。許多中國巨頭，如阿里巴巴和百度，都選擇Vue作為他們的主要前端JavaScript框架。
-如果您喜歡簡單性，但也喜歡靈活性，那麼應該選擇Vue。
+然而，在過去的幾年裡，它確實做得很好，成為了Angular和React的強大競爭對手。這可能與許多中國巨頭，如阿里巴巴和百度，選擇Vue作為他們的主要前端JavaScript框架的應用。
+然而，它未來的表現仍有待觀察，人們有理由對此保持謹慎。如果您喜歡簡單，但又喜歡靈活性，那麼Vue應該是您的選擇。
 
 Extra 這裡有一些[Vue的BootStrap管理模板](https://www.codeinwp.com/blog/best-vuejs-admin-templates-built-with-bootstrap/) 你可能感興趣。
 
 # 尾聲
 關於Angular、React和Vue之間爭論的答案是，沒有絕對正確的選擇，這可能是您所期待的結論。
 
-每個庫都有自己的優點和缺點。根據你正在從事的項目和你個人的需求，其中一個會比其他的更合適。在做決定之前自己做一些調查研究是非常關鍵的，尤其是如果您是要從事商業開發而不是個人項目的話。
+每個庫都有自己的優點和缺點。根據你正在從事的項目和你個人的需求，其中一個會比其他的更合適。在做決定之前自己做一些調查研究是非常關鍵的，尤其是如果你是要從事商業而不是個人項目的話。
 
 Angular vs React vs Vue，你認為哪個框架是贏家?請在下面的評論中告訴我們。
 
