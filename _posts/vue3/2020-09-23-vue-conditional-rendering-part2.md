@@ -11,14 +11,14 @@ crosspost_to_medium: true
 另一個條件式渲染的指令是`v-show`，它的語法和`v-if`雷同，都是根據跟隨其後的表達句的`Truthy`或`Falsy`來顯示或隱藏元素。
 
 # 範例
-```html
+```
 <template>
     <div id="app">
         <span v-show="ok">條件式渲染 v-show</span>
     </div>
 </template>
 ```
-```html
+```
 <script>
 export default {
   setup () {
@@ -39,7 +39,7 @@ export default {
 ## Group Rendering
 因為`v-show`不支援`<template>`語法，因此以下的`v-show`語法是無效的。
 ### 原始碼
-```html
+```
 <template >
   <template v-if="ok">
     <h1>Only</h1>
@@ -70,7 +70,7 @@ export default {
 ### 解決辦法
 1. 改用`v-if`
 2. 用塊級元素`div`取代`template`做包裏的動作。
-```html
+```
   <div v-show="ok">
     <h1>You</h1>
     <h2>can</h2>
@@ -85,7 +85,7 @@ export default {
 這聽起來很棒，對不對？藉由兩者的組合，我們同時擁有了兩個的優點，也避掉了兩個各自的缺點。
 
 為了達到上述的效果，我們需要一個額外的資料結構，並且改造一下`v-if`的條件判斷，讓它在無資料時為 `Falsy` ，第一次創建後就永遠為`Truthy`。
-```html
+```
 <template >
     <h2>{{articles}}</h2>
     <button @click="storeArticle(1)">顯示文章一</button>

@@ -53,7 +53,7 @@ Vue.js 其中一個核心思想是數據驅動，它提供了一個 MVVM 風格�
 
 ## 範例
 以下是一個計數器的例子，頁面渲染後，每點擊按鈕一次，計數器都會加一。
-```html
+```
 <template>
   <div>
     <span>{{ count }}</span>
@@ -76,7 +76,7 @@ export default {
 以下是一個錯誤的例子，我們對count變數進行了數據綁定，同時也宣告了一個onClick變數，每按下按鈕就會使count增加1，但是不管我們按幾下按鈕，頁面總是顯示 0 ，console的輸出卻又顯示了count的數值確實有增加。
 
 這就是因為我們沒有把count變數宣告為響應式，因此vue並不會監測資料是否變動而去重新渲染畫面。
-```html
+```
 <template>
     <span>{{ count }}</span>
     <button @click="onClick">點擊後加1</button>
@@ -107,7 +107,7 @@ __proto__: Object
 
 # ref 自動展開
 另一個問題是我們為什麼不用在樣板裡使用`.value`進行數據綁定？
-```html
+```
 <template>
     <span>{{ count }}</span>
 </template>
@@ -120,7 +120,7 @@ __proto__: Object
 假使你想要的是一個響應式物件，而不是主要資料型態的響應式變數， `reactive` 將會是你需要的，它接受一個Object，並且會回傳一個響應式的物件。
 
 舉例來說，上述的ref範例可以用reactive改寫：
-```html
+```
 <template>
   <div>
     <span>{{ state.count }}</span>
@@ -146,7 +146,7 @@ export default {
 一切取決於開發者組織代碼的方式，上述點擊器的範例，我們宣告了一個count變數的響應式資料，儲存的是單一主要資料類型，因此使用`ref`會比`reactive`更佳。
 
 假設今天我們要建立一個使用者頁面，使用者有：姓名、性別、年齡、電話、vip等屬性，我們有兩個選擇，第一是用`ref`分別宣告每個屬性
-```html
+```
 <script>
 import { ref } from "vue";
 
@@ -163,7 +163,7 @@ export default {
 </script>
 ```
 又或者我們可以使用`reactive`宣告一個響應式的user物件
-```html
+```
 <script>
 import { reactive } from "vue";
 

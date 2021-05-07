@@ -66,7 +66,7 @@ renderTriggered ->  onRenderTriggered
 > 因此`this.$attrs`, `this.$slots`, `this.$emit`, `this.$parent`, `this.$root`. 在 Vue3 裡是以 `context` 的參數來傳遞，使用時需要呼叫 context.attrs, context.slots, context.emit, context.parent, context.root
 
 以下是一個setup()語法的例子。
-```html
+```
 //Hello.vue
 <template>
     <h1>{{speech}}</h1>

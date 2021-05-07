@@ -14,7 +14,7 @@ crosspost_to_medium: true
 Vue 提供了 `v-if` 指令可用於條件渲染，當`v-if`後面跟隨的表達式為Truthy時會將該元素插入DOM，反之若表達式為Falsy時則會將該元素自DOM裡頭移除。
 
 ## 語法
-```html
+```
 <h1 v-if="isOK">當變數isOK為Truthy時，你才看得見我</h1>
 ```
 > Javascript中對於Truthy的定義是：該數值在邏輯判斷時與true等價，但是數值並非boolean的true。  
@@ -23,7 +23,7 @@ Vue 提供了 `v-if` 指令可用於條件渲染，當`v-if`後面跟隨的表�
 
 ## 條件渲染多個元素
 如果要使用一個`v-if`去控制多個元素的渲染，可以用`<template>`將多個元素包裏起來，`<template>`是一個不可見的包裏元素，並不會出現在渲染結果裡。
-```html
+```
 <template v-if="isTechJob">
     <li>前端工程師</li>
     <li>後端工程師</li>
@@ -35,7 +35,7 @@ Vue 提供了 `v-if` 指令可用於條件渲染，當`v-if`後面跟隨的表�
 `v-else-if`和`v-else`指令可以讓我們有更多的判斷條件去選擇要渲染的元素。
 
 要注意的是兩者使用時都必須跟隨在`v-if`或`v-else-if`其後，否則將失去作用。
-```html
+```
 <div v-if="ok">
 現在OK
 </div>
@@ -44,7 +44,7 @@ Vue 提供了 `v-if` 指令可用於條件渲染，當`v-if`後面跟隨的表�
 </div>
 ```
 
-```html
+```
 <div v-if="color === 'red'">
 紅色
 </div>
@@ -63,7 +63,7 @@ Vue 提供了 `v-if` 指令可用於條件渲染，當`v-if`後面跟隨的表�
 ## 範例
 以下是一個點擊按鈕後會切換輸入欄的範例，網頁渲染後如圖所示：
 
-```html
+```
 <template>
   <div id="app">
     <template v-if="data.type==='username'">

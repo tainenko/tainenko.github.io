@@ -52,8 +52,8 @@ Vue，又稱為Vue.js是組合中最年輕的成員。它是由前谷歌員工Ev
 |初始版本|2010年|2013年|2014年|
 |官方網站|[angular.io](angular.io)|[reactjs.org](reactjs.org)|[vuejs.org](vuejs.org)|
 |容量大約(KB)| 500| 100| 80|
-|當前版本|9| 16.x|3.0.0|
-|使用公司|谷歌、wix|facebook、優步|阿里巴巴、GitLab|
+|當前版本|11| 17.x|3.0.x|
+|使用公司|Google、Wix|Facebook、Uber|Alibaba、GitLab|
 
 ## 許可證
 

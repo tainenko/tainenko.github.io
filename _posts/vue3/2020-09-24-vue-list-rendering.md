@@ -17,7 +17,7 @@ v-for="item in items"
 其中 `items` 是我們在setup裡頭宣告的array，item代表在array裡頭的值，v-for會從頭到尾的根據array的內容生成html元素。
 ## 範例
 ###  程式碼
-```html
+```
 <template>
     <ul>
       <li v-for="city in cities">
@@ -26,7 +26,7 @@ v-for="item in items"
     </ul>
 </template>
 ```
-```html
+```
 <script>
 export default {
   setup () {
@@ -59,7 +59,7 @@ Vue.createApp({
 
 ## 取得index
 `v-for`的語法和javascript的for-loop一樣，當我們在遍歷過程中想要同時取得陣列中的值和指標時，只要這樣寫就可以了。
-```html
+```
 <template>
     <ul>
       <li v-for="city, index in cities">
@@ -92,7 +92,7 @@ Vue.createApp({
 - slice()
 
 例如，你只想渲染陣列中的偶數個內容，你可以這麼寫：
-```html
+```
 <template>
     <ul>
       <li v-for="city, index in even_cities">
@@ -101,7 +101,7 @@ Vue.createApp({
     </ul>
 </template>
 ```
-```html
+```
 <script>
 export default {
   setup () {
@@ -116,7 +116,7 @@ export default {
 綜合使用`v-for`和`v-if`做列表式的條件渲染也可以出現上述結果，但是我們不推薦這麼做，因為效能不佳。
 
 比較好的做法是用`computed`搭配方法去產生一個新的陣列。
-```html
+```
 <template>
     <ul>
       <li v-for="city, index in cites">
@@ -127,7 +127,7 @@ export default {
     </ul>
 </template>
 ```
-```html
+```
 <script>
 export default {
   setup () {
@@ -142,7 +142,7 @@ export default {
 `v-for`可以指定一個數字當作迴圈次數，以下是一個範例
 v-for can also take an integer. In this case it will repeat the template that many times.
 
-```html
+```
 <div id="range" >
   <span v-for="n in 10">{{ n }}隻羊</span>
 </div>
@@ -151,7 +151,7 @@ v-for can also take an integer. In this case it will repeat the template that ma
 和`v-if`類似，`v-for`同樣能夠使用在`<template>`標籤上同時渲染多個html元素。
 
 範例如下
-```html
+```
 <ul>
   <template v-for="item in items">
     <li>{{ item.msg }}</li>
@@ -163,13 +163,13 @@ v-for can also take an integer. In this case it will repeat the template that ma
 # 在`v-for`裡使用Object
 ## Object的v-for語法
 類似陣列在`v-for`中的使用法式，Object在`v-for`裡的語法如下：
-```html
+```
 <div v-for="(value, key, index) in object">
   {{ index }}. {{ key }}: {{ value }}
 </div>
 ```
 ## 範例
-```html
+```
 <ul id="v-for-object" class="demo">
   <li v-for="value,key in object">
      {{ key }} {{ value }}
@@ -177,7 +177,7 @@ v-for can also take an integer. In this case it will repeat the template that ma
 </ul>
 ```
 
-```html
+```
 <script>
 export default {
   setup () {
@@ -194,7 +194,7 @@ export default {
 </script>
 ```
 渲染結果如下
-```html					
+```					
 中正區　 100		
 大同區　 103		
 中山區　 104		

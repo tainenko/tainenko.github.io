@@ -17,7 +17,7 @@ crosspost_to_medium: true
 
 # 什麼是打包
 舉個例子，你在一個html文件中引入多個JavaScript文件
-```html
+```
 <html>
 <script src="/src/entry.js"></script>
 <script src="/src/message.js"></script>

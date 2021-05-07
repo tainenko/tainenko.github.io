@@ -22,7 +22,7 @@ const computedVariable = computed(()=>{//do somethind
 假設我們有一個會員資料頁面，其中一個欄位是出生年，同時要顯示民國年和西元年，我們當然可以儲存兩個值在後台，然後分別綁定到頁面上，不過這顯示不是一個很好的做法，因為要維護兩個變數。
 
 因為西元年可以藉由民國年加上1911推導而來，因此我們可以使用`computed`函數從民國年去計算得到西元年。
-```html
+```
 <script>
 import {computed} from 'vue'
 export default {
@@ -36,7 +36,7 @@ export default {
 ```
 
 雖然`computed`函數返回的是一個`ref`物件，不過預設是不能修改，重新對`computed`的變數賦值會產生一個 Vue warning。
-```html
+```
 <script>
 import {computed} from 'vue'
 export default {
@@ -67,7 +67,7 @@ export default {
 
 也就是說，原先我們建立的是單向的推導關係，現在要把關係變為雙向。
 > 我們可以傳入一個擁有get和set屬性的物件給`computed`函數，創建一個可以重新賦值的computed物件
-```html
+```
 <script>
 import {computed, ref} from 'vue'
 export default {

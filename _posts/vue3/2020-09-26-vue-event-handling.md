@@ -11,11 +11,11 @@ crosspost_to_medium: true
 我們可以使用 `v-on` 指令去監聽 DOM 事件，並且在事件被觸發時執行我們定義的 Javscript 函數
 
 # `v-on` 語法
-```html
+```
 v-on:事件名稱="函數名稱"
 ```
 `v-on`也可縮寫成`@`
-```html
+```
 @事件名稱="函數名稱"
 ```
 
@@ -23,7 +23,7 @@ v-on:事件名稱="函數名稱"
 這是一個onclick事件的範例，我們在button上使用`v-on`監聽 DOM 的click事件，每當按鈕被點擊便會觸發事件，進而執行我們定義的函數onClick。
 
 此處我們定義的onClick函數的功能就是把 count 加一，因此每點擊一次就會更新count的值，頁面也會響應式的重新渲染。
-```html
+```
 <template >
     <p>{{ count }}</p>
     <button @click="onClick">點擊後加1</button>
@@ -46,7 +46,7 @@ export default {
 我們稍微修改一下上面的計數器，讓它可以接受一個參數，讓計數器的增加數量由傳入的參數來決定，而不是每點擊一次就加1。
 
 傳參數的方法很簡單，只要在`v-on`的函數名稱呼叫時也帶參數就可以了。
-```html
+```
 <template >
     <p>{{ count }}</p>
     <button @click="onClick(2)">點擊後加2</button>
@@ -68,7 +68,7 @@ export default {
 ```
 # DOM事件
 有的時候，我們會需要原始的 DOM 事件來處理一些情境，遇到這種情況，你可以傳入一個代表 DOM 事件的特殊參數 `$event`
-```html
+```
 <template >
     <button @click="onSubmit($event)">Submit</button>
 </template>
@@ -91,7 +91,7 @@ export default {
 ```
 # 綁定多個函數
 `v-on`可以同時綁定多個函數在一個事件上，只要用書寫時用`,`將函數隔開。
-```html
+```
 <template >
     <p>{{ count1 }}</p>
     <p>{{ count2 }}</p>
@@ -157,7 +157,7 @@ Vue同時提供了許多好用的事件修改器和`v-on`搭配，例如：
 ## 鍵盤修改器
 當對應的按鍵被按下時才會觸發事件，例如：
 
-```html
+```
 <!-- 只有按下 `enter` 鍵時才會觸發 submit -->
 <input @keyup.enter="submit" />
 ```
