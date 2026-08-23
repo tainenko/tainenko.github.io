@@ -1,0 +1,75 @@
+<svg viewBox="0 0 920 480" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="480" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="460" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">LLM 知識庫工作流程</text>
+
+  <!-- Row of 4 phase boxes -->
+  <!-- 1. Collect -->
+  <g>
+    <rect x="30" y="90" width="180" height="120" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+    <text x="120" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">1. 收集</text>
+    <text x="120" y="156" text-anchor="middle" font-size="13" fill="#334155">Obsidian Web Clipper</text>
+    <text x="120" y="176" text-anchor="middle" font-size="13" fill="#334155">存進 raw/ 資料夾</text>
+  </g>
+
+  <!-- 2. Compile -->
+  <g>
+    <rect x="255" y="90" width="180" height="120" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="345" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#15803d">2. 整理</text>
+    <text x="345" y="156" text-anchor="middle" font-size="13" fill="#334155">Claude Code 讀取 raw/</text>
+    <text x="345" y="176" text-anchor="middle" font-size="13" fill="#334155">自動分類、建立 wiki 連結</text>
+  </g>
+
+  <!-- 3. Query -->
+  <g>
+    <rect x="480" y="90" width="180" height="120" rx="12" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+    <text x="570" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#a16207">3. 查詢</text>
+    <text x="570" y="156" text-anchor="middle" font-size="13" fill="#334155">自然語言提問</text>
+    <text x="570" y="176" text-anchor="middle" font-size="13" fill="#334155">回答歸檔回知識庫</text>
+  </g>
+
+  <!-- 4. Maintain -->
+  <g>
+    <rect x="705" y="90" width="185" height="120" rx="12" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+    <text x="797" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#be185d">4. 維護</text>
+    <text x="797" y="156" text-anchor="middle" font-size="13" fill="#334155">掃描找矛盾</text>
+    <text x="797" y="176" text-anchor="middle" font-size="13" fill="#334155">提示新研究方向</text>
+  </g>
+
+  <!-- Arrows between boxes -->
+  <line x1="210" y1="150" x2="250" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="435" y1="150" x2="475" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="150" x2="700" y2="150" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Loop back arrow (maintain -> compile, ongoing cycle) -->
+  <path d="M 797 210 C 797 300, 345 300, 345 215" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text x="571" y="292" text-anchor="middle" font-size="13" fill="#64748b">持續循環：新資料 + 維護結果不斷回饋進整理階段</text>
+
+  <!-- Bottom: 3 roles -->
+  <text x="460" y="356" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">三個角色</text>
+
+  <g>
+    <rect x="120" y="380" width="200" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="220" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">Obsidian</text>
+    <text x="220" y="428" text-anchor="middle" font-size="12" fill="#64748b">存放與呈現，本身不做整理</text>
+  </g>
+
+  <g>
+    <rect x="360" y="380" width="200" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="460" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">Claude Code</text>
+    <text x="460" y="428" text-anchor="middle" font-size="12" fill="#64748b">讀寫檔案，做分類與連結</text>
+  </g>
+
+  <g>
+    <rect x="600" y="380" width="200" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="700" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">你</text>
+    <text x="700" y="428" text-anchor="middle" font-size="12" fill="#64748b">丟資料、問問題、抽查結果</text>
+  </g>
+</svg>
