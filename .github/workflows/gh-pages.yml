@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -29,6 +29,11 @@ jobs:
           destination: ./_site
         env:
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+      - name: Save Medium crosspost cache
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Medium crosspost cache [skip ci]"
+          file_pattern: .jekyll-crosspost_to_medium/*.yml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
