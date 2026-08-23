@@ -17,7 +17,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-crosspost-to-medium
 
 authors:
   tony:
