@@ -32,6 +32,7 @@ jobs:
         env:
           JEKYLL_ENV: production
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+          MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
       - name: Save Medium crosspost cache
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
