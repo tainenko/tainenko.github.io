@@ -1,6 +1,6 @@
 ---
 name: technical-blog-writing
-description: "Writing guidance for software engineering / technical blog posts on this Jekyll blog (tainenko.github.io) — post structure templates, voice and tone, code example conventions, and this repo's front matter format. Use this whenever the user asks to draft, write, or outline a new blog post, article, or _posts/ entry for this repo, whether it's about an algorithm/Leetcode problem, an interview writeup, a framework deep dive (Vue/React/etc.), a bug postmortem, a benchmark, or a system design explainer — even if they just say something like '幫我寫一篇關於 X 的文章' or 'draft a post about Y' without naming this skill."
+description: "Writing guidance for software engineering / technical blog posts on this Jekyll blog (tainenko.github.io) — post structure templates (including a simplified ELI5/白話 style for non-technical readers), voice and tone, code example conventions, and this repo's front matter format. Use this whenever the user asks to draft, write, or outline a new blog post, article, or _posts/ entry for this repo, whether it's an algorithm/Leetcode problem, an interview writeup, a framework deep dive (Vue/React/etc.), a bug postmortem, a benchmark, a system design explainer, or an ELI5-style simple explanation — even if they just say something like '幫我寫一篇關於 X 的文章', 'draft a post about Y', or '用 eli5 寫一篇...' without naming this skill."
 ---
 
 # Technical Blog Writing (tainenko.github.io)
@@ -48,6 +48,16 @@ Different technical content wants a different shape. Skimming for the shape firs
 4. Chosen design (diagram if it helps — a diagram beats 500 words of prose description)
 5. Trade-offs accepted
 6. Results / lessons
+
+**ELI5 / 白話解說** — explains a concept in the simplest terms possible, for a reader who has little or no background in the topic (a non-engineer friend, or an engineer completely new to this specific area). Different goal from Deep Dive: Deep Dive assumes the reader is technical and wants precision; ELI5 assumes the reader isn't, and wants a correct-but-simplified mental model over precision.
+1. One plain sentence answering "what even is this", before any setup
+2. A relatable everyday analogy — this is the backbone of the whole post, so it needs to actually map onto how the thing works, not just sound cute (a misleading analogy is worse than none, because it has to be unlearned later)
+3. Build the real explanation on top of the analogy, introducing one new idea at a time
+4. One concrete, minimal example — skip code entirely if the concept doesn't need it, or keep it to a few annotated lines if it does
+5. Common misconception this clears up, if there is one
+6. Pointer to a Deep Dive-style post (this blog's or elsewhere) for the reader who wants the real technical depth
+
+Writing rules specific to ELI5: every piece of jargon gets defined in plain words the moment it's introduced, sentences stay short, and it's fine — good, even — to sacrifice some precision for clarity as long as what's said isn't actually wrong.
 
 If a Leetcode or interview-prep post is being drafted, that's closest to Tutorial or Deep Dive depending on whether it's "how to solve this problem" (tutorial) or "here's a technique/pattern and when to reach for it" (deep dive) — pick based on what the reader actually walks away able to do.
 
@@ -101,7 +111,7 @@ Loose template — TL;DR and a trade-offs/limitations section are the two pieces
 [Key takeaway, what to do next]
 ```
 
-Rough length by type, as a sanity check rather than a hard rule: quick tip ~500-800 words, tutorial ~1500-3000, deep dive ~2000-4000, architecture post ~2000-3500 (diagrams carry some of the load), benchmark ~1500-2500 (the data does the heavy lifting).
+Rough length by type, as a sanity check rather than a hard rule: quick tip ~500-800 words, ELI5 ~800-1500 (short on purpose — depth is what's being traded away), tutorial ~1500-3000, deep dive ~2000-4000, architecture post ~2000-3500 (diagrams carry some of the load), benchmark ~1500-2500 (the data does the heavy lifting).
 
 ## Common mistakes to avoid
 
